@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f7f4;
+  --background: #ffffff;
   --surface: #ffffff;
-  --foreground: #17201d;
-  --muted: #5f6863;
-  --line: #d8ded9;
-  --accent: #245c4c;
-  --accent-dark: #173d32;
-  --accent-soft: #e4eee9;
-  --friction: #8a6232;
+  --foreground: #1d1d1f;
+  --muted: #6e6e73;
+  --line: #d2d2d7;
+  --accent: #0071e3;
+  --accent-dark: #0066cc;
+  --accent-soft: #e8f3ff;
+  --friction: #9a6a16;
 }
 
 @theme inline {
@@ -32,8 +32,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.55;
 }
@@ -983,5 +982,323 @@ p {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* A restrained, product-led presentation inspired by Apple's editorial clarity. */
+.container {
+  width: min(100% - 48px, 1120px);
+}
+
+.section {
+  padding: 136px 0;
+}
+
+h1 {
+  max-width: 850px;
+  font-size: clamp(3rem, 5.25vw, 5.35rem);
+  font-weight: 650;
+  letter-spacing: -0.072em;
+  line-height: 0.98;
+}
+
+h2 {
+  max-width: 780px;
+  font-size: clamp(2.35rem, 4vw, 4rem);
+  font-weight: 650;
+  letter-spacing: -0.065em;
+  line-height: 1;
+}
+
+h3 {
+  font-weight: 650;
+}
+
+.site-header {
+  border-bottom-color: color-mix(in srgb, var(--line) 65%, transparent);
+  background: color-mix(in srgb, #fff 82%, transparent);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.wordmark,
+.footer-name {
+  font-weight: 700;
+}
+
+.header-nav a,
+.text-link {
+  color: #424245;
+}
+
+.header-nav a:hover,
+.text-link:hover {
+  color: var(--accent);
+}
+
+.button {
+  min-height: 44px;
+  border-color: var(--accent);
+  border-radius: 980px;
+  background: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0 19px;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--accent-dark);
+  background: var(--accent-dark);
+  transform: scale(1.015);
+}
+
+.button-small {
+  min-height: 34px;
+  padding: 0 15px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 132px 0 120px;
+}
+
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  top: -440px;
+  left: 50%;
+  width: 900px;
+  height: 620px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(219, 239, 255, 0.9) 0%, rgba(239, 247, 255, 0.45) 45%, transparent 72%);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(350px, 0.85fr);
+  gap: clamp(44px, 7vw, 104px);
+}
+
+.hero-copy {
+  padding-bottom: 10px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero-lede {
+  max-width: 630px;
+  font-size: clamp(1.05rem, 1.35vw, 1.18rem);
+  line-height: 1.5;
+}
+
+.hero-flow {
+  border-color: rgba(0, 0, 0, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 16px 44px rgba(0, 46, 95, 0.1), 0 2px 7px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(18px);
+}
+
+.flow-heading {
+  margin-bottom: 28px;
+}
+
+.hero-flow h2 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  letter-spacing: -0.045em;
+}
+
+.flow-node {
+  border-color: #dfe2e7;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.flow-connector {
+  background: #b9cbe0;
+}
+
+.flow-node-accent {
+  border-color: #b9dcff;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.section-intro {
+  margin-bottom: 56px;
+}
+
+.problem-item {
+  border-top-color: #e5e5e7;
+  padding: 28px 0 32px;
+}
+
+.problem-item h3,
+.solution-item h3,
+.process-item h3,
+.demo-panel h3 {
+  color: var(--foreground);
+}
+
+.item-index,
+.process-number {
+  color: #86868b;
+}
+
+.solutions-grid {
+  gap: 48px 56px;
+}
+
+.solution-item {
+  border-top-color: #d2d2d7;
+  padding-top: 24px;
+}
+
+.solution-item:hover {
+  border-top-color: var(--accent);
+}
+
+.systems-note {
+  border-top-color: #d2d2d7;
+}
+
+.process-section {
+  background: #f5f5f7;
+}
+
+.process-item {
+  border-top-color: #c9c9ce;
+}
+
+.process-item:not(:last-child)::after {
+  background: #c9c9ce;
+}
+
+.process-item-final {
+  border-color: var(--accent);
+}
+
+.process-item-final .process-number,
+.process-item-final h3 {
+  color: var(--accent-dark);
+}
+
+.process-result {
+  border-color: #b9dcff;
+  border-radius: 980px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.demos-section {
+  border-top: 0;
+  background: #f5f5f7;
+}
+
+.demo-panel {
+  border-color: transparent;
+  border-radius: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.025), 0 8px 28px rgba(0, 0, 0, 0.035);
+}
+
+.demo-flow {
+  border-color: #d6d6da;
+  border-radius: 16px;
+}
+
+.demo-flow-proposed {
+  border-color: #b9dcff;
+  background: #f4f9ff;
+}
+
+.demo-flow .flow-label {
+  color: var(--friction);
+}
+
+.demo-flow-proposed .flow-label {
+  color: var(--accent-dark);
+}
+
+.demo-flow-step span {
+  border-color: #d6d6da;
+  border-radius: 980px;
+  color: #515154;
+}
+
+.demo-flow-proposed .demo-flow-step span {
+  border-color: #c9e4ff;
+  background: #fff;
+  color: var(--accent-dark);
+}
+
+.about-content {
+  max-width: 820px;
+  border-top-color: #d2d2d7;
+}
+
+.focus-list span {
+  border-color: #d2d2d7;
+  border-radius: 980px;
+}
+
+.contact-panel {
+  border-color: transparent;
+  border-radius: 28px;
+  background: #f5f5f7;
+}
+
+.form-field input,
+.form-field textarea {
+  border-color: #d2d2d7;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.16);
+}
+
+.faq-list {
+  border-top-color: #d2d2d7;
+}
+
+.faq-list details {
+  border-bottom-color: #d2d2d7;
+}
+
+.faq-list summary {
+  min-height: 68px;
+}
+
+.faq-list summary::after {
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 88px 0;
+  }
+
+  .hero {
+    padding: 96px 0 88px;
+  }
+
+  h1 {
+    font-size: clamp(2.75rem, 13vw, 3.8rem);
+  }
+
+  .hero-flow {
+    border-radius: 22px;
+  }
+
+  .demo-panel,
+  .contact-panel {
+    border-radius: 20px;
   }
 }
