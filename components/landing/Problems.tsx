@@ -6,8 +6,8 @@ export function Problems() {
       <div className="container">
         <div className="section-intro">
           <p className="eyebrow">Problemas operativos</p>
-          <h2 id="problems-title">Procesos que suelen absorber tiempo operativo.</h2>
-          <p>Si estos escenarios aparecen en tu operación, puede haber un proceso que vale la pena revisar.</p>
+          <h2 id="problems-title">Patrones operativos que suelen pedir una intervención.</h2>
+          <p>Aplican a distintas industrias cuando el trabajo depende de personas sosteniendo manualmente la coordinación y el contexto.</p>
         </div>
         <ol className="problems-list">
           {problems.map(([title, description], index) => (

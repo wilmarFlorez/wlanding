@@ -5,9 +5,9 @@ export function Solutions() {
     <section className="section section-rule" id="soluciones" aria-labelledby="solutions-title">
       <div className="container">
         <div className="section-intro section-intro-wide">
-          <p className="eyebrow">Qué puedo construir</p>
-          <h2 id="solutions-title">No ofrezco un producto estándar.</h2>
-          <p>Diseño y construyo una solución alrededor del proceso priorizado.</p>
+          <p className="eyebrow">Capacidad de construcción</p>
+          <h2 id="solutions-title">Partimos de un proceso concreto, no de una herramienta predefinida.</h2>
+          <p>La intervención puede ser una interfaz, un flujo automatizado, una integración o software con IA, según lo que el contexto justifique.</p>
         </div>
         <div className="solutions-grid">
           {solutions.map(([title, description], index) => (
@@ -19,8 +19,8 @@ export function Solutions() {
           ))}
         </div>
         <p className="systems-note">
-          <span>Sistemas y canales posibles</span>
-          TMS, ERP, correo, WhatsApp, hojas de cálculo, APIs, bases de datos y herramientas internas.
+          <span>Entornos posibles</span>
+          Herramientas internas, APIs, correo, mensajería, hojas de cálculo, bases de datos, ERP, CRM o TMS.
         </p>
       </div>
     </section>

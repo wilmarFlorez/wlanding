@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Wilmar | Product Architect & Builder",
   description:
-    "Soluciones para procesos operativos manuales en logística terrestre.",
+    "Wilmar entiende problemas, diseña intervenciones y construye software con IA, agentes, automatización e integraciones cuando tienen sentido.",
   openGraph: {
     title: "Wilmar | Product Architect & Builder",
     description:
-      "Soluciones para procesos operativos manuales en logística terrestre.",
+      "Product Architect & Builder para problemas operativos y productos conectados con IA, automatización e integraciones.",
     type: "website",
     locale: "es_CO",
   },

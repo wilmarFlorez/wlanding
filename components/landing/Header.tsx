@@ -7,11 +7,12 @@ export function Header() {
         </a>
         <nav className="header-nav" aria-label="Navegación principal">
           <a href="#problemas">Problemas</a>
-          <a href="#proceso">Cómo trabajo</a>
-          <a href="#ejemplos">Ejemplos</a>
+            <a href="#proceso">Método</a>
+            <a href="#logistica">Logística</a>
+            <a href="#ejemplos">Demos</a>
         </nav>
-        <a className="button button-small" href="#contacto-form">
-          Revisar un proceso
+        <a className="button button-small" href="#contacto">
+          Contacto
         </a>
       </div>
     </header>

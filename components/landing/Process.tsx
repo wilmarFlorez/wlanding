@@ -5,8 +5,8 @@ export function Process() {
     <section className="section process-section" id="proceso" aria-labelledby="process-title">
       <div className="container">
         <div className="section-intro">
-          <p className="eyebrow">Cómo abordo un problema</p>
-          <h2 id="process-title">Del proceso actual a una solución funcionando.</h2>
+          <p className="eyebrow">Método de trabajo</p>
+          <h2 id="process-title">Criterio de producto, arquitectura y construcción en el mismo recorrido.</h2>
         </div>
         <ol className="process-list">
           {processSteps.map(([title, description], index) => (
@@ -19,7 +19,7 @@ export function Process() {
             </li>
           ))}
         </ol>
-        <p className="process-result">Solución funcionando</p>
+        <p className="process-result">Proceso conectado y observable</p>
       </div>
     </section>
   );

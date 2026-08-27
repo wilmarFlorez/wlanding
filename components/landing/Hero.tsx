@@ -9,14 +9,14 @@ export function Hero() {
     <section className="hero section" id="inicio" aria-labelledby="hero-title">
       <div className="container hero-grid">
         <div className="hero-copy">
-          <p className="eyebrow">Para empresas de transporte terrestre y 3PL</p>
-          <h1 id="hero-title">Diseño y construyo soluciones para procesos operativos manuales en logística terrestre.</h1>
+          <p className="eyebrow">Wilmar / Product Architect &amp; Builder</p>
+          <h1 id="hero-title">Entiendo el problema, diseño la intervención y construyo la solución.</h1>
           <p className="hero-lede">
-            Reviso procesos con seguimiento manual, información dispersa o reprocesos y construyo la solución que el caso requiere: automatización, IA, agentes e integraciones con los sistemas existentes cuando tiene sentido.
+            Software para procesos operativos y productos que necesitan conectar personas, decisiones y sistemas. IA, agentes, automatización e integraciones cuando tienen sentido para el caso.
           </p>
           <div className="hero-actions">
-            <a className="button" href="#contacto-form">
-              Revisar un proceso operativo
+            <a className="button" href="#contacto">
+              Contacto pendiente de integración
             </a>
             <a className="text-link" href="#problemas">
               Ver problemas que puedo abordar <span aria-hidden="true">-&gt;</span>
@@ -26,19 +26,19 @@ export function Hero() {
         <div className="hero-flow" aria-label="Flujo conceptual de información dispersa a proceso coordinado">
           <div className="flow-heading">
             <span className="flow-label">Flujo conceptual</span>
-            <span className="flow-privacy"><i aria-hidden="true" /> Sin datos de cliente</span>
+            <span>Sin datos de cliente</span>
           </div>
-          <h2>Del ruido operativo a una acción que llega a tiempo.</h2>
+          <h2>De un proceso disperso a una intervención conectada.</h2>
           <div className="flow-stage flow-stage-sources">
             <div className="flow-stage-heading">
               <span>01</span>
               <p>Señales de operación</p>
             </div>
             <div className="flow-inputs">
-              <FlowNode><i className="flow-node-mark flow-node-mark-chat" aria-hidden="true" />WhatsApp</FlowNode>
-              <FlowNode><i className="flow-node-mark flow-node-mark-mail" aria-hidden="true" />Correo</FlowNode>
-              <FlowNode><i className="flow-node-mark flow-node-mark-call" aria-hidden="true" />Llamadas</FlowNode>
-              <FlowNode><i className="flow-node-mark flow-node-mark-system" aria-hidden="true" />Sistemas</FlowNode>
+              <FlowNode>Personas</FlowNode>
+              <FlowNode>Canales</FlowNode>
+              <FlowNode>Datos</FlowNode>
+              <FlowNode>Sistemas</FlowNode>
             </div>
           </div>
           <div className="flow-connector" aria-hidden="true" />
@@ -47,7 +47,7 @@ export function Hero() {
               <span>02</span>
               <p>Orquestación</p>
             </div>
-            <FlowNode><i className="flow-node-mark flow-node-mark-process" aria-hidden="true" />Proceso operativo</FlowNode>
+              <FlowNode>Proceso y excepciones</FlowNode>
           </div>
           <div className="flow-connector" aria-hidden="true" />
           <div className="flow-stage flow-stage-intelligence">
@@ -55,7 +55,7 @@ export function Hero() {
               <span>03</span>
               <p>Decisión</p>
             </div>
-            <FlowNode accent><i className="flow-node-mark flow-node-mark-spark" aria-hidden="true" />Reglas + contexto <b>activo</b></FlowNode>
+              <FlowNode accent>Reglas + contexto</FlowNode>
           </div>
           <div className="flow-connector" aria-hidden="true" />
           <div className="flow-stage flow-stage-results">
@@ -64,8 +64,8 @@ export function Hero() {
               <p>Resultado coordinado</p>
             </div>
             <div className="flow-output">
-              <FlowNode accent><i className="flow-node-mark flow-node-mark-person" aria-hidden="true" />Intervención</FlowNode>
-              <FlowNode accent><i className="flow-node-mark flow-node-mark-send" aria-hidden="true" />Actualización / notificación</FlowNode>
+               <FlowNode accent>Intervención</FlowNode>
+               <FlowNode accent>Acción conectada</FlowNode>
             </div>
           </div>
         </div>

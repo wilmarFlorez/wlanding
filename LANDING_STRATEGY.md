@@ -1,3 +1,156 @@
+# Estrategia vigente V3 — Landing personal de Wilmar
+
+## Prioridad y alcance
+
+Esta es la estrategia vigente para la landing personal de Wilmar. Si entra en conflicto con cualquier decisión, copy, dirección visual, auditoría o implementación posterior de este documento, **V3 tiene prioridad**. El historial anterior permanece como referencia del proceso y no debe interpretarse como una restricción vigente cuando sea incompatible con esta sección.
+
+## Objetivo
+
+Vender directamente la capacidad personal de Wilmar para entender problemas, diseñar y construir soluciones de software con IA, agentes, automatización e integraciones. La landing debe hacer visible que la responsabilidad cubre criterio de producto, arquitectura, construcción e integración, no solamente una recomendación o una tarea aislada.
+
+## Posicionamiento
+
+**Wilmar es Product Architect & Builder.**
+
+No se presenta como freelancer genérico, agencia, consultor que solo entrega estrategia, SaaS, vendedor de horas ni proveedor de una herramienta predefinida. Trabaja a partir de un problema concreto, define una intervención adecuada y construye la solución con el nivel de complejidad que el contexto justifica.
+
+## Audiencias
+
+- Empresas logísticas y de operaciones que enfrentan procesos manuales, coordinación dispersa o falta de visibilidad.
+- Clientes que buscan capacidad freelance especializada para diseñar y construir soluciones con IA, agentes o automatización.
+- Empresas que están evaluando talento técnico y de producto para una iniciativa o problema concreto.
+- Prospectos de cualquier industria con procesos manuales o repetibles, información dispersa o sistemas que requieren conexión, aunque todavía no tengan una solución técnica definida.
+
+## Especialización
+
+Logística y operaciones, especialmente transporte terrestre y 3PL, son un área visible de profundidad, lenguaje de dominio y evidencia. No son un límite de industrias ni un requisito de entrada para conversar con Wilmar.
+
+La especialización debe servir para demostrar criterio aplicado, no para excluir problemas equivalentes de otras organizaciones. La landing puede priorizar ejemplos logísticos mientras la propuesta principal mantiene alcance para procesos operativos y de software más amplios.
+
+## Propuesta de valor y lenguaje aprobado
+
+La propuesta de valor debe comunicar que Wilmar entiende un problema, diseña la intervención y construye software conectado con los procesos y sistemas existentes. IA, agentes, automatización e integraciones se nombran como mecanismos posibles, no como una promesa automática ni como un producto en sí mismos.
+
+Lenguaje aprobado:
+
+- “Entiendo el problema, diseño la intervención y construyo la solución.”
+- “IA, agentes, automatización e integraciones cuando tienen sentido para el caso.”
+- “Partimos de un proceso concreto, no de una herramienta predefinida.”
+- “Logística y operaciones son una especialización visible de mi trabajo.”
+
+No usar promesas de ahorro, ROI, velocidad, porcentajes, resultados, experiencia sectorial específica ni credenciales que no puedan verificarse. No presentar proyectos propios, demos o prototipos como trabajo de cliente.
+
+## Jerarquía de mensaje
+
+1. Wilmar.
+2. Product Architect & Builder.
+3. IA, agentes, automatización e integraciones como capacidades de construcción.
+4. Problemas resolubles: procesos manuales, coordinación, información dispersa, decisiones repetibles, excepciones e integración de sistemas.
+5. Especialización logística y operacional.
+6. Evidencia de capacidad.
+7. Contacto.
+
+## Arquitectura aprobada
+
+Una única landing modular, sin crear tres landings:
+
+1. Hero personal y capacidad.
+2. Problemas que resuelve.
+3. Cómo trabaja.
+4. Especialización logística.
+5. Proyectos y demostraciones.
+6. Sobre Wilmar y enlaces profesionales.
+7. Contacto.
+8. FAQ.
+
+Los módulos de especialización y evidencia pueden crecer con el tiempo. La capacidad personal, proceso y contacto se mantienen comunes; logística funciona como una prueba de profundidad dentro de la misma página.
+
+## Reglas de credibilidad
+
+Cada pieza de evidencia debe mostrar una etiqueta visible y exacta:
+
+| Etiqueta | Uso permitido |
+| --- | --- |
+| `Proyecto propio` | Software construido por Wilmar fuera de una relación de cliente. |
+| `Demo conceptual` | Flujo o ejemplo que ilustra un enfoque posible; no está implementado ni atribuido a un cliente. |
+| `Prototipo` | Implementación exploratoria o demostrable que no se presenta como producto en producción. |
+| `Caso autorizado` | Trabajo real con autorización explícita para publicar contexto, rol y resultados verificables. |
+
+No inventar clientes, resultados, testimonios, logos, certificaciones, años de experiencia, métricas ni relaciones comerciales. La ausencia de evidencia se reconoce mediante un estado provisional sobrio; no se rellena con activos de stock o afirmaciones vagas.
+
+## CTA provisional
+
+Hasta configurar un canal comercial real, ningún CTA ni formulario debe afirmar que la información fue enviada, recibida o será respondida. Tampoco se debe prometer un plazo, agenda, diagnóstico o siguiente paso. El estado provisional debe indicar claramente que el contacto está pendiente de integración.
+
+## Requisitos pendientes de credibilidad
+
+- Fotografía profesional actual.
+- Enlaces reales a LinkedIn, GitHub y Upwork si aplica y representa el trabajo de Wilmar.
+- Biografía factual y verificable.
+- Proyectos, demos o prototipos publicables con su etiqueta de evidencia correcta.
+- Destino funcional para el contacto y definición del flujo de respuesta.
+
+## Decisiones visuales
+
+La dirección es un portfolio técnico y personal, claramente diferenciado de NuTeam. Debe conservar una paleta mineral sobria con verde funcional, bordes sobrios y radios limitados. La interfaz debe priorizar trabajo, criterio, arquitectura y evidencia antes que una apariencia de startup de IA o agencia.
+
+Cualquier estilo azul, uso extenso de píldoras o sombras heredado debe revisarse en una futura implementación, porque no corresponde por defecto a esta dirección V3.
+
+## Decisiones anteriores reemplazadas
+
+| Apartado previo | Decisión reemplazada | Decisión V3 |
+| --- | --- | --- |
+| `1. Posicionamiento`, `COPY V1` y `COPY V2` | Logística terrestre y 3PL como alcance exclusivo de la propuesta. | Logística es especialización visible, no límite de industrias ni requisito de entrada. |
+| `UI / UX DIRECTION V1 > Hero` (líneas 1051-1063) | Obligación de mostrar transporte terrestre y 3PL en el primer pantallazo. | El primer pantallazo prioriza a Wilmar y su capacidad; logística puede aparecer como especialización, no como condición obligatoria. |
+| `COPY V2 > Demostraciones conceptuales` y `UI / UX DIRECTION V1 > Demostraciones conceptuales` | Demostraciones exclusivamente logísticas. | La logística conserva ejemplos prioritarios, pero proyectos y demostraciones pueden cubrir otras industrias o problemas equivalentes y deben etiquetarse por su tipo de evidencia. |
+
+## Brief de implementación V3
+
+### Copy objetivo por sección
+
+| Sección | Objetivo de copy |
+| --- | --- |
+| Hero personal y capacidad | Nombrar a Wilmar, su rol de Product Architect & Builder y su capacidad de entender, diseñar y construir soluciones con IA, agentes, automatización e integraciones. |
+| Problemas que resuelve | Describir patrones reconocibles sin limitarse a logística: procesos manuales, información dispersa, coordinación, decisiones repetibles, excepciones y sistemas desconectados. |
+| Cómo trabaja | Mostrar la secuencia entender → priorizar → diseñar → construir → integrar → medir, dejando claro que no entrega solo estrategia. |
+| Especialización logística | Presentar transporte terrestre, 3PL y operaciones como un área de profundidad aplicada y no como único mercado atendido. |
+| Proyectos y demostraciones | Mostrar evidencia con la etiqueta correcta, contexto, problema, rol de Wilmar, tecnología o enfoque y límites de lo que puede afirmarse. |
+| Sobre Wilmar y enlaces profesionales | Presentar biografía factual, fotografía y enlaces profesionales reales; sin sustituir evidencia con claims. |
+| Contacto | Invitar a compartir un problema o iniciativa concreta solo cuando exista un canal de recepción y una expectativa posterior definida. |
+| FAQ | Resolver objeciones de alcance, sistemas existentes, datos y enfoque técnico; no publicar precio ni condiciones sin definición comercial. |
+
+### Elementos requeridos y opcionales
+
+**Requeridos antes de activar captación comercial:** identidad personal clara, posicionamiento V3, proceso de trabajo, al menos una forma de evidencia correctamente etiquetada, enlace o canal de contacto funcional y estado de respuesta definido.
+
+**Opcionales:** fotografía profesional, enlaces adicionales, especializaciones futuras, casos autorizados, demostraciones interactivas, publicaciones y recursos técnicos. Son prioritarios para credibilidad, pero no deben reemplazarse por material ficticio.
+
+### Estados provisionales
+
+- Sin foto: omitir el espacio visual; no usar placeholder ni stock.
+- Sin enlaces: no mostrar iconos ni destinos vacíos.
+- Sin evidencia publicable: mantener solo demos conceptuales con descargo visible; no llamarlas proyectos ni casos.
+- Sin contacto funcional: no simular envío ni respuesta; declarar que la integración está pendiente o mantener el CTA en estado no operativo.
+
+### Criterios de aceptación verificables
+
+- El primer recorrido permite identificar a Wilmar, su rol y sus capacidades sin asumir que el visitante pertenece a logística.
+- Logística, transporte terrestre y 3PL aparecen como especialización, no como exclusión de otras industrias.
+- Ningún copy promete métricas, resultados, clientes, experiencia o respuesta de contacto sin respaldo verificable.
+- Todo proyecto, demo, prototipo o caso lleva una de las cuatro etiquetas de credibilidad definidas por V3.
+- La landing conserva una sola ruta y módulos que pueden ordenarse o ampliarse sin duplicar sitios por audiencia.
+- La dirección visual usa paleta mineral, verde funcional, bordes sobrios y radios limitados; cualquier excepción heredada queda identificada para revisión.
+- El contacto solo se presenta como operativo cuando existe un destino real y un comportamiento comprobable de recepción.
+
+### Orden de implementación recomendado
+
+1. Definir y aprobar el copy de hero, audiencia y especialización con V3 como fuente de verdad.
+2. Definir el canal comercial, flujo posterior y CTA operativo antes de promover captación.
+3. Reunir biografía factual, foto profesional y enlaces reales.
+4. Seleccionar y publicar los primeros proyectos, prototipos o demos con etiquetado de evidencia correcto.
+5. Reordenar los módulos de la landing según la arquitectura V3 y actualizar la dirección visual heredada.
+6. Durante los siguientes 90 días, añadir evidencia de capacidad de forma incremental y convertir casos reales en `caso autorizado` solo con autorización verificable.
+
 # Estrategia de landing personal B2B para logística
 
 ## Diagnóstico clave
@@ -1370,3 +1523,156 @@ Ninguna. La implementación usa Next.js, React, TypeScript y Tailwind CSS ya ins
 - `pnpm build` muestra una advertencia de Turbopack sobre la detección del `pnpm-lock.yaml` en `/home/wilmar`, fuera del repositorio actual. No bloquea la compilación ni es causado por la landing. Puede resolverse posteriormente configurando `turbopack.root` si se requiere eliminar la advertencia.
 - No hay envío de formulario hasta conectar una integración comercial real.
 - No hay fotografía ni enlaces profesionales porque no fueron proporcionados.
+
+## IMPLEMENTATION AUDIT V1
+
+### Alcance y método
+
+Auditoría de la implementación estática contra COPY V2, UI / UX DIRECTION V1 e IMPLEMENTATION V1. Se revisaron la estructura y los estilos, además de la página renderizada en desktop (1,440 px), tablet (1,024 px) y mobile (390 px). No se modificó la landing.
+
+### Hallazgos
+
+#### Hero
+
+| Aspecto | Puntuación | Evaluación |
+| --- | ---: | --- |
+| Se entiende qué hago en 5 segundos | 8/10 | El titular declara diseño y construcción; el subheadline concreta el trabajo operativo. |
+| Se entiende logística terrestre | 9/10 | Está en eyebrow y titular. "3PL" aporta especificidad al público correcto. |
+| Se entiende que construyo soluciones | 10/10 | "Diseño y construyo" es directo y se repite con coherencia. |
+| IA y automatización como mecanismos | 9/10 | Aparecen después del problema y con el condicionante "cuando tiene sentido". |
+| Uso de espacio del headline | 3/10 | En desktop ocupa siete líneas y domina la mayor parte del primer pantallazo. En mobile crece todavía más y desplaza el CTA. |
+| Protagonismo del CTA | 7/10 desktop; 2/10 mobile | El botón tiene contraste y copy correcto. En mobile queda fuera de la vista inicial por la altura del titular y el error de layout. |
+| Aporte del visual | 7/10 desktop; 2/10 mobile | En desktop explica bien canales dispersos, orquestación y resultado. No identifica un proceso concreto y, en mobile, se desborda y se superpone al copy. |
+
+No se recomienda cambiar el headline por razones de copy: es el recomendado por COPY V2 y cumple industria, problema y capacidad de construcción. El problema es de composición: tamaño, ancho efectivo de la columna y regla responsive. Debe corregirse esa composición antes de reabrir el copy.
+
+#### Jerarquía
+
+El orden Hero -> Problemas -> Soluciones -> Proceso -> Demostraciones -> Sobre mí -> Cierre -> FAQ responde a la estrategia y comunica la progresión general. Sin embargo, el peso visual no es equilibrado:
+
+- **Demostraciones** tienen demasiado peso por sus tres paneles, dos flujos y tres columnas de detalle. Son valiosas como evidencia, pero llegan tarde y convierten el segundo tramo en una lectura extensa.
+- **Sobre mí** tiene muy poco peso. El bloque es angosto, no contiene fotografía ni evidencia verificable y termina en un aviso de información pendiente. No alcanza a reforzar la contratación de un especialista individual.
+- **Problemas** debería acortarse o compactarse ligeramente: seis escenarios son útiles, pero varios convergen en información dispersa, actualizaciones y coordinación.
+- **Capacidad de construcción** debería ganar protagonismo relativo. Soluciones y proceso lo declaran, pero la percepción queda dominada por diagnóstico y por flujos hipotéticos.
+- No conviene eliminar una sección nuclear. El candidato a eliminar si se necesita recortar es la pregunta de FAQ sobre precio mientras no exista una respuesta comercial definida; no la sección de FAQ completa.
+
+#### Densidad
+
+| Sección | Decisión | Motivo |
+| --- | --- | --- |
+| Hero | Reestructurar | El contenido es correcto, pero su composición hace que el primer mensaje ocupe demasiado alto. |
+| Problemas | Reducir | Mantener escenarios reconocibles, eliminando solapamientos entre información dispersa, actualización y coordinación. |
+| Soluciones | Mantener | Cuatro campos de acción son una cantidad adecuada y evitan un catálogo. |
+| Proceso | Mantener | Es la síntesis más clara de entender -> decidir -> diseñar -> construir/integrar/medir. |
+| Demostraciones | Reestructurar | El contenido demuestra criterio, pero tres capas de explicación por demo superan la lectura de 10-20 segundos. |
+| Sobre mí | Reestructurar | Debe dejar de presentar el pendiente como contenido visible; mientras falte evidencia, debe ser más breve y cercano. |
+| Cierre/formulario | Mantener | El copy de encaje y no encaje filtra adecuadamente, pero el formulario no puede ser accionable sin destino. |
+| FAQ | Reducir | Cinco preguntas son razonables, pero repiten mensajes ya declarados. La respuesta de precio no debe publicar una indecisión comercial. |
+
+La repetición principal es "no se necesita llegar con una solución/proyecto de IA" y "no todo requiere IA" entre hero, proceso, cierre y FAQ. Debe aparecer con fuerza una vez en el proceso y, como máximo, una vez en el cierre. Los párrafos más prescindibles son las explicaciones largas de papel del agente, sistemas y métricas de cada demo cuando ya están visibles en el flujo.
+
+#### Demostraciones conceptuales
+
+La etiqueta de ejemplos conceptuales y el descargo "No son implementaciones ni resultados de clientes" son claros y correctos. Cada panel comunica el problema, la intervención, el rol del agente, integraciones potenciales y qué medir. También distingue la revisión humana cuando aplica, lo que mejora credibilidad.
+
+No cumplen todavía el objetivo de comprensión en 10-20 segundos: el visitante debe leer una introducción, comparar dos bandas de cuatro o cinco nodos y procesar tres columnas de detalle, repetido tres veces. La acción del agente queda en texto secundario, no dentro de la intervención visual. En mobile los nodos se apilan correctamente por CSS, pero cada panel se vuelve una secuencia larga y difícil de comparar.
+
+Simplificación recomendada: conservar los tres ejemplos, pero hacer que cada uno se lea como una sola unidad: una frase de problema, una banda "Hoy" de máximo cuatro nodos y una banda "Intervención" de máximo cuatro nodos que incluya explícitamente el nodo de IA/agente cuando corresponda y el nodo de revisión humana. Reemplazar las tres columnas inferiores por una franja de dos microetiquetas: "Se conecta con" y "Se mediría"; limitar cada una a una línea. Así se conserva problema -> intervención -> integración/medición sin ocultar información ni inventar evidencia.
+
+#### Sobre mí y credibilidad
+
+La página usa primera persona, nombre personal y el rol "Product Architect & Builder". Esto ayuda a que no parezca SaaS. La ausencia de foto ficticia es una decisión correcta y preferible a un placeholder. El método, las demostraciones etiquetadas y la negativa explícita a prometer resultados son las principales señales de confianza actuales.
+
+El resultado aún no transmite suficientemente "estoy contratando a una persona especialista": no hay fotografía, nombre completo, biografía verificable, enlace profesional ni evidencia pública; el aviso "Información profesional pendiente" hace visible esa carencia y resta proximidad. No se debe inventar esos elementos. Hasta disponer de evidencia real, conviene que el bloque no amplifique el pendiente ni intente suplirlo con claims.
+
+#### Conversión
+
+El CTA principal tiene un verbo concreto y la página explica que se revisará el encaje para una conversación inicial. Los CTAs secundarios orientan a problemas en lugar de desviar a una biografía. Los cinco campos obligatorios coinciden con el mínimo definido; el contexto adicional es opcional. La ubicación final del formulario es correcta.
+
+Existe un bloqueo de conversión: al enviar, el formulario informa que no existe vía de envío y que la información no se ha enviado. Por lo tanto, el visitante sí se pregunta "¿qué pasa si envío esto?" y recibe la respuesta de que no ocurre nada, después de invertir esfuerzo. No debe publicarse como mecanismo de captación hasta conectar el canal comercial elegido. Además, falta definir y comunicar el plazo/canal de respuesta; el copy solo dice que se revisará el encaje.
+
+#### Responsive
+
+- **Desktop:** no hay overflow visible. El hero es legible, pero muy alto; el headline de siete líneas y el gran vacío inferior reducen densidad comercial. El CTA existe, pero aparece tarde dentro del primer bloque.
+- **Tablet:** la relación entre headline y diagrama se mantiene razonable en la vista inspeccionada, aunque el headline sigue siendo dominante. Las cuadrículas cambian después de 900 px, no en el rango tablet completo indicado por la dirección.
+- **Mobile:** hay overflow horizontal y el diagrama se superpone al titular. La causa es que `.hero-grid` se redefine a dos columnas después del breakpoint de 900 px, anulando la regla móvil/tablet. El eyebrow se fragmenta en demasiadas líneas, el CTA no queda en la primera vista y el flujo no es comprensible de una pasada. Los diagramas de demos sí se apilan, pero la longitud acumulada es excesiva.
+
+#### Comparación con la secuencia objetivo
+
+La secuencia "Entender el problema -> identificar oportunidad -> diseñar -> construir -> integrar -> medir" está expresada con claridad en Proceso y respaldada por Problemas, Soluciones y Demostraciones. Visualmente, no tiene el mismo peso de extremo a extremo: Problemas y los flujos conceptuales reciben más atención que "construir, integrar y medir". El cuarto paso destacado y la etiqueta "Solución funcionando" ayudan, pero no compensan el volumen anterior. La mejora debe ser de jerarquía y síntesis, no de estrategia.
+
+### Prioridades
+
+#### P0 - corregir antes de publicar
+
+1. Corregir el layout responsive del hero: restaurar una sola columna debajo del breakpoint, eliminar el overflow/superposición y comprobar el flujo en 390 px y 768 px.
+2. Conectar el formulario a un mecanismo comercial real o retirar su capacidad de envío hasta definirlo. Un CTA principal que concluye en "no se ha enviado" bloquea conversión.
+3. Reducir la altura efectiva del hero sin cambiar el headline: ajustar escala/ancho para que eyebrow, titular, subheadline y CTA sean prioritarios en la primera vista, especialmente en mobile.
+
+#### P1 - mejorar próximamente
+
+1. Reestructurar demos para lectura de 10-20 segundos: hacer visible la función del agente en el flujo y condensar integraciones/métricas.
+2. Compactar problemas y eliminar repetición de diagnóstico/IA entre hero, proceso, cierre y FAQ.
+3. Aumentar la presencia de construcción, integración y medición en el peso visual relativo de soluciones y proceso.
+4. Replantear Sobre mí con evidencia real cuando exista; mientras tanto, retirar o reducir el aviso público de información pendiente.
+5. Eliminar la FAQ de precio hasta poder responderla con una decisión comercial clara, o definir esa respuesta antes de publicar.
+
+#### P2 - posteriormente
+
+1. Refinar el diagrama del hero para anclarlo a un caso operativo concreto, no solo a "ruido" y "acción".
+2. Revisar el alto vertical y los espacios entre secciones después de reducir demos, para recuperar ritmo de lectura.
+3. Revisar el punto de quiebre de tablet para que conserve columnas solo cuando cada bloque tenga ancho de lectura suficiente.
+4. Añadir foto profesional, nombre completo, biografía y enlaces únicamente cuando sean verificables y representen el trabajo real.
+5. Incorporar evidencia pública propia, como demos o publicaciones, antes de añadir cualquier forma de prueba comercial.
+
+### Decisiones recomendadas
+
+- Mantener el headline de COPY V2; corregir su tratamiento visual antes de sustituirlo.
+- Mantener el orden estratégico de secciones, sin reintroducir una sección independiente de criterios de oportunidad.
+- Conservar los tres ejemplos conceptuales, pero tratarlos como demostraciones de lectura rápida y no como minicasos extensos.
+- No inventar credenciales, métricas, clientes, logos ni resultados para resolver el déficit de confianza.
+- No lanzar la landing como canal de captación hasta resolver el envío del formulario y la respuesta posterior.
+
+## IMPLEMENTATION V2
+
+### Cambios realizados
+
+- Se corrigió la cascada responsive del hero. La retícula conserva dos columnas solo cuando hay ancho suficiente y pasa a una columna antes del rango mobile; el copy, CTA y visual siguen un orden vertical real.
+- Se compactó el hero mediante una escala tipográfica, ancho de lectura, interlineado, separaciones y padding responsivos. El headline aprobado se conserva sin cambios.
+- Se redujeron los problemas a cinco patrones de reconocimiento rápido, agrupando los solapamientos entre seguimiento, información dispersa, coordinación y actualización.
+- Las tres demostraciones se condensaron a problema, flujo actual e intervención posible. El nodo de IA y la revisión o confirmación humana se muestran dentro del flujo cuando corresponde. Sistemas y medición quedan como dos etiquetas breves.
+- Se aumentó el peso relativo de construcción, integración y medición reforzando visualmente las secciones de soluciones y proceso, con la etapa final como punto de cierre.
+- Se eliminó la pregunta de precio de la FAQ mientras no exista una respuesta comercial definida.
+- Se mejoró la presentación de Sobre mí con el nombre y rol en una jerarquía visible; no se añadieron datos, foto ni credenciales no verificables.
+
+### Problemas corregidos
+
+- El hero ya no vuelve a dos columnas por reglas CSS posteriores en 768 px, 390 px ni 375 px. El visual queda debajo del CTA y no interfiere con el copy.
+- La composición del headline deja visibles el subheadline y CTA de forma temprana, sin reducir la legibilidad.
+- Se retiró el estado temporal de "Preparando envío...", que podía sugerir una operación de envío inexistente.
+
+### Decisiones visuales
+
+- Se conserva la dirección editorial, la paleta, la tipografía y el diagrama conceptual existente.
+- Los flujos conceptuales mantienen la distinción entre el proceso actual y la intervención propuesta, pero limitan cada recorrido a pasos escaneables.
+- En desktop y tablet amplia se conserva el hero asimétrico. En tablet estrecha y mobile se privilegia una sola columna, sin compresión de nodos ni contenido oculto.
+
+### Estado del formulario
+
+- El formulario conserva su UI, validación nativa y foco desde los CTA.
+- El `submit handler` previene el envío y comunica explícitamente que la integración está pendiente; no afirma recepción de información ni éxito.
+- El punto de integración futura está delimitado en el handler. No se añadieron servicios externos, API, backend ni dependencias.
+
+### Verificación realizada
+
+- `pnpm exec tsc --noEmit`: correcto.
+- `pnpm lint`: correcto.
+- `pnpm build`: correcto. La página raíz se genera como contenido estático.
+- `git diff --check`: correcto.
+- Inspección renderizada en 1440 px, 1024 px, 768 px, 390 px y 375 px: hero, navegación, CTA y visual se adaptan sin superposición ni overflow horizontal visible.
+
+### Problemas pendientes
+
+- Integrar el formulario con el canal comercial que se defina y establecer el flujo de respuesta real.
+- Incorporar fotografía, biografía, enlaces profesionales y evidencia pública solo cuando existan y sean verificables.
+- La advertencia de Turbopack sobre el `pnpm-lock.yaml` fuera del repositorio continúa sin bloquear la compilación.
