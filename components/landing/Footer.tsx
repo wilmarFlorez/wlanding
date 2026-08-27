@@ -3,10 +3,10 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container footer-content">
         <div>
-          <p className="footer-name">Wilmar</p>
+          <p className="footer-name">Wilmar Florez Samudio</p>
           <p>Product Architect &amp; Builder</p>
         </div>
-        <p>© {new Date().getFullYear()} Wilmar</p>
+        <p>© {new Date().getFullYear()} Wilmar Florez Samudio</p>
       </div>
     </footer>
   );
