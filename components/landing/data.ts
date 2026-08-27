@@ -44,29 +44,6 @@ export const solutions = [
   ],
 ] as const;
 
-export const processSteps = [
-  [
-    "Entiendo",
-    "Delimito el proceso, sus actores, pasos, decisiones, excepciones y restricciones reales.",
-  ],
-  [
-    "Priorizo",
-    "Reviso frecuencia, carga manual, coordinación, información disponible y qué parte vale la pena intervenir.",
-  ],
-  [
-    "Diseño",
-    "Defino el flujo futuro, las reglas, la supervisión humana y la arquitectura que requiere el caso.",
-  ],
-  [
-    "Construyo e integro",
-    "Desarrollo la solución y la conecto con el entorno acordado. El trabajo no termina en una recomendación.",
-  ],
-  [
-    "Mido",
-    "Definimos cómo observar el proceso y ajustamos la intervención con base en el uso real.",
-  ],
-] as const;
-
 export const demos = [
   {
     title: "Gestión de novedades de transporte",
