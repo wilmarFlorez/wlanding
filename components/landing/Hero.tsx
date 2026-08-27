@@ -6,12 +6,9 @@ export function Hero() {
           <p className="eyebrow">Sobre mí</p>
           <h1 id="hero-title">Wilmar Florez Samudio, Product Architect &amp; Builder.</h1>
           <p className="hero-role">Trabajo entre el problema, la arquitectura y lo que finalmente se construye.</p>
-          <p className="hero-lede">
-            Mi enfoque combina entendimiento de producto, diseño de sistemas y construcción de software para convertir una situación concreta en una intervención usable y conectada.
-          </p>
-          <p className="hero-lede hero-specialization">
-            Logística y operaciones son una especialización visible de mi trabajo. El mismo criterio aplica a otros contextos donde la información, las decisiones y los sistemas necesitan trabajar mejor juntos.
-          </p>
+           <p className="hero-lede">
+             Mi enfoque combina entendimiento de producto, diseño de sistemas y construcción de software para convertir una situación concreta en una intervención usable y conectada.
+           </p>
           <div className="focus-list" aria-label="Enfoque">
             <span>Producto</span>
             <span>Arquitectura</span>

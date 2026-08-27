@@ -1,23 +1,15 @@
 export const problems = [
   [
-    "La información está repartida entre personas, canales y sistemas.",
-    "El contexto necesario para actuar no está en un solo lugar ni llega con la misma forma.",
+    "La información y el trabajo se duplican entre sistemas.",
+    "El contexto se busca, registra o comunica más de una vez para que el proceso avance.",
   ],
   [
-    "Un proceso sigue vivo porque alguien recuerda cómo coordinarlo.",
-    "La ejecución depende de perseguir respuestas, pasar contexto y saber a quién consultar.",
+    "La coordinación y las excepciones dependen de alguien.",
+    "La ejecución exige perseguir respuestas, pasar contexto y saber a quién consultar cuando algo cambia.",
   ],
   [
     "Las decisiones repetibles consumen atención de especialistas.",
     "Clasificar, validar, buscar, responder o actualizar se repite bajo reglas que pueden explicitarse.",
-  ],
-  [
-    "Las excepciones no tienen un recorrido claro.",
-    "Un cambio, incidente o dato faltante se mueve entre responsables sin suficiente trazabilidad.",
-  ],
-  [
-    "Los sistemas no comparten el trabajo que ya se hizo.",
-    "La misma información se registra, interpreta o comunica más de una vez para avanzar.",
   ],
   [
     "El flujo existe, pero no se puede observar ni mejorar.",
@@ -76,23 +68,11 @@ export const demos = [
 
 export const faqs = [
   [
-    "¿Solo trabajas en logística?",
-    "No. Logística y operaciones son una especialización visible, en particular transporte terrestre y 3PL. El trabajo también puede partir de problemas equivalentes en otros contextos operativos o de producto.",
-  ],
-  [
-    "¿Necesito tener un proyecto de IA definido?",
-    "No. Se puede empezar por un proceso que genera fricción. La tecnología se decide después de entender el caso.",
-  ],
-  [
-    "¿Necesito cambiar mis sistemas actuales?",
-    "No necesariamente. El diseño evalúa cómo conectarse con las herramientas y canales existentes cuando sea pertinente.",
+    "¿Necesito cambiar mis sistemas actuales o usar IA?",
+    "No necesariamente. Se parte del proceso y de las herramientas existentes; puede requerir integración, automatización, IA, rediseño o una combinación.",
   ],
   [
     "¿Qué pasa si los datos están desordenados?",
     "No se necesitan datos perfectos para revisar el problema. Sí se debe entender qué información existe, dónde está y qué tan confiable es para el flujo.",
-  ],
-  [
-    "¿La solución siempre utiliza agentes de IA?",
-    "No. Puede requerir automatización, integración, IA, rediseño de proceso o una combinación. Se elige el mecanismo que tenga sentido.",
   ],
 ] as const;

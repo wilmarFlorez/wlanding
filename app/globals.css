@@ -54,7 +54,6 @@ p { color: var(--muted); }
 .hero-copy { border-top: 1px solid var(--line); padding-top: 27px; }
 .hero-role { color: var(--foreground); font-size: 1.04rem; font-weight: 500; }
 .hero-lede { max-width: 710px; margin-bottom: 15px; font-size: clamp(1.02rem, 1.35vw, 1.16rem); line-height: 1.52; }
-.hero-specialization { margin-bottom: 0; }
 .hero-copy .focus-list { margin-top: 26px; }
 .hero-actions { display: flex; align-items: center; gap: 22px; margin-top: 29px; }
 .text-link { font-weight: 550; }
