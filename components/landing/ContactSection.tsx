@@ -1,6 +1,8 @@
 import { ContactForm } from "@/components/landing/ContactForm";
 
 export function ContactSection() {
+  const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
   return (
     <section className="section contact-section" id="contacto" aria-labelledby="contact-title">
       <div className="container contact-panel">
@@ -13,7 +15,7 @@ export function ContactSection() {
           <p className="flow-label">Consulta inicial</p>
           <h3>Cuéntame qué está ocurriendo.</h3>
           <p>Responderé al correo que registres para entender si vale la pena revisarlo juntos.</p>
-          <ContactForm />
+          <ContactForm turnstileSiteKey={turnstileSiteKey} />
         </div>
       </div>
     </section>

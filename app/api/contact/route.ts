@@ -1,4 +1,10 @@
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1_000;
+const RATE_LIMIT_MAX_REQUESTS = 5;
+const rateLimits = new Map<string, { count: number; resetAt: number }>();
+
+export const runtime = "nodejs";
+export const maxDuration = 30;
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -17,10 +23,33 @@ function text(value: unknown, required: boolean, maxLength: number) {
   return result;
 }
 
+function getClientIp(request: Request) {
+  const forwardedFor = request.headers.get("x-forwarded-for");
+  return forwardedFor?.split(",")[0]?.trim() || request.headers.get("x-real-ip") || "unknown";
+}
+
+function isRateLimited(ip: string) {
+  const now = Date.now();
+  const limit = rateLimits.get(ip);
+
+  if (!limit || limit.resetAt <= now) {
+    rateLimits.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+
+  limit.count += 1;
+  return limit.count > RATE_LIMIT_MAX_REQUESTS;
+}
+
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
   if (origin && origin !== new URL(request.url).origin) {
     return Response.json({ success: false }, { status: 403 });
+  }
+
+  const clientIp = getClientIp(request);
+  if (isRateLimited(clientIp)) {
+    return Response.json({ success: false }, { status: 429 });
   }
 
   let payload: Record<string, unknown>;
@@ -51,9 +80,42 @@ export async function POST(request: Request) {
 
   const endpoint = process.env.GOOGLE_SHEETS_ENDPOINT;
   const secret = process.env.GOOGLE_SHEETS_SHARED_SECRET;
-  if (!endpoint || !secret) {
-    console.error("Google Sheets contact integration is not configured.");
+  const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
+  if (!endpoint || !secret || !turnstileSecret) {
+    console.error("Contact integration is not configured.");
     return Response.json({ success: false }, { status: 503 });
+  }
+
+  const turnstileToken = text(payload["cf-turnstile-response"], true, 2048);
+  if (!turnstileToken) {
+    return Response.json({ success: false }, { status: 403 });
+  }
+
+  try {
+    const verificationData = new URLSearchParams({
+      secret: turnstileSecret,
+      response: turnstileToken,
+    });
+    if (clientIp !== "unknown") {
+      verificationData.set("remoteip", clientIp);
+    }
+
+    const verification = await fetch(
+      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: verificationData,
+        cache: "no-store",
+        signal: AbortSignal.timeout(10_000),
+      },
+    );
+    const result: unknown = await verification.json();
+    if (!verification.ok || !isRecord(result) || result.success !== true) {
+      return Response.json({ success: false }, { status: 403 });
+    }
+  } catch {
+    return Response.json({ success: false }, { status: 502 });
   }
 
   try {

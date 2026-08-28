@@ -1,10 +1,17 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Script from "next/script";
 
 type Status = "idle" | "success" | "error";
 
-export function ContactForm() {
+declare global {
+  interface Window {
+    turnstile?: { reset: () => void };
+  }
+}
+
+export function ContactForm({ turnstileSiteKey }: { turnstileSiteKey?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -34,9 +41,11 @@ export function ContactForm() {
         form.reset();
         setStatus("success");
       } else {
+        window.turnstile?.reset();
         setStatus("error");
       }
     } catch {
+      window.turnstile?.reset();
       setStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -71,8 +80,21 @@ export function ContactForm() {
         Sitio web
         <input name="website" tabIndex={-1} autoComplete="off" />
       </label>
-      <p className="contact-privacy">Usaré esta información únicamente para responder a tu consulta.</p>
-      <button className="button" disabled={isSubmitting} type="submit">
+      {turnstileSiteKey ? (
+        <>
+          <Script
+            src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+            strategy="afterInteractive"
+          />
+          <div className="cf-turnstile" data-sitekey={turnstileSiteKey} data-size="flexible" />
+        </>
+      ) : (
+        <p className="contact-status contact-status-error" role="alert">
+          La verificación de seguridad no está disponible.
+        </p>
+      )}
+      <p className="contact-privacy">Cloudflare procesa la verificación de seguridad. Usaré tu información únicamente para responder a tu consulta.</p>
+      <button className="button" disabled={isSubmitting || !turnstileSiteKey} type="submit">
         {isSubmitting ? "Enviando..." : "Enviar consulta"}
       </button>
       <p className={`contact-status contact-status-${status}`} aria-live="polite">
