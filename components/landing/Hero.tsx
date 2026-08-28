@@ -16,7 +16,7 @@ export function Hero() {
           </div>
           <div className="hero-actions">
             <a className="button" href="#contacto">
-              Contacto pendiente de integración
+              Hablemos de tu iniciativa
             </a>
             <a className="text-link" href="#problemas">
               Ver problemas que puedo abordar <span aria-hidden="true">-&gt;</span>

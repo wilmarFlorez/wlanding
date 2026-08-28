@@ -13,7 +13,6 @@ export function Logistics() {
           />
         </div>
         <div className="logistics-copy">
-          <p className="eyebrow">Especialización visible</p>
           <h2 id="logistics-title">Logística y operaciones</h2>
           <p>En transporte terrestre y 3PL, una carga se mueve entre llamadas, correos, mensajes y sistemas. Cada cambio de cita, ETA o disponibilidad exige recuperar contexto, coordinar a las partes y actualizar el estado correcto.</p>
           <p>El trabajo parte de esos puntos de fricción: confirmar recogidas, perseguir documentación, detectar retrasos y escalar excepciones antes de que afecten la entrega. Se diseña el flujo que reúne información, define la siguiente acción y deja cada decisión trazable.</p>

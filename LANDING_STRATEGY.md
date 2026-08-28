@@ -1524,6 +1524,176 @@ Ninguna. La implementación usa Next.js, React, TypeScript y Tailwind CSS ya ins
 - No hay envío de formulario hasta conectar una integración comercial real.
 - No hay fotografía ni enlaces profesionales porque no fueron proporcionados.
 
+## PERSONAL FREELANCE POSITIONING AUDIT V1
+
+### Alcance y criterio
+
+Auditoría de conversión de la versión visual actualmente publicada, contrastada con la estrategia vigente V3. El objetivo no es evaluar la estética de forma aislada, sino determinar si la página puede actuar como activo secundario de adquisición para contratación freelance directa desde Upwork, LinkedIn, publicidad paga, logística y proyectos generales de IA aplicada. No se modificó código, copy ni canal de contacto.
+
+### Veredicto ejecutivo
+
+La landing ya se percibe como una página de una persona, no como una agencia: el nombre completo en el titular, el rol individual y el lenguaje en primera persona establecen autoría. Sin embargo, aún no comunica con suficiente velocidad una oferta freelance directa y construible. En los primeros segundos el visitante entiende principalmente: "Wilmar es Product Architect & Builder que piensa problemas y construye software". No entiende con la misma claridad: "puedo contratar a Wilmar para construir agentes de IA, automatizaciones, integraciones y software operativo".
+
+La página tampoco se percibe como una versión personal de NuTeam por marca, tono o presencia explícita, porque NuTeam no aparece. El riesgo actual es más sutil: el monograma "W", la navegación mínima y la composición editorial no explican una relación comercial ni aportan señales personales suficientes. Sin foto, bio verificable, enlaces profesionales o evidencia atribuible, la página sigue siendo una propuesta personal declarativa, no un perfil freelance plenamente comprobable.
+
+### 1. Percepción personal/freelance frente a NuTeam
+
+**Conclusión:** personal, pero incompleta como activo de contratación freelance.
+
+- El hero nombra a Wilmar y usa un rol personal; esto evita que el visitante suponga una empresa de múltiples personas.
+- La ausencia de marca, servicios empaquetados, logos y lenguaje corporativo evita una confusión directa con NuTeam.
+- El monograma aislado en el header puede leerse como marca de estudio o compañía antes que como identidad profesional; no aporta por sí solo la señal de "contrata directamente a esta persona".
+- "Product Architect & Builder" diferencia frente a un freelancer de ejecución por horas, pero no es una categoría universalmente autoexplicativa para compradores de Upwork, LinkedIn o tráfico frío.
+- No hay bloque "Sobre Wilmar", foto, trayectoria factual ni destinos profesionales. La identidad personal depende casi por completo del nombre del hero y no se sostiene durante el recorrido.
+
+**Implicación:** la página debe seguir vendiendo criterio individual y responsabilidad de punta a punta, no convertirse en una página de agencia. Aun así, necesita señales verificables de la persona que se contrataría.
+
+### 2. Claridad en los primeros 5-10 segundos
+
+**Resultado:** parcial; suficiente para "arquitectura y construcción", insuficiente para las capacidades específicas solicitadas.
+
+| Capacidad que debería entenderse | Señal actual en el primer pantallazo | Evaluación |
+| --- | --- | --- |
+| Contratación directa de Wilmar | Nombre propio y primera persona, pero CTA no operativo | Parcial |
+| AI agents | No se menciona en hero | No clara |
+| Automatización | No se menciona en hero | No clara |
+| Integraciones | "intervención usable y conectada" lo insinúa, pero no lo nombra | Débil |
+| AI-powered software | "construcción de software" aparece, sin IA aplicada | Parcial |
+| Soluciones operativas | Problemas y lenguaje de intervención lo sugieren | Parcial |
+
+El titular tiene buena autoridad y asigna responsabilidad: "Wilmar Florez Samudio, Product Architect & Builder." El problema es que funciona como presentación profesional, no como propuesta de contratación. La frase siguiente, "Trabajo entre el problema, la arquitectura y lo que finalmente se construye", es conceptualmente coherente con V3, pero abstracta para tráfico frío. El párrafo amplía la abstracción con "situación concreta" e "intervención usable y conectada" sin nombrar los mecanismos que el visitante necesita reconocer.
+
+La consecuencia para publicidad paga y Upwork es importante: un visitante que llega buscando agentes, automatización o integraciones debe inferir que Wilmar los ofrece. No debe tener que desplazarse hasta las demos logísticas para confirmarlo.
+
+### 3. Logística como especialización, no restricción
+
+**Resultado:** la intención estratégica es correcta, pero la jerarquía visual actual hace que logística pese más como mercado dominante que como prueba de profundidad.
+
+- La sección de problemas conserva formulaciones genéricas y reutilizables: duplicación de información, coordinación, decisiones repetibles y falta de visibilidad. Es la mejor señal de alcance transversal.
+- El bloque "Logística y operaciones" aparece inmediatamente después de problemas, usa una fotografía grande de un camión y concentra copy específico de transporte terrestre, 3PL, citas, ETA, cargas y documentación.
+- Las tres demos posteriores son también exclusivamente logísticas: novedades de transporte, validación documental y actualización de estados con TMS, ERP, CRM y WhatsApp.
+- No existe antes ni después una declaración equivalente que diga que esos patrones aplican a otras operaciones o industrias, ni ejemplos no logísticos de lo que Wilmar puede construir.
+
+Para un comprador logístico, este peso es una ventaja: demuestra lenguaje de dominio y hace tangible el contexto. Para un cliente general de IA aplicada, la secuencia "problemas -> camión -> tres demos de transporte" comunica que la página probablemente no es para él. En la versión actual, logística opera como especialización visible, pero también como filtro implícito demasiado fuerte.
+
+### 4. Reutilización por canal y audiencia
+
+| Uso previsto | Aptitud actual | Diagnóstico |
+| --- | --- | --- |
+| Upwork | Baja-media | El perfil es personal, pero el hero no enumera de forma inequívoca los tipos de trabajo buscados y no ofrece prueba técnica personal ni destino de contacto habilitado. |
+| LinkedIn | Media | Funciona como portfolio editorial al llegar desde un perfil que ya contextualiza a Wilmar. Por sí sola, la landing no repone bio, enlaces ni evidencia suficiente. |
+| Publicidad paga | Baja | El mensaje inicial es demasiado abstracto para empatar con anuncios de agentes, automatización o integraciones. El CTA no permite convertir. |
+| Clientes de logística | Media-alta | Problemas, foto, vocabulario y demos hacen que el sector se reconozca. Falta una propuesta inicial más directa y evidencia no conceptual. |
+| Proyectos generales de AI agents | Baja | Los agentes aparecen solo dentro de flujos conceptuales logísticos; el alcance intersectorial no tiene una ruta explícita. |
+
+La arquitectura modular sí permite reutilización futura, pero la página actual todavía no ejecuta la jerarquía V3: faltan los módulos de "Qué puedo construir", "Cómo trabajo" y "Sobre Wilmar" que permitirían mantener un mensaje principal común y dejar logística como evidencia especializada.
+
+### 5. Asociaciones que produce la versión actual
+
+**Hace pensar primero en logística:**
+
+- La fotografía de camión ocupa un bloque visual completo y es el único activo fotográfico de la página.
+- El título "Logística y operaciones" y el copy sobre transporte terrestre y 3PL aparecen antes de toda evidencia técnica.
+- Las tres demos tratan exclusivamente transporte, documentos operativos y estados de servicio.
+- TMS, ETA, citas, cargas, WhatsApp y ERP se repiten como lenguaje de contexto.
+
+**Hace pensar primero en AI builder / Product Architect:**
+
+- El nombre propio y el rol "Product Architect & Builder" en el hero.
+- La secuencia "problema, arquitectura y lo que finalmente se construye".
+- Las etiquetas Producto, Arquitectura y Construcción.
+- Los flujos de demos, que muestran sistemas conectados, reglas implícitas, validación y revisión humana.
+
+La asociación logística gana en memoria visual y en volumen de contenido; la asociación de builder gana solo en el titular. El balance actual no basta para una landing que debe servir a compradores generales sin abandonar el foco operacional.
+
+### 6. Necesidad de una sección explícita "Qué construyo"
+
+**Decisión de auditoría: sí, hace falta y es prioritaria.**
+
+La página actual explica problemas y presenta ejemplos de flujos, pero no ofrece una capa de clasificación rápida para quien llega con una necesidad de construcción ya formulada. Una sección explícita, breve y situada antes de logística y demos, debe responder: "¿qué puede contratarse?" sin convertirse en un catálogo de herramientas ni en promesa de que toda solución requiere IA.
+
+Su función es traducir el rol abstracto a capacidades contratables: agentes de IA, automatización de procesos, integraciones entre sistemas y software interno o interfaces operativas. Debe mantener el condicionante estratégico: se parte del problema y se elige el mecanismo adecuado. Esta sección es necesaria para que la propuesta pueda sostener tráfico desde Upwork, LinkedIn y campañas de capacidades concretas.
+
+### 7. Evidencia de capacidad técnica y personal
+
+**Resultado:** existe evidencia de pensamiento técnico; no existe todavía evidencia suficiente de capacidad personal demostrada para conversión de alto compromiso.
+
+- Las demos conceptuales muestran una forma de razonar útil: proceso actual, intervención posible, supervisión humana, sistemas a conectar y métricas a observar.
+- El etiquetado "Demo conceptual" y el descargo de que no son implementaciones ni resultados de clientes cumplen la regla de credibilidad y evitan una afirmación engañosa.
+- Esa honestidad reduce riesgo reputacional, pero también establece con claridad que no hay casos publicados. Las demos no sustituyen repositorios, prototipos navegables, videos, artículos técnicos, casos autorizados o resultados verificables.
+- No hay evidencia personal persistente: fotografía, biografía factual, LinkedIn, GitHub, Upwork, proyectos propios etiquetados o una explicación concreta de experiencia y responsabilidad.
+- La página muestra cómo Wilmar podría pensar una solución, pero no prueba todavía qué ha construido Wilmar, con qué profundidad técnica o en qué contexto real.
+
+El mínimo para activación comercial no exige inventar pruebas: un prototipo propio funcional, una demo en video, un repositorio publicable o una explicación de arquitectura atribuida a Wilmar mejoraría materialmente la confianza. Cualquier activo debe conservar la etiqueta de evidencia correcta definida en V3.
+
+### 8. Jerarquía visual del hero
+
+**Lo que funciona:**
+
+- El nombre y el rol dominan con nitidez. La landing se atribuye de inmediato a una persona concreta.
+- El ancho de lectura contenido y la composición sobria mantienen atención en el mensaje, sin distraer con estética de startup de IA.
+- El CTA principal está visualmente distinguido y el secundario ofrece una ruta de menor compromiso hacia problemas.
+
+**Lo que limita la conversión:**
+
+- El mayor peso visual recae en el nombre y el título profesional, no en la propuesta de valor. Un visitante puede leer quién es Wilmar sin entender con precisión qué contratar.
+- "Sobre mí" como eyebrow refuerza una lectura de portfolio o página personal. Para adquisición freelance, desperdicia el espacio de clasificación más valioso del hero.
+- El párrafo de explicación es pequeño, abstracto y contiene la única mención a software; no nombra IA, agentes, automatización ni integraciones.
+- Las etiquetas Producto, Arquitectura y Construcción refuerzan disciplinas internas, no entregables o capacidades reconocibles por un comprador.
+- El espacio negativo a la derecha aporta contención editorial, pero no aporta una prueba visual de construcción ni un mecanismo que acelere la comprensión. En tráfico frío, el hero depende enteramente de copy conceptual.
+- El CTA primario se presenta como botón, pero su copy anuncia indisponibilidad. Es correcto desde transparencia, pero no puede cumplir la función de conversión que su jerarquía visual promete.
+
+La jerarquía debe seguir priorizando identidad personal, pero el orden semántico del primer bloque debe resolver en una mirada: persona responsable -> qué construye -> para qué tipo de problema -> especialización logística como prueba, no requisito.
+
+### 9. CTA y flujo de conversión
+
+**Estado actual:** correcto en transparencia, no funcional para adquisición.
+
+- "Contacto pendiente de integración" evita la falsa promesa de una conversación, envío o respuesta. Esto está alineado con V3 y debe conservarse hasta que exista un destino real.
+- Como CTA comercial, comunica una indisponibilidad antes de ofrecer un siguiente paso. En Upwork, LinkedIn o anuncios, esa fricción termina el recorrido justo cuando el visitante muestra intención.
+- El enlace secundario a problemas es útil para exploración, pero no crea una ruta alternativa de captura ni de prueba técnica.
+- La sección de contacto es clara al afirmar que no se solicitan ni almacenan datos. También confirma al visitante que todavía no puede contratar, consultar ni compartir un proyecto desde la landing.
+
+No corresponde habilitar ni anunciar un canal hasta definir destino, mecanismo de recepción, responsable y expectativa posterior. Cuando exista, el CTA debe expresar una acción concreta y coherente con la audiencia amplia, sin prometer diagnóstico, agenda, plazo o respuesta que aún no estén definidos.
+
+### 10. Separación conceptual frente a NuTeam
+
+No se auditó una landing o propuesta actual de NuTeam dentro de este repositorio; por ello la comparación es conceptual y se basa en la estrategia V3, que exige una diferenciación clara. La separación debe construirse por función comercial y responsabilidad, no solo por paleta, nombre o ausencia de logo.
+
+| Landing personal de Wilmar | NuTeam |
+| --- | --- |
+| Contratación directa de un Product Architect & Builder identificable. | Marca, empresa, equipo o propuesta colectiva si esa es su naturaleza real. |
+| Vende criterio personal: entender, diseñar, construir e integrar para un problema concreto. | Debe vender la propuesta, capacidad, productos o servicios propios de NuTeam sin atribuirlos automáticamente a Wilmar. |
+| Portfolio y evidencia atribuida con precisión a Wilmar: proyecto propio, demo, prototipo o caso autorizado. | Casos, capacidades y resultados atribuibles a NuTeam con sus permisos y contexto correspondientes. |
+| Puede usar logística como especialización aplicada y mantener entrada para otras operaciones. | Debe definir su propio alcance comercial sin que la landing personal actúe como una copia reducida. |
+| Tono editorial, personal, técnico y responsable. | Puede tener un tono corporativo o de producto, solo si refleja su posicionamiento real. |
+
+Para evitar confusión futura:
+
+- No reutilizar la misma propuesta principal, estructura de hero, casos o CTA como si fueran intercambiables entre ambas propiedades.
+- No presentar trabajo de NuTeam como evidencia personal de Wilmar sin especificar el rol, la relación, la autorización y el tipo de evidencia.
+- No usar la landing de Wilmar como página de servicios encubierta de NuTeam ni enlazar a NuTeam como sustituto de un canal personal sin explicar la relación.
+- Si se menciona NuTeam, hacerlo en una nota factual y breve que aclare si es proyecto, empresa, colaboración o experiencia profesional, sin diluir quién asume la contratación y la responsabilidad en esta landing.
+
+### Prioridad de corrección estratégica
+
+1. Resolver la propuesta de contratación directa del hero: capacidades construibles y tipo de problema, manteniendo el enfoque condicional de V3.
+2. Incorporar la sección explícita "Qué construyo" antes de que logística y demos dominen la interpretación.
+3. Reubicar el papel de logística como evidencia de profundidad y añadir una señal inequívoca de aplicabilidad a otras operaciones o industrias.
+4. Incorporar evidencia personal y técnica verificable con el etiquetado de credibilidad correspondiente.
+5. Definir y habilitar el flujo de contacto solo cuando exista un destino funcional y una expectativa de respuesta real.
+6. Documentar una regla pública y factual para cualquier referencia futura a NuTeam.
+
+### Decisiones requeridas para este diagnóstico
+
+1. Confirmar si la propuesta primaria debe nombrar explícitamente en el hero: agentes de IA, automatización, integraciones y software con IA, o si alguna de esas capacidades no se ofrecerá de forma directa.
+2. Aprobar que "Qué construyo" sea una sección obligatoria y definir las tres o cuatro categorías exactas que Wilmar puede entregar y sostener públicamente.
+3. Decidir el alcance visible fuera de logística: operaciones de cualquier industria, industrias seleccionadas o proyectos generales de IA aplicada. Esta decisión determina el copy de entrada y los ejemplos necesarios.
+4. Decidir si logística permanece como primera especialización visible o si debe moverse después de una prueba más general de capacidades para priorizar adquisición multicanal.
+5. Definir qué evidencia personal verificable puede publicarse primero: bio, foto, LinkedIn, GitHub, Upwork, repositorio, prototipo, video o artículo técnico.
+6. Definir la relación pública exacta entre Wilmar y NuTeam, incluyendo si debe mencionarse y bajo qué condiciones se atribuyen proyectos o casos.
+7. Definir el canal comercial, su destinatario, los campos necesarios y el flujo de respuesta antes de sustituir el estado de contacto pendiente.
+
 ## IMPLEMENTATION AUDIT V1
 
 ### Alcance y método
@@ -1676,3 +1846,13 @@ La secuencia "Entender el problema -> identificar oportunidad -> diseñar -> con
 - Integrar el formulario con el canal comercial que se defina y establecer el flujo de respuesta real.
 - Incorporar fotografía, biografía, enlaces profesionales y evidencia pública solo cuando existan y sean verificables.
 - La advertencia de Turbopack sobre el `pnpm-lock.yaml` fuera del repositorio continúa sin bloquear la compilación.
+
+## DECISIONS REQUIRED
+
+1. Confirmar si el hero debe nombrar explícitamente agentes de IA, automatización, integraciones y software con IA, y descartar cualquier capacidad que no se ofrezca directamente.
+2. Aprobar una sección obligatoria de "Qué construyo" y sus tres o cuatro categorías publicables.
+3. Definir el alcance visible fuera de logística para que la página pueda atender proyectos generales sin diluir la especialización.
+4. Decidir el orden relativo de capacidad general y especialización logística en el recorrido.
+5. Priorizar la primera evidencia personal verificable que se publicará.
+6. Definir la relación pública y las reglas de atribución entre Wilmar y NuTeam.
+7. Definir el canal comercial y su flujo de respuesta antes de habilitar conversión.
