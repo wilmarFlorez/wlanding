@@ -64,20 +64,14 @@ p { color: var(--muted); }
 .section-intro p:last-child { max-width: 660px; margin-bottom: 0; }
 .problems-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; list-style: none; margin: 0; padding: 0; }
 .problem-item { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 15px; border-top: 1px solid var(--line); padding: 22px 0 25px; }
-.problem-item p, .solution-item p, .demo-summary p { margin-bottom: 0; font-size: .92rem; }
-
-.solutions-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 42px 56px; }
-.solution-item { border-top: 1px solid var(--line); padding-top: 19px; }
-.solution-item .item-index { display: block; margin-bottom: 26px; }
-.systems-note { display: flex; gap: 18px; max-width: 900px; margin: 50px 0 0; border-top: 1px solid var(--line); padding-top: 17px; font-size: .86rem; }
-.systems-note span { flex: 0 0 170px; color: var(--muted); font-family: var(--font-geist-mono), monospace; font-size: .68rem; letter-spacing: .07em; text-transform: uppercase; }
+.problem-item p, .demo-summary p { margin-bottom: 0; font-size: .92rem; }
 
 .logistics-section { border-top: 1px solid var(--line); }
-.logistics-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: clamp(44px, 8vw, 130px); }
-.logistics-intro h2 { letter-spacing: -.068em; line-height: .94; }
-.logistics-image { position: relative; aspect-ratio: 4 / 3; overflow: hidden; margin-top: 34px; background: var(--accent-soft); }
+.logistics-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); align-items: start; gap: clamp(44px, 8vw, 130px); }
+.logistics-image { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--accent-soft); }
 .logistics-image img { object-fit: cover; object-position: center; filter: saturate(.78) contrast(1.04); }
 .logistics-copy { border-top: 1px solid var(--line); padding-top: 21px; }
+.logistics-copy h2 { letter-spacing: -.068em; line-height: .94; }
 .logistics-copy p { font-size: .95rem; }
 .logistics-signals { display: grid; gap: 14px; margin: 31px 0 0; }
 .logistics-signals div { border-top: 1px solid var(--line); padding-top: 12px; }
@@ -149,11 +143,8 @@ p { color: var(--muted); }
   .header-content { min-height: 60px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
   .hero-actions .button { width: 100%; }
-  .problems-list, .solutions-grid, .demo-notes { grid-template-columns: 1fr; }
+  .problems-list, .demo-notes { grid-template-columns: 1fr; }
   .problems-list { gap: 0; }
-  .solutions-grid { gap: 31px; }
-  .systems-note { flex-direction: column; gap: 8px; margin-top: 38px; }
-  .systems-note span { flex-basis: auto; }
   .demo-flow-nodes { align-items: stretch; flex-direction: column; }
   .demo-flow-step { align-items: stretch; flex-direction: column; }
   .demo-flow-step span { text-align: center; }

@@ -17,25 +17,6 @@ export const problems = [
   ],
 ] as const;
 
-export const solutions = [
-  [
-    "Flujos operativos y de excepción",
-    "Para ordenar reportes, reunir contexto, asignar responsables y mantener el recorrido visible hasta el cierre.",
-  ],
-  [
-    "Automatización e integraciones",
-    "Para mover información entre sistemas, activar tareas y evitar que los equipos repitan pasos previsibles.",
-  ],
-  [
-    "Procesamiento de información",
-    "Para extraer, validar, clasificar y preparar datos o documentos para la decisión correcta, incluida la revisión humana.",
-  ],
-  [
-    "Interfaces y asistentes internos",
-    "Para dar a las personas una forma útil de consultar contexto, avanzar tareas y escalar incertidumbre con control.",
-  ],
-] as const;
-
 export const demos = [
   {
     title: "Gestión de novedades de transporte",

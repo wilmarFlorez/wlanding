@@ -5,9 +5,9 @@ export function Problems() {
     <section className="section" id="problemas" aria-labelledby="problems-title">
       <div className="container">
         <div className="section-intro">
-          <p className="eyebrow">Problemas operativos</p>
-          <h2 id="problems-title">Patrones operativos que suelen pedir una intervención.</h2>
-          <p>Aplican a distintas industrias cuando el trabajo depende de personas sosteniendo manualmente la coordinación y el contexto.</p>
+          <p className="eyebrow">Problemas y construcción</p>
+          <h2 id="problems-title">Procesos operativos que conviene revisar.</h2>
+          <p>Diseño flujos, automatizaciones, integraciones e interfaces internas según el proceso y las herramientas que ya usa el equipo.</p>
         </div>
         <ol className="problems-list">
           {problems.map(([title, description], index) => (
