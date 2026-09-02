@@ -75,6 +75,7 @@ p { color: var(--muted); }
 .capability-card { position: relative; min-height: 232px; border-bottom: 1px solid var(--line); padding: 27px 32px 28px 55px; }
 .capability-card:nth-child(odd) { border-right: 1px solid var(--line); }
 .capability-card .item-index { position: absolute; top: 29px; left: 0; }
+.capability-card:nth-child(even) .item-index { left: 32px; }
 .capability-card p { max-width: 430px; margin-bottom: 0; font-size: .9rem; }
 
 .problems-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; list-style: none; margin: 0; padding: 0; }
@@ -92,7 +93,7 @@ p { color: var(--muted); }
 
 .logistics-section { border-top: 1px solid var(--line); }
 .logistics-layout { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1fr); align-items: start; gap: clamp(44px, 8vw, 130px); }
-.logistics-image { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--accent-soft); }
+.logistics-image { position: relative; align-self: center; aspect-ratio: 4 / 5; overflow: hidden; background: var(--accent-soft); }
 .logistics-image img { object-fit: cover; object-position: center; filter: saturate(.78) contrast(1.04); }
 .logistics-copy { border-top: 1px solid var(--line); padding-top: 21px; }
 .logistics-copy h2 { letter-spacing: -.068em; line-height: .94; }
@@ -101,6 +102,12 @@ p { color: var(--muted); }
 .logistics-signals div { border-top: 1px solid var(--line); padding-top: 12px; }
 .logistics-signals dt { margin-bottom: 4px; }
 .logistics-signals dd { margin: 0; font-size: .86rem; }
+.logistics-context { margin-top: 30px; }
+.logistics-context .flow-label { margin-bottom: 10px; color: var(--accent-dark); }
+.logistics-context ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); list-style: none; margin: 0; border-top: 1px solid var(--line); padding: 0; }
+.logistics-context li { border-bottom: 1px solid var(--line); color: var(--foreground); font-size: .82rem; line-height: 1.4; padding: 12px 16px 13px 0; }
+.logistics-context li:nth-child(odd) { border-right: 1px solid var(--line); }
+.logistics-context li:nth-child(even) { padding-left: 16px; }
 
 .demos-section { background: #e6ebe6; }
 .section-intro-wide { max-width: 830px; }
@@ -198,6 +205,9 @@ p { color: var(--muted); }
   .process-closing { grid-column: 1; }
   .logistics-image { aspect-ratio: 3 / 2; max-width: 720px; }
   .evidence-framework dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .logistics-context ul { grid-template-columns: 1fr; }
+  .logistics-context li:nth-child(odd) { border-right: 0; }
+  .logistics-context li:nth-child(even) { padding-left: 0; }
   .demos-list { grid-template-columns: 1fr; }
   .demo-panel { min-height: 0; }
 }
@@ -222,6 +232,7 @@ p { color: var(--muted); }
   .capabilities-grid, .problems-list, .freight-pilot-details, .evidence-framework dl { grid-template-columns: 1fr; }
   .capability-card { min-height: 0; border-right: 0 !important; padding: 25px 0 26px 43px; }
   .capability-card .item-index { left: 0; }
+  .capability-card:nth-child(even) .item-index { left: 0; }
   .problems-list { gap: 0; }
   .freight-pilot { padding: 22px; }
   .freight-pilot-heading { align-items: flex-start; flex-direction: column; gap: 16px; margin-bottom: 32px; }

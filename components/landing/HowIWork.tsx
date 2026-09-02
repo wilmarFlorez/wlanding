@@ -6,7 +6,7 @@ export function HowIWork() {
       <div className="container process-layout">
         <div className="section-intro">
           <p className="eyebrow">De problema a solución</p>
-          <h2 id="process-title">Entender el contexto antes de construir.</h2>
+          <h2 id="process-title">Entender el contexto antes de construir</h2>
         </div>
         <ol className="process-list">
           {workSteps.map(([title, description], index) => (
