@@ -1856,3 +1856,608 @@ La secuencia "Entender el problema -> identificar oportunidad -> diseñar -> con
 5. Priorizar la primera evidencia personal verificable que se publicará.
 6. Definir la relación pública y las reglas de atribución entre Wilmar y NuTeam.
 7. Definir el canal comercial y su flujo de respuesta antes de habilitar conversión.
+
+## PERSONAL LANDING STRATEGY V4
+
+### Prioridad y alcance
+
+Esta es la estrategia vigente para la landing personal de Wilmar y reemplaza las decisiones estratégicas incompatibles de V3, el audit V1 y los copies anteriores. No cambia la implementación actual ni habilita un canal de contacto. Define la próxima versión de la landing como un activo independiente para contratación directa de Wilmar.
+
+### Objetivo
+
+Hacer que un visitante de LinkedIn, Upwork, una referencia o tráfico pago entienda rápidamente que puede contratar directamente a Wilmar para diseñar y construir AI Agents, automatización, integraciones y software con IA aplicado a un problema operativo o de información concreto.
+
+La landing debe mostrar que Wilmar parte del problema, elige el mecanismo adecuado y asume la responsabilidad de llevar la solución desde el entendimiento y diseño hasta la construcción e integración. No debe presentarse como una agencia, un catálogo de tecnologías ni una promesa de resultados no verificables.
+
+### Posicionamiento aprobado
+
+**Wilmar Florez Samudio es Product Architect & Builder. Diseña y construye AI Agents, automatización, integraciones y software con IA para resolver problemas operativos y de información.**
+
+Logística y operaciones, con profundidad en transporte terrestre y 3PL, son su especialización y foco comercial actual. Esta especialización demuestra contexto aplicado, pero no limita la conversación a una sola industria: Wilmar puede trabajar en problemas equivalentes de otras organizaciones cuando existe encaje.
+
+### Principios de mensaje
+
+1. Nombrar las cuatro capacidades en el primer recorrido de la página: AI Agents, Automation, Integrations y AI-powered Software.
+2. Explicar capacidades mediante entregables y problemas resueltos, nunca mediante una lista de frameworks, modelos o herramientas internas.
+3. Presentar primero la persona responsable y la capacidad general; presentar después los problemas, la especialización logística y la evidencia.
+4. Usar logística como prueba de profundidad, no como condición de acceso ni único mercado posible.
+5. Mantener una atribución exacta para toda evidencia. No convertir demos conceptuales en casos, ni trabajo de NuTeam en evidencia personal sin contexto y autorización.
+6. Mantener la intención de contacto directo, sin simular un canal, recepción, respuesta, agenda o formulario funcional hasta que exista un flujo real.
+
+### Jerarquía definitiva del mensaje
+
+1. **Persona:** Wilmar Florez Samudio, Product Architect & Builder, disponible para contratación directa.
+2. **Qué construye:** AI Agents, Automation & Workflows, Integrations y AI-powered Software.
+3. **Qué problemas resuelve:** trabajo manual repetitivo, información dispersa, coordinación fragmentada, decisiones repetibles, excepciones y sistemas desconectados.
+4. **Cómo trabaja:** entender el contexto, definir la intervención, construir, integrar y medir lo pertinente.
+5. **Dónde tiene profundidad:** logística y operaciones, especialmente transporte terrestre y 3PL.
+6. **Evidencia:** proyectos, prototipos, demos y casos con etiquetado exacto.
+7. **Identidad y confianza:** fotografía, biografía factual y enlaces profesionales reales cuando estén disponibles.
+8. **Conversión:** intención clara de contactar a Wilmar, con un estado no operativo hasta definir el canal final.
+
+### Arquitectura definitiva de la landing
+
+1. **Hero: Wilmar y capacidad de construcción.** Presenta a Wilmar, el rol, las cuatro capacidades y el tipo de problema. Debe resolverse en el primer pantallazo sin requerir conocimiento previo de logística.
+2. **Qué construyo.** Cuatro categorías de entregables publicables: AI Agents, Automation & Workflows, Integrations y AI-powered Software. Va antes de la especialización logística.
+3. **Problemas que vale la pena resolver.** Patrones transversales que permiten al visitante reconocer un contexto operativo o de información, sin asumir una industria única.
+4. **Cómo trabajo.** Secuencia de entender, priorizar, diseñar, construir, integrar y medir. Refuerza que el punto de partida es el problema y no una herramienta predefinida.
+5. **Profundidad en logística y operaciones.** Explica el foco actual y su lenguaje de dominio en transporte terrestre y 3PL. Debe declarar de forma breve que los patrones pueden aplicar a otras operaciones cuando existe encaje.
+6. **Proyectos y demostraciones.** Evidencia organizada por tipo y con atribución visible. Conserva las demos logísticas existentes como ejemplos conceptuales, sin presentarlas como implementaciones o resultados de clientes.
+7. **Sobre Wilmar.** Identidad personal persistente: fotografía profesional, bio factual y enlaces a LinkedIn, GitHub y Upwork únicamente cuando existan y sean verificables.
+8. **Contacto.** Cierre que expresa la intención de discutir un proyecto u oportunidad con Wilmar. Hasta definir canal, destino y respuesta, se mantiene como CTA no operativo y transparente.
+9. **FAQ.** Resuelve alcance, forma de trabajo, sistemas existentes, datos y naturaleza de la evidencia. No incluye precio ni compromisos comerciales aún no definidos.
+
+### COPY V4
+
+#### Navegación
+
+- Marca: `Wilmar Florez Samudio`
+- Enlaces: `Qué construyo` · `Logística y operaciones` · `Proyectos y demostraciones` · `Sobre Wilmar`
+- CTA de navegación, estado provisional: `Contactar a Wilmar`
+
+#### Hero: Wilmar y capacidad de construcción
+
+**Eyebrow**
+
+`Product Architect & Builder`
+
+**Titular**
+
+`Diseño y construyo AI Agents, automatización, integraciones y software con IA para problemas operativos reales.`
+
+**Texto de apoyo**
+
+`Soy Wilmar Florez Samudio. Trabajo a partir de un proceso, una decisión o una información que hoy genera trabajo manual, coordinación dispersa o falta de visibilidad. Defino la intervención adecuada y construyo una solución conectada con la operación y los sistemas existentes.`
+
+**Línea de especialización**
+
+`Especialización y foco actual: logística y operaciones.`
+
+**CTA principal, conceptual y no operativo**
+
+`Contactar a Wilmar`
+
+**Nota de estado junto al CTA mientras no exista canal**
+
+`Canal de contacto en preparación. Esta acción todavía no envía información.`
+
+**CTA secundario**
+
+`Ver qué construyo`
+
+#### Sección: Qué construyo
+
+**Eyebrow**
+
+`Capacidades de construcción`
+
+**Titular**
+
+`Lo que puedo construir depende del problema, no de una herramienta predefinida.`
+
+**Introducción**
+
+`Estas son las cuatro formas principales en que convierto una necesidad operativa o de información en una solución construible. Pueden combinarse cuando el contexto lo requiere.`
+
+**Categoría 1**
+
+`AI Agents`
+
+`Agentes que consultan información, clasifican solicitudes, preparan respuestas, proponen acciones o escalan excepciones para revisión humana. Útiles cuando una operación depende de interpretar entradas repetitivas y decidir qué sigue.`
+
+**Categoría 2**
+
+`Automation & Workflows`
+
+`Flujos que reducen pasos manuales entre personas y procesos: validaciones, asignaciones, actualizaciones, recordatorios y seguimiento de tareas. Útiles cuando el trabajo se repite, se retrasa o se pierde entre canales.`
+
+**Categoría 3**
+
+`Integrations`
+
+`Conexiones entre sistemas, fuentes de información y canales de trabajo para que los datos necesarios estén disponibles donde se toman decisiones. Útiles cuando la operación depende de copiar, reconciliar o perseguir información dispersa.`
+
+**Categoría 4**
+
+`AI-powered Software`
+
+`Software interno e interfaces operativas que reúnen contexto, reglas y acciones en un punto de trabajo. Útiles cuando una necesidad no se resuelve conectando herramientas existentes y requiere una experiencia propia.`
+
+**Cierre de sección**
+
+`No todo problema requiere IA. La decisión parte del proceso, las personas involucradas, los sistemas disponibles y el nivel de control necesario.`
+
+#### Sección: Problemas que vale la pena resolver
+
+**Eyebrow**
+
+`Punto de partida`
+
+**Titular**
+
+`La oportunidad suele estar en el trabajo que hoy sostiene la operación.`
+
+**Introducción**
+
+`El trabajo comienza con un problema concreto. Estos patrones pueden aparecer en logística, operaciones y otras industrias.`
+
+**Patrones**
+
+- `Información dispersa`: datos relevantes repartidos entre correos, hojas de cálculo, chats y sistemas que no conversan entre sí.
+- `Coordinación manual`: personas que persiguen actualizaciones, confirman tareas o trasladan contexto entre equipos.
+- `Decisiones repetibles`: revisiones frecuentes que siguen reglas, contexto o criterios que pueden hacerse visibles y consistentes.
+- `Excepciones sin visibilidad`: novedades que se detectan tarde o no llegan a la persona que debe actuar.
+- `Sistemas desconectados`: herramientas que contienen partes del proceso, pero obligan a copiar, comparar o conciliar información manualmente.
+
+**Cierre de sección**
+
+`La conversación no necesita empezar con una solución de IA. Puede empezar con un proceso que hoy es difícil de coordinar, seguir o decidir.`
+
+#### Sección: Cómo trabajo
+
+**Eyebrow**
+
+`De problema a solución`
+
+**Titular**
+
+`Entender antes de construir.`
+
+**Paso 1**
+
+`Entender el contexto`
+
+`Reviso el proceso actual, las personas involucradas, la información disponible, las excepciones y los sistemas que ya existen.`
+
+**Paso 2**
+
+`Definir la intervención`
+
+`Identifico qué conviene simplificar, automatizar, asistir con IA, conectar o construir desde cero.`
+
+**Paso 3**
+
+`Diseñar y construir`
+
+`Convierto la intervención en flujos, interfaces y software que permitan operar con claridad.`
+
+**Paso 4**
+
+`Integrar y medir`
+
+`Conecto la solución con el entorno necesario y defino qué señales permiten observar su funcionamiento.`
+
+**Cierre de sección**
+
+`El resultado no es solo una recomendación: es una solución diseñada para el contexto que se puede construir e integrar.`
+
+#### Sección: Profundidad en logística y operaciones
+
+**Eyebrow**
+
+`Especialización`
+
+**Titular**
+
+`Logística y operaciones como contexto de profundidad.`
+
+**Texto principal**
+
+`Mi foco comercial actual está en operaciones logísticas, especialmente transporte terrestre y 3PL. Es un entorno donde la coordinación, los cambios de estado, la documentación y la visibilidad dependen de información que se mueve entre personas, canales y sistemas.`
+
+**Texto de alcance**
+
+`Este contexto guía los ejemplos de la landing y permite hablar con precisión de problemas operativos. Los mismos patrones también pueden existir en otras organizaciones cuando hay un problema claro y existe encaje.`
+
+**Áreas de contexto**
+
+- `Seguimiento de novedades y estados operativos`
+- `Coordinación entre operación, clientes y proveedores`
+- `Validación y trazabilidad documental`
+- `Conexión entre TMS, ERP, CRM, canales de mensajería y otros sistemas`
+
+#### Sección: Proyectos y demostraciones
+
+**Eyebrow**
+
+`Evidencia y exploración`
+
+**Titular**
+
+`El tipo de evidencia importa tanto como lo que muestra.`
+
+**Introducción**
+
+`Cada pieza publicada debe indicar con precisión qué es, cuál fue mi rol y qué se puede afirmar sobre ella. No se presentan ejemplos conceptuales como implementaciones ni trabajo de terceros como evidencia personal.`
+
+**Reglas visibles de atribución**
+
+| Etiqueta | Significado |
+| --- | --- |
+| `Proyecto propio` | Software construido por Wilmar fuera de una relación de cliente. |
+| `Demo conceptual` | Ejemplo que ilustra una intervención posible; no es una implementación ni un resultado de cliente. |
+| `Prototipo funcional` | Implementación demostrable y exploratoria; no se presenta como producto en producción. |
+| `Proyecto de cliente autorizado` | Trabajo real con autorización explícita para publicar contexto, rol y resultados verificables. |
+
+**Subsección: Demostraciones conceptuales en logística**
+
+`Las siguientes demostraciones describen enfoques posibles en logística y operaciones. No son implementaciones ni resultados de clientes.`
+
+**Demo 1**
+
+`Demo conceptual · Novedades de transporte`
+
+`Un flujo para reunir novedades recibidas por distintos canales, identificar excepciones y preparar una actualización para revisión o acción operativa.`
+
+**Demo 2**
+
+`Demo conceptual · Validación documental`
+
+`Un flujo para organizar documentos operativos, revisar información requerida y dirigir los casos que necesitan confirmación humana.`
+
+**Demo 3**
+
+`Demo conceptual · Actualización de estados`
+
+`Un flujo para conectar eventos de la operación con los sistemas y canales donde clientes o equipos necesitan visibilidad.`
+
+**Estado de evidencia futura**
+
+`Aquí se incorporarán proyectos propios, prototipos funcionales y proyectos de cliente autorizados cuando exista material verificable para publicar.`
+
+#### Sección: Sobre Wilmar
+
+**Eyebrow**
+
+`Responsabilidad directa`
+
+**Titular**
+
+`Wilmar Florez Samudio, Product Architect & Builder.`
+
+**Bio base, solo si puede verificarse y completarse antes de publicar**
+
+`Trabajo entre el problema operativo, la arquitectura de la solución y lo que finalmente se construye. Mi rol combina criterio de producto, diseño de flujos, construcción de software e integración con los sistemas que sostienen la operación.`
+
+**Identidad y enlaces, solo cuando existan**
+
+- Fotografía profesional actual de Wilmar.
+- `LinkedIn` con destino real.
+- `GitHub` con destino real.
+- `Upwork` con destino real y representativo del trabajo ofrecido.
+
+**Regla de estado provisional**
+
+`Si aún no existen fotografía, bio factual completa o enlaces verificables, no mostrar placeholders, iconos vacíos ni un aviso de información pendiente.`
+
+#### Sección: Contacto
+
+**Eyebrow**
+
+`Conversación directa`
+
+**Titular**
+
+`¿Tienes un proyecto, proceso u oportunidad que vale la pena revisar?`
+
+**Texto**
+
+`La intención es conversar directamente con Wilmar sobre un problema operativo, una iniciativa de automatización, un agente, una integración o software con IA.`
+
+**CTA principal, conceptual y no operativo**
+
+`Contactar a Wilmar`
+
+**Estado hasta definir canal**
+
+`El canal de contacto está en preparación. Esta página todavía no recibe información ni confirma conversaciones.`
+
+#### FAQ
+
+**¿Solo trabajas con empresas de logística?**
+
+`No. Logística y operaciones son mi especialización y foco comercial actual. También puedo trabajar en problemas operativos y de información de otras industrias cuando existe encaje.`
+
+**¿Necesito llegar con una solución de IA definida?**
+
+`No. La conversación puede comenzar con un proceso manual, información dispersa, coordinación difícil o sistemas desconectados. La solución se define a partir del contexto.`
+
+**¿Todo proyecto requiere un AI Agent?**
+
+`No. Un agente es una de las capacidades posibles. Según el caso, puede ser más apropiado automatizar un flujo, integrar sistemas o construir una interfaz operativa.`
+
+**¿Puedes trabajar con los sistemas que ya usamos?**
+
+`La evaluación considera los sistemas, fuentes de información y canales que ya sostienen la operación. Las integraciones o una construcción nueva se definen según lo que el contexto permita.`
+
+**¿Las demostraciones son proyectos de clientes?**
+
+`No. Las demostraciones actuales están etiquetadas como demos conceptuales. Ilustran un enfoque posible y no representan implementaciones ni resultados de clientes.`
+
+### Secciones actuales: reutilizar, modificar y crear
+
+#### Reutilizar
+
+- **Proceso / Cómo trabajo:** conservar la secuencia entender, priorizar, diseñar, construir, integrar y medir; ajustar copy y jerarquía para que siga a problemas y capacidades.
+- **Especialización logística:** conservar su intención, vocabulario de dominio y la fotografía existente si sigue siendo pertinente; moverla después de la capacidad general y reformularla como profundidad, no restricción.
+- **Demostraciones conceptuales:** conservar los tres temas logísticos, el descargo de credibilidad y la distinción entre proceso actual e intervención posible.
+- **FAQ:** conservar su función de resolver objeciones; reemplazar preguntas redundantes y excluir precio hasta que exista una definición comercial.
+- **Dirección visual editorial:** conservar la estética de portfolio personal, paleta mineral y verde funcional, sin introducir una apariencia de agencia o startup genérica.
+
+#### Modificar
+
+- **Hero:** reemplazar el énfasis inicial abstracto por la propuesta explícita de las cuatro capacidades y el tipo de problemas, manteniendo nombre y rol personal.
+- **Navegación y marca:** sustituir el monograma aislado por el nombre de Wilmar o acompañarlo de este; evitar que se lea como marca de empresa.
+- **Problemas:** ajustar el bloque para que sea transversal a industrias y esté después de "Qué construyo".
+- **Bloque de logística:** cambiar título, copy y posición para que comunique especialización y foco actual, con una frase explícita de alcance condicionado fuera de logística.
+- **Demos:** condensarlas para lectura rápida y mostrar el tipo de evidencia en el título de cada panel.
+- **Sobre Wilmar:** sustituir estados de información pendiente por una estructura que solo muestra fotografía, bio y enlaces cuando existan.
+- **Contacto:** mantenerlo no operativo; cambiar el propósito del CTA a contacto directo con Wilmar y eliminar cualquier interacción que sugiera envío o recepción.
+
+#### Crear
+
+- **Sección "Qué construyo":** cuatro categorías obligatorias con entregables, problemas resueltos y el condicionante de que no todo requiere IA.
+- **Marco visible de evidencia:** etiquetas y definiciones para proyecto propio, demo conceptual, prototipo funcional y proyecto de cliente autorizado.
+- **Espacio progresivo de identidad personal:** estructura preparada para fotografía profesional, enlaces reales y evidencia atribuible sin renderizar contenido ficticio.
+
+### Tratamiento definitivo de las demos logísticas
+
+Las tres demos existentes se mantienen porque demuestran profundidad de razonamiento en un contexto coherente con el foco comercial. Deben permanecer después de la sección de especialización, nunca antes de "Qué construyo" ni como sustituto de evidencia real.
+
+Cada una debe llevar `Demo conceptual` como etiqueta visible y el descargo común: `No son implementaciones ni resultados de clientes.` Su lectura debe reducirse a problema, flujo actual, intervención posible, sistemas que podría conectar y señal que se observaría. El agente de IA y la revisión humana deben aparecer dentro del flujo solo cuando correspondan.
+
+No deben inventarse proyectos no logísticos para equilibrar el alcance. Cuando exista evidencia real o propia en otra industria, puede añadirse con la etiqueta correspondiente y una atribución completa.
+
+### Integración de identidad personal
+
+La identidad personal debe aparecer de forma consistente, no limitarse al hero:
+
+- Nombre completo en hero, navegación y sección Sobre Wilmar.
+- Rol `Product Architect & Builder` junto al nombre en los puntos de mayor intención.
+- Primera persona en el copy que describe responsabilidad y forma de trabajo.
+- Fotografía profesional solo cuando esté disponible; no usar stock, avatar generado ni placeholder.
+- Enlaces a LinkedIn, GitHub y Upwork solo con URLs reales y relevantes.
+- Proyectos, prototipos, demos y casos con etiqueta de evidencia, rol de Wilmar y límites explícitos de atribución.
+
+NuTeam no aparece en la navegación, hero, CTA, evidencia ni cierre. Cualquier referencia futura será excepcional, factual y acompañada del rol de Wilmar, la relación con el trabajo y la autorización aplicable. No usar `Powered by NuTeam` ni derivar el contacto a NuTeam.
+
+### CTAs conceptuales
+
+La intención uniforme de los CTAs principales es: `Contactar a Wilmar`.
+
+Mientras no exista canal, destino, responsable de recepción y flujo de respuesta definidos, el CTA puede llevar a la sección de contacto o mostrarse como control no operativo con una nota clara: `Canal de contacto en preparación. Esta acción todavía no envía información.`
+
+Los CTAs secundarios deben facilitar exploración, no prometer conversión:
+
+- Hero: `Ver qué construyo`.
+- Problemas: `Ver cómo trabajo`.
+- Especialización: `Ver demostraciones conceptuales`.
+- Evidencia: `Conocer a Wilmar`.
+
+No crear formulario, correo visible, calendario, integración externa, captura de datos, mensaje de éxito ni promesa de respuesta hasta que el canal final esté decidido.
+
+### Decisiones restantes realmente bloqueantes
+
+No hay decisiones estratégicas bloqueantes para diseñar e implementar la estructura, copy y estados no operativos definidos en V4.
+
+Sí son bloqueantes exclusivamente para activar conversión real:
+
+1. Canal final de contacto directo: destino profesional elegido y URL o mecanismo funcional.
+2. Responsable de recepción y flujo posterior: quién recibe la solicitud, qué información mínima necesita y qué respuesta puede afirmarse honestamente.
+3. Activos de identidad y evidencia: fotografía, biografía factual, enlaces y proyectos solo pueden mostrarse cuando el material verificable esté disponible.
+
+### Actualización V4: Freight Pilot
+
+#### Clasificación y función estratégica
+
+Freight Pilot se incorpora como la primera evidencia real de la landing con la etiqueta principal `Proyecto propio` y el descriptor de estado `Demo funcional desplegada`. Es software construido por Wilmar fuera de una relación de cliente y está disponible para revisión en `https://freight-pilot-flame.vercel.app/`.
+
+No debe etiquetarse como `Demo conceptual`, porque existe una implementación funcional desplegada. Tampoco como `Proyecto de cliente autorizado`, porque no fue construido para un cliente ni se publican resultados de cliente. El descriptor `Demo funcional desplegada` prueba que puede explorarse, pero no convierte el proyecto en producto comercial validado ni en caso de éxito.
+
+Su función es demostrar con una pieza verificable cómo Wilmar conecta AI, reglas deterministas, revisión humana y trazabilidad para abordar un problema operativo concreto. Complementa las demos conceptuales existentes, que siguen siendo útiles para mostrar otros patrones posibles, pero ya no deben ser el elemento principal de evidencia.
+
+#### Lugar en la jerarquía de la landing
+
+Freight Pilot aparece como primer bloque destacado dentro de la sección **Proyectos y demostraciones**, inmediatamente después de la introducción y antes de las reglas de atribución y las demos conceptuales logísticas.
+
+El recorrido dentro de esa sección queda así:
+
+1. Introducción: qué significa evidencia y cómo se atribuye.
+2. Freight Pilot: proyecto propio y demo funcional desplegada.
+3. Marco breve de etiquetas de evidencia.
+4. Demostraciones conceptuales logísticas: evidencia secundaria de exploración.
+5. Espacio futuro para proyectos propios, prototipos funcionales y proyectos de cliente autorizados.
+
+No se mueve Freight Pilot a la sección de especialización. Logística debe seguir explicando profundidad y contexto; Freight Pilot funciona después como prueba concreta de que Wilmar puede construir una intervención dentro de ese contexto.
+
+#### Diferenciación visual y semántica de la evidencia
+
+| Tipo | Etiqueta de atribución | Descriptor visual | Qué comunica | Qué no comunica |
+| --- | --- | --- | --- | --- |
+| Freight Pilot | `Proyecto propio` | `Demo funcional desplegada` | Software propio, funcional y accesible para explorar. | Producto comercial validado, proyecto de cliente o resultados económicos. |
+| Ejemplos existentes | `Demo conceptual` | `Flujo ilustrativo` | Un enfoque posible para un problema operativo. | Software implementado, experiencia de cliente o evidencia de resultados. |
+| Evidencia futura de cliente | `Proyecto de cliente autorizado` | Contexto, rol y alcance autorizados | Trabajo real que puede publicarse con atribución verificable. | Atribución general de resultados si no están autorizados y documentados. |
+
+La etiqueta de atribución debe ser visualmente más prominente que el descriptor. El descriptor explica el estado de la pieza, no su procedencia. Ninguna tarjeta debe usar lenguaje que mezcle estos tipos de evidencia.
+
+#### Capacidades que Freight Pilot demuestra
+
+Freight Pilot demuestra de forma factual:
+
+- Interpretación de mensajes libres de clientes para extraer información estructurada con IA.
+- Validación de los datos extraídos mediante reglas deterministas.
+- Derivación a revisión humana cuando faltan datos o existe ambigüedad.
+- Conservación del mensaje original, la extracción, las incidencias detectadas y las correcciones para mantener trazabilidad.
+- Construcción de una aplicación que prepara solicitudes estructuradas para el siguiente paso del proceso de cotización.
+- Implementación full-stack con Next.js, FastAPI y PostgreSQL.
+
+En términos de las capacidades V4, aporta evidencia directa de `AI Agents` solo en el sentido de asistencia basada en IA para interpretar y preparar información, `Automation & Workflows` para el flujo de extracción, validación y escalamiento, `Integrations` únicamente como capacidad general de la landing y no como claim específico de Freight Pilot, y `AI-powered Software` por tratarse de una aplicación propia con IA dentro del flujo.
+
+#### Claims que no deben hacerse
+
+No afirmar que Freight Pilot:
+
+- Calcula precios, genera cotizaciones o reemplaza el proceso de cotización.
+- Asigna vehículos, optimiza rutas o gestiona la operación de transporte.
+- Es un proyecto, producto o resultado de un cliente.
+- Está validado comercialmente, se usa en producción o tiene usuarios, clientes o adopción real.
+- Ha generado ahorro, reducción de tiempos, precisión, ROI, conversión o cualquier resultado económico medido.
+- Resuelve por sí solo todas las necesidades de un operador de transporte terrestre.
+- Integra sistemas de clientes, TMS, ERP, CRM o canales externos, salvo que una integración concreta exista y pueda verificarse públicamente.
+- Es un AI Agent autónomo. La capacidad factual es extracción asistida por IA, validación determinista y revisión humana.
+
+#### COPY V4: bloque Freight Pilot
+
+**Etiqueta principal**
+
+`Proyecto propio`
+
+**Descriptor**
+
+`Demo funcional desplegada`
+
+**Eyebrow**
+
+`Evidencia verificable`
+
+**Titular**
+
+`Freight Pilot convierte mensajes libres en solicitudes listas para preparar una cotización.`
+
+**Descripción**
+
+`Freight Pilot es una demo de portfolio para operadores de transporte terrestre. Usa IA para extraer la información de un mensaje de cliente, reglas deterministas para validarla y revisión humana cuando faltan datos o existe ambigüedad.`
+
+**Cómo funciona**
+
+`El sistema conserva el texto original, la extracción realizada, las incidencias detectadas y las correcciones. El objetivo es mantener trazabilidad mientras la información se prepara para el siguiente paso del proceso de cotización.`
+
+**Capacidades demostradas**
+
+- `Extracción de información con IA`
+- `Validación mediante reglas`
+- `Revisión humana de excepciones`
+- `Trazabilidad de procesamiento`
+
+**Tecnología**
+
+`Construido con Next.js, FastAPI y PostgreSQL.`
+
+**Límites visibles**
+
+`No calcula precios, no genera cotizaciones y no asigna vehículos. Es un proyecto propio de portfolio; no es un proyecto de cliente ni un producto comercial validado.`
+
+**CTA externo**
+
+`Explorar Freight Pilot`
+
+**Destino del CTA**
+
+`https://freight-pilot-flame.vercel.app/`
+
+**Comportamiento del enlace**
+
+Abrir la demo en una nueva pestaña e indicar visualmente que dirige a un sitio externo. El CTA es operativo porque lleva a una URL pública verificable; no es un CTA de contacto ni de captación.
+
+#### Tratamiento de las demos conceptuales existentes
+
+Las tres demos conceptuales permanecen en la landing, pero pasan a un bloque secundario bajo el título `Otros enfoques conceptuales en logística y operaciones`. Deben ubicarse después de Freight Pilot y del marco de etiquetas.
+
+Reducir cada demo a una tarjeta o unidad compacta con:
+
+1. Etiqueta `Demo conceptual`.
+2. Una frase de problema.
+3. Una frase de intervención posible.
+4. Dos microetiquetas opcionales: sistemas potenciales y señal a observar.
+
+Conservar los tres temas: novedades de transporte, validación documental y actualización de estados. Eliminar cualquier detalle visual o textual que repita el nivel de profundidad de Freight Pilot, cualquier lenguaje que sugiera implementación y cualquier CTA equivalente a explorar software. Las tres tarjetas deben compartir el descargo: `Son flujos ilustrativos; no son implementaciones ni resultados de clientes.`
+
+La sección debe hacer visible el contraste: Freight Pilot permite explorar una solución propia funcional; las tres demos muestran posibilidades de intervención que no se presentan como software construido.
+
+## V4 IMPLEMENTATION BRIEF
+
+### Alcance de implementación
+
+Implementar únicamente la landing definida por `PERSONAL LANDING STRATEGY V4`. Esta sección es la fuente de verdad para arquitectura, copy, CTA, evidencia e identidad. No alterar el canal de contacto ni añadir infraestructura comercial durante esta fase.
+
+### Orden de secciones obligatorio
+
+1. Hero: Wilmar y capacidad de construcción.
+2. Qué construyo.
+3. Problemas que vale la pena resolver.
+4. Cómo trabajo.
+5. Profundidad en logística y operaciones.
+6. Proyectos y demostraciones: Freight Pilot primero, seguido de demos conceptuales.
+7. Sobre Wilmar.
+8. Contacto.
+9. FAQ.
+
+### Reglas de contenido
+
+- Usar el `COPY V4` literalmente como punto de partida. Ajustes menores de longitud para responsive son válidos si no cambian el significado, las capacidades aprobadas ni las reglas de credibilidad.
+- Hacer visibles en el hero y en "Qué construyo": `AI Agents`, `Automation & Workflows`, `Integrations` y `AI-powered Software`.
+- Describir capacidades por entregables y problemas resueltos. No añadir listas de modelos, frameworks, proveedores o tecnologías salvo que se documenten como parte verificable de una pieza de evidencia.
+- Mantener logística y operaciones como especialización y foco actual. Incluir su declaración de alcance fuera de logística; no comunicar exclusividad ni disponibilidad universal.
+- Incorporar Freight Pilot como primer bloque de evidencia, después de la introducción de "Proyectos y demostraciones". Usar `Proyecto propio` como etiqueta de atribución y `Demo funcional desplegada` como descriptor de estado.
+- Usar el COPY V4 de Freight Pilot. El CTA `Explorar Freight Pilot` debe enlazar a `https://freight-pilot-flame.vercel.app/`, abrir en una nueva pestaña e identificar el destino externo.
+- Describir Freight Pilot de forma factual: extrae información de mensajes libres con IA, valida datos con reglas deterministas, escala faltantes o ambigüedades a revisión humana y conserva trazabilidad. Puede incluir Next.js, FastAPI y PostgreSQL como tecnología verificable del proyecto.
+- No afirmar que Freight Pilot calcula precios, genera cotizaciones, asigna vehículos, integra sistemas de clientes, está validado comercialmente, se usa en producción o genera resultados económicos. No llamarlo AI Agent autónomo ni proyecto de cliente.
+- Conservar las tres demos logísticas bajo la etiqueta `Demo conceptual` y el descargo de que no son implementaciones ni resultados de clientes.
+- Reordenar las demos conceptuales después de Freight Pilot y del marco de etiquetas, bajo el título `Otros enfoques conceptuales en logística y operaciones`. Reducir cada una a problema, intervención posible y, como máximo, dos microetiquetas de sistemas potenciales y señal a observar.
+- Aplicar exactamente una etiqueta a cada elemento de evidencia: `Proyecto propio`, `Demo conceptual`, `Prototipo funcional` o `Proyecto de cliente autorizado`. No usar ninguna pieza de NuTeam como evidencia personal sin rol, autorización y atribución explícitos.
+- No inventar foto, trayectoria, clientes, resultados, testimonios, logos, métricas, enlaces, credenciales ni experiencia.
+
+### Identidad personal
+
+- Usar el nombre completo de Wilmar en navegación, hero y sección personal. El monograma no debe aparecer solo si puede interpretarse como marca de una empresa.
+- Preparar el componente de identidad para una fotografía profesional, una bio factual y enlaces LinkedIn, GitHub y Upwork.
+- Renderizar fotografía y enlaces solo si se proporcionan activos o URLs reales. Si faltan, omitirlos sin placeholders ni mensajes de pendiente.
+- Mantener NuTeam fuera de la navegación, CTA, hero y evidencia. No usar su nombre como destino ni sello de respaldo.
+
+### CTAs y conversión
+
+- El texto conceptual de CTA principal es `Contactar a Wilmar`.
+- Hasta recibir la decisión del canal comercial, el CTA no debe enviar datos, abrir formularios, anunciar correo, prometer recepción ni mostrar éxito.
+- Puede hacer scroll a Contacto o permanecer no operativo, siempre acompañado de una nota clara que indique que el canal está en preparación y no se envía información.
+- Los CTAs secundarios deben usar anclas internas hacia el contenido definido en V4.
+
+### Dirección visual y responsive
+
+- Conservar el lenguaje editorial personal vigente: paleta mineral sobria, verde funcional, bordes sobrios y radios limitados.
+- Dar al hero una jerarquía de lectura clara: nombre y rol, propuesta de valor explícita, texto de apoyo, especialización y CTA visibles sin que logística o un visual desplacen las capacidades aprobadas.
+- Diseñar la sección "Qué construyo" como cuatro unidades escaneables, con contenido suficiente para entender el entregable y el problema, sin apariencia de catálogo técnico.
+- En desktop, tablet y mobile, garantizar que el recorrido semántico se conserva y que los CTAs no se presentan como funcionales cuando no lo son.
+- Mantener las demos compactas y comparables: problema, hoy, intervención posible, sistemas y medición. En mobile, los flujos deben apilarse sin overflow ni pérdida de etiquetas.
+- Dar a Freight Pilot mayor jerarquía visual que las demos conceptuales sin presentarlo como producto comercial: bloque destacado, etiqueta de atribución prominente, descriptor de estado, límites visibles y CTA externo diferenciado.
+
+### Criterios de aceptación
+
+- En los primeros segundos se identifica a Wilmar, su rol y las cuatro capacidades aprobadas.
+- "Qué construyo" aparece antes de logística y contiene exactamente las cuatro categorías V4.
+- La página comunica que logística es especialización y foco actual, no restricción de industria.
+- Freight Pilot aparece antes de las demos conceptuales como `Proyecto propio` y `Demo funcional desplegada`, con la URL pública correcta y un CTA externo que no se confunde con contacto.
+- El bloque de Freight Pilot comunica extracción con IA, validación determinista, revisión humana y trazabilidad; declara explícitamente que no calcula precios, no genera cotizaciones, no asigna vehículos y no es producto comercial validado ni proyecto de cliente.
+- Las demos logísticas se preservan como `Demo conceptual` y no contienen resultados, clientes ni afirmaciones no verificables.
+- La identidad personal se refuerza sin contenido ficticio ni referencias promocionales a NuTeam.
+- Ningún CTA, formulario o mensaje afirma que se enviaron, recibieron o responderán datos sin un canal comercial funcional.
+- La implementación se valida en desktop, tablet y mobile, sin solapamiento, overflow horizontal ni degradación de la jerarquía del hero.
