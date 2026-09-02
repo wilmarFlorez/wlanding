@@ -56,11 +56,11 @@ export function ContactForm({ turnstileSiteKey }: { turnstileSiteKey?: string })
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="contact-form-grid">
         <label>
-          Nombre <span aria-hidden="true">*</span>
+          <span>Nombre <span aria-hidden="true">*</span></span>
           <input autoComplete="name" name="name" required maxLength={120} />
         </label>
         <label>
-          Correo de trabajo <span aria-hidden="true">*</span>
+          <span>Correo de trabajo <span aria-hidden="true">*</span></span>
           <input autoComplete="email" name="email" required type="email" maxLength={254} />
         </label>
         <label>
@@ -73,7 +73,7 @@ export function ContactForm({ turnstileSiteKey }: { turnstileSiteKey?: string })
         </label>
       </div>
       <label>
-        ¿Qué proyecto, iniciativa o rol quieres conversar? <span aria-hidden="true">*</span>
+        <span>¿Qué proyecto, iniciativa o rol quieres conversar? <span aria-hidden="true">*</span></span>
         <textarea name="message" required maxLength={5000} rows={5} />
       </label>
       <label className="contact-honeypot" aria-hidden="true">
