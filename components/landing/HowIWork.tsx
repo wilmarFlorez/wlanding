@@ -19,7 +19,6 @@ export function HowIWork() {
             </li>
           ))}
         </ol>
-        <p className="process-closing">El resultado no es solo una recomendación: es una solución diseñada para el contexto que se puede construir, integrar y usar.</p>
       </div>
     </section>
   );

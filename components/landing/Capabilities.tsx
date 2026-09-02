@@ -7,7 +7,6 @@ export function Capabilities() {
         <div className="section-intro">
           <p className="eyebrow">Capacidades de construcción</p>
           <h2 id="capabilities-title">La solución se define por el problema que debe resolver</h2>
-          <p>Estas son las cuatro formas principales en que convierto una necesidad operativa, de producto o de información en una solución construible. Pueden combinarse cuando el contexto lo requiere.</p>
         </div>
         <div className="capabilities-grid">
           {capabilities.map((capability, index) => (
@@ -18,7 +17,6 @@ export function Capabilities() {
             </article>
           ))}
         </div>
-        <p className="section-closing">No todo problema requiere IA. La decisión parte del proceso, las personas involucradas, los sistemas disponibles y el nivel de control necesario.</p>
       </div>
     </section>
   );

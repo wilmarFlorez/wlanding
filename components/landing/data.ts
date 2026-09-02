@@ -21,29 +21,6 @@ export const capabilities = [
   },
 ] as const;
 
-export const problems = [
-  [
-    "Información dispersa",
-    "Datos relevantes repartidos entre correos, hojas de cálculo, chats y sistemas que no conversan entre sí.",
-  ],
-  [
-    "Coordinación manual",
-    "Personas que persiguen actualizaciones, confirman tareas o trasladan contexto entre equipos.",
-  ],
-  [
-    "Decisiones repetibles",
-    "Revisiones frecuentes que siguen reglas, contexto o criterios que pueden hacerse visibles y consistentes.",
-  ],
-  [
-    "Excepciones sin visibilidad",
-    "Novedades que se detectan tarde o no llegan a la persona que debe actuar.",
-  ],
-  [
-    "Sistemas desconectados",
-    "Herramientas que contienen partes del proceso, pero obligan a copiar, comparar o conciliar información manualmente.",
-  ],
-] as const;
-
 export const workSteps = [
   [
     "Entender el contexto",
@@ -61,36 +38,6 @@ export const workSteps = [
     "Integrar y medir",
     "Conecto la solución con el entorno necesario y defino qué señales permiten observar su funcionamiento.",
   ],
-] as const;
-
-export const demos = [
-  {
-    title: "Gestión de novedades de transporte",
-    problem:
-      "Una novedad llega por mensaje, llamada o correo y el equipo debe buscar contexto antes de avisar y actualizar varios lugares.",
-    intervention:
-      "Un flujo podría reunir contexto, identificar excepciones y preparar una actualización para revisión o acción operativa.",
-    systems: "Mensajería, correo y TMS",
-    signal: "Asignación y trazabilidad de cierre",
-  },
-  {
-    title: "Validación documental",
-    problem:
-      "Los documentos llegan por distintos medios y el equipo debe revisar si están completos y corresponden al servicio correcto.",
-    intervention:
-      "Un flujo podría organizar la información requerida y dirigir los casos que necesitan confirmación humana.",
-    systems: "Correo y almacenamiento documental",
-    signal: "Casos que requieren revisión humana",
-  },
-  {
-    title: "Actualización y comunicación de estados",
-    problem:
-      "Una actualización operativa debe registrarse en varias herramientas y comunicarse a diferentes personas.",
-    intervention:
-      "Un flujo podría conectar eventos con los sistemas y canales donde equipos o clientes necesitan visibilidad.",
-    systems: "TMS, CRM y mensajería",
-    signal: "Tiempo entre evento y actualización",
-  },
 ] as const;
 
 export const faqs = [
@@ -113,9 +60,5 @@ export const faqs = [
   [
     "¿Puedes trabajar con los sistemas que ya usamos?",
     "La evaluación considera los sistemas, fuentes de información y canales que ya sostienen la operación. Las integraciones o una construcción nueva se definen según lo que el contexto permita.",
-  ],
-  [
-    "¿Las demostraciones son proyectos de clientes?",
-    "No. Freight Pilot está identificado como proyecto propio y demo funcional desplegada. Las otras demostraciones están etiquetadas como demos conceptuales: ilustran un enfoque posible y no representan implementaciones ni resultados de clientes.",
   ],
 ] as const;

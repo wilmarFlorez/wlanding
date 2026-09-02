@@ -5,8 +5,7 @@ export function FAQ() {
     <section className="section faq-section" aria-labelledby="faq-title">
       <div className="container faq-container">
         <div className="section-intro">
-          <p className="eyebrow">Preguntas frecuentes</p>
-          <h2 id="faq-title">Lo esencial antes de empezar.</h2>
+          <h2 id="faq-title">Lo esencial antes de empezar</h2>
         </div>
         <div className="faq-list">
           {faqs.map(([question, answer], index) => (

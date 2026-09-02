@@ -7,7 +7,6 @@ export function ContactSection() {
     <section className="section contact-section" id="contacto" aria-labelledby="contact-title">
       <div className="container contact-panel">
         <div className="contact-copy">
-          <p className="eyebrow">Hablemos</p>
           <h2 id="contact-title">¿Buscas construir una iniciativa o sumar capacidad a tu equipo?</h2>
           <p>Cuéntame sobre el proyecto, proceso, sistema o rol. Puede empezar con una necesidad de automatización, IA o producto; no hace falta llegar con una solución técnica definida.</p>
         </div>

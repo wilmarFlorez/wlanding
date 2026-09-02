@@ -8,7 +8,7 @@ export function Header() {
         <nav className="header-nav" aria-label="Navegación principal">
           <a href="#construyo">Qué construyo</a>
           <a href="#logistica">Logística y operaciones</a>
-          <a href="#proyectos">Proyectos y demostraciones</a>
+          <a href="#proyectos">Proyecto destacado</a>
         </nav>
         <a className="button button-small" href="#contacto">
           Contactar a Wilmar

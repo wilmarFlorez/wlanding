@@ -15,18 +15,16 @@ export function Logistics() {
         <div>
           <p className="eyebrow">Especialización</p>
           <h2 id="logistics-title">Logística y operaciones</h2>
-          <p>Mi foco comercial actual está en operaciones logísticas, especialmente transporte terrestre y 3PL. Es un entorno donde la coordinación, los cambios de estado, la documentación y la visibilidad dependen de información que se mueve entre personas, canales y sistemas.</p>
-          <p>Este contexto guía los ejemplos de la landing y permite hablar con precisión de problemas operativos. Los mismos patrones también pueden existir en otras organizaciones cuando hay un problema claro y existe encaje.</p>
+          <p>Mi foco comercial actual está en operaciones logísticas, especialmente transporte terrestre y 3PL, donde la coordinación, los cambios de estado, la documentación y la visibilidad dependen de información que se mueve entre personas, canales y sistemas.</p>
           <div className="logistics-context">
             <p className="flow-label">Áreas de contexto</p>
             <ul>
-              <li>Seguimiento de novedades y estados operativos.</li>
-              <li>Coordinación entre operación, clientes y proveedores.</li>
+              <li>Seguimiento de novedades, estados y coordinación operativa.</li>
               <li>Validación y trazabilidad documental.</li>
               <li>Conexión entre TMS, ERP, CRM, mensajería y otros sistemas.</li>
             </ul>
           </div>
-          <a className="text-link section-link" href="#proyectos">Ver demostraciones conceptuales <span aria-hidden="true">-&gt;</span></a>
+          <a className="text-link section-link" href="#proyectos">Explorar Freight Pilot <span aria-hidden="true">-&gt;</span></a>
         </div>
       </div>
     </section>
