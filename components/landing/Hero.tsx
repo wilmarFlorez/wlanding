@@ -5,9 +5,9 @@ export function Hero() {
         <div className="hero-copy">
           <p className="eyebrow">Product Architect &amp; Builder</p>
           <p className="hero-name">Wilmar Florez Samudio</p>
-          <h1 id="hero-title">Diseño y construyo AI Agents, automatización, integraciones y software con IA para problemas operativos reales.</h1>
+          <h1 id="hero-title">Diseño y construyo productos, automatizaciones y sistemas con IA para resolver problemas operativos reales.</h1>
           <p className="hero-lede">
-            Trabajo a partir de un proceso, una decisión o una información que hoy genera trabajo manual, coordinación dispersa o falta de visibilidad. Defino la intervención adecuada y construyo una solución conectada con la operación y los sistemas existentes.
+            Trabajo con equipos que necesitan convertir información dispersa, procesos manuales o decisiones repetibles en herramientas que se puedan usar. Defino la intervención y la construyo con el contexto y los sistemas que ya existen.
           </p>
           <div className="focus-list" aria-label="Capacidades principales">
             <span>AI Agents</span>
@@ -15,7 +15,10 @@ export function Hero() {
             <span>Integrations</span>
             <span>AI-powered Software</span>
           </div>
-          <p className="hero-specialization">Especialización y foco actual: logística y operaciones.</p>
+          <div className="hero-context">
+            <p>Disponible para colaborar en proyectos freelance y equipos de producto y tecnología.</p>
+            <p>Especialización y foco actual: logística y operaciones.</p>
+          </div>
           <div className="hero-actions">
             <a className="button" href="#contacto">
               Contactar a Wilmar

@@ -6,8 +6,8 @@ export function Capabilities() {
       <div className="container">
         <div className="section-intro">
           <p className="eyebrow">Capacidades de construcción</p>
-          <h2 id="capabilities-title">Lo que puedo construir depende del problema, no de una herramienta predefinida.</h2>
-          <p>Estas son las cuatro formas principales en que convierto una necesidad operativa o de información en una solución construible. Pueden combinarse cuando el contexto lo requiere.</p>
+          <h2 id="capabilities-title">La solución se define por el problema que debe resolver.</h2>
+          <p>Estas son las cuatro formas principales en que convierto una necesidad operativa, de producto o de información en una solución construible. Pueden combinarse cuando el contexto lo requiere.</p>
         </div>
         <div className="capabilities-grid">
           {capabilities.map((capability, index) => (

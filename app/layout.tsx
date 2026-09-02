@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Wilmar Florez Samudio | Product Architect & Builder",
   description:
-    "Wilmar entiende problemas, diseña intervenciones y construye software con IA, agentes, automatización e integraciones cuando tienen sentido.",
+    "Product Architect & Builder disponible para colaborar en proyectos freelance y equipos de producto y tecnología. Diseña y construye productos, automatizaciones y sistemas con IA.",
   openGraph: {
     title: "Wilmar Florez Samudio | Product Architect & Builder",
     description:
-      "Product Architect & Builder para problemas operativos y productos conectados con IA, automatización e integraciones.",
+      "Productos, automatizaciones y sistemas con IA para problemas operativos y de información.",
     type: "website",
     locale: "es_CO",
   },

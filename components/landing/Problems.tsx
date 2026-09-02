@@ -6,8 +6,8 @@ export function Problems() {
       <div className="container">
         <div className="section-intro">
           <p className="eyebrow">Punto de partida</p>
-          <h2 id="problems-title">La oportunidad suele estar en el trabajo que hoy sostiene la operación.</h2>
-          <p>El trabajo comienza con un problema concreto. Estos patrones pueden aparecer en logística, operaciones y otras industrias.</p>
+          <h2 id="problems-title">La oportunidad suele estar en el trabajo que todavía depende de coordinación manual.</h2>
+          <p>El trabajo comienza con un problema concreto. Estos patrones pueden aparecer en un producto, una operación o cualquier equipo que dependa de información y decisiones.</p>
         </div>
         <ol className="problems-list">
           {problems.map(([title, description], index) => (

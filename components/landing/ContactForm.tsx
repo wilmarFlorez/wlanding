@@ -73,7 +73,7 @@ export function ContactForm({ turnstileSiteKey }: { turnstileSiteKey?: string })
         </label>
       </div>
       <label>
-        ¿Qué proceso o iniciativa quieres revisar? <span aria-hidden="true">*</span>
+        ¿Qué proyecto, iniciativa o rol quieres conversar? <span aria-hidden="true">*</span>
         <textarea name="message" required maxLength={5000} rows={5} />
       </label>
       <label className="contact-honeypot" aria-hidden="true">

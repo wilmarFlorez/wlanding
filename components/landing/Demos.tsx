@@ -6,7 +6,7 @@ export function Demos() {
       <div className="container">
         <div className="section-intro section-intro-wide">
           <p className="eyebrow">Evidencia y exploración</p>
-          <h2 id="demos-title">El tipo de evidencia importa tanto como lo que muestra.</h2>
+          <h2 id="demos-title">Proyectos y demostraciones para mostrar cómo abordo un problema.</h2>
           <p>Cada pieza publicada indica con precisión qué es y qué se puede afirmar sobre ella. No se presentan ejemplos conceptuales como implementaciones ni trabajo de terceros como evidencia personal.</p>
         </div>
 

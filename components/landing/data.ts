@@ -95,8 +95,12 @@ export const demos = [
 
 export const faqs = [
   [
+    "¿Colaboras como freelancer o dentro de un equipo?",
+    "Ambas opciones. Puedo trabajar de forma independiente en una iniciativa concreta o sumar capacidad a un equipo de producto y tecnología, según lo que el contexto requiera.",
+  ],
+  [
     "¿Solo trabajas con empresas de logística?",
-    "No. Logística y operaciones son mi especialización y foco comercial actual. También puedo trabajar en problemas operativos y de información de otras industrias cuando existe encaje.",
+    "No. Logística y operaciones son mi especialización y foco comercial actual. También puedo trabajar en problemas de producto, operaciones e información de otras industrias cuando existe encaje.",
   ],
   [
     "¿Necesito llegar con una solución de IA definida?",

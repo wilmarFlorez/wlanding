@@ -14,7 +14,7 @@ export function Logistics() {
         </div>
         <div className="logistics-copy">
           <p className="eyebrow">Especialización</p>
-          <h2 id="logistics-title">Logística y operaciones como contexto de profundidad.</h2>
+          <h2 id="logistics-title">Logística y operaciones es mi especialización, no una restricción.</h2>
           <p>Mi foco comercial actual está en operaciones logísticas, especialmente transporte terrestre y 3PL. Es un entorno donde la coordinación, los cambios de estado, la documentación y la visibilidad dependen de información que se mueve entre personas, canales y sistemas.</p>
           <p>Este contexto guía los ejemplos de la landing y permite hablar con precisión de problemas operativos. Los mismos patrones también pueden existir en otras organizaciones cuando hay un problema claro y existe encaje.</p>
           <dl className="logistics-signals">

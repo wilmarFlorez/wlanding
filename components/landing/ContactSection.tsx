@@ -7,14 +7,14 @@ export function ContactSection() {
     <section className="section contact-section" id="contacto" aria-labelledby="contact-title">
       <div className="container contact-panel">
         <div className="contact-copy">
-          <p className="eyebrow">Contacto</p>
-          <h2 id="contact-title">¿Tienes un proyecto, proceso u oportunidad que vale la pena revisar?</h2>
-          <p>Puede empezar por un proceso manual, una integración pendiente o una decisión repetible que necesita mejor contexto. No es necesario llegar con una solución técnica definida.</p>
+          <p className="eyebrow">Hablemos</p>
+          <h2 id="contact-title">¿Buscas construir una iniciativa o sumar capacidad a tu equipo?</h2>
+          <p>Cuéntame sobre el proyecto, proceso, sistema o rol. Puede empezar con una necesidad de automatización, IA o producto; no hace falta llegar con una solución técnica definida.</p>
         </div>
         <div className="contact-form-panel">
           <p className="flow-label">Consulta inicial</p>
-          <h3>Cuéntame qué está ocurriendo.</h3>
-          <p>Responderé al correo que registres para entender si vale la pena revisarlo juntos.</p>
+          <h3>Cuéntame qué buscas construir.</h3>
+          <p>Responderé al correo que registres para entender el contexto y cómo podría aportar.</p>
           <ContactForm turnstileSiteKey={turnstileSiteKey} />
         </div>
       </div>
