@@ -7,6 +7,7 @@ import { Header } from "@/components/landing/Header";
 import { HowIWork } from "@/components/landing/HowIWork";
 import { Hero } from "@/components/landing/Hero";
 import { Logistics } from "@/components/landing/Logistics";
+import { WhatsAppButton } from "@/components/landing/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <FAQ />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

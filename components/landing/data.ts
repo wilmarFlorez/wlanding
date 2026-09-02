@@ -62,3 +62,7 @@ export const faqs = [
     "La evaluación considera los sistemas, fuentes de información y canales que ya sostienen la operación. Las integraciones o una construcción nueva se definen según lo que el contexto permita.",
   ],
 ] as const;
+
+export const whatsappUrl = `https://wa.me/573184323342?text=${encodeURIComponent(
+  "Hola, vi tu portafolio y quiero hablar sobre mi proyecto.",
+)}`;
