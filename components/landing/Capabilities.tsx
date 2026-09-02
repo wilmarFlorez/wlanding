@@ -5,7 +5,6 @@ export function Capabilities() {
     <section className="section capabilities-section" id="construyo" aria-labelledby="capabilities-title">
       <div className="container">
         <div className="section-intro">
-          <p className="eyebrow">Capacidades de construcción</p>
           <h2 id="capabilities-title">La solución se define por el problema que debe resolver</h2>
         </div>
         <div className="capabilities-grid">

@@ -11,7 +11,6 @@ export function ContactSection() {
           <p>Cuéntame sobre el proyecto, proceso, sistema o rol. Puede empezar con una necesidad de automatización, IA o producto; no hace falta llegar con una solución técnica definida.</p>
         </div>
         <div className="contact-form-panel">
-          <p className="flow-label">Consulta inicial</p>
           <h3>Cuéntame qué buscas construir.</h3>
           <p>Responderé al correo que registres para entender el contexto y cómo podría aportar.</p>
           <ContactForm turnstileSiteKey={turnstileSiteKey} />

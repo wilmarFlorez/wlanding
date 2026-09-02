@@ -13,7 +13,6 @@ export function Logistics() {
           />
         </div>
         <div>
-          <p className="eyebrow">Especialización</p>
           <h2 id="logistics-title">Logística y operaciones</h2>
           <p>Mi foco comercial actual está en operaciones logísticas, especialmente transporte terrestre y 3PL, donde la coordinación, los cambios de estado, la documentación y la visibilidad dependen de información que se mueve entre personas, canales y sistemas.</p>
           <div className="logistics-context">

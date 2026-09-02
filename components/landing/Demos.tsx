@@ -9,13 +9,9 @@ export function Demos() {
 
         <article className="freight-pilot" aria-labelledby="freight-pilot-title">
           <div className="freight-pilot-heading">
-            <div>
-              <p className="evidence-label evidence-label-primary">Proyecto propio</p>
-              <p className="evidence-status">Demo funcional desplegada</p>
-            </div>
           </div>
           <div className="freight-pilot-copy">
-            <h3 id="freight-pilot-title">Freight Pilot convierte mensajes libres en solicitudes listas para preparar una cotización</h3>
+            <h3 id="freight-pilot-title">Freight Pilot</h3>
             <p>Freight Pilot es una demo de portfolio para operadores de transporte terrestre. Usa IA para extraer la información de un mensaje de cliente, reglas deterministas para validarla y revisión humana cuando faltan datos o existe ambigüedad.</p>
             <p>El sistema conserva el texto original, la extracción realizada, las incidencias detectadas y las correcciones. El objetivo es mantener trazabilidad mientras la información se prepara para el siguiente paso del proceso de cotización.</p>
           </div>

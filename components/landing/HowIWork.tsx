@@ -5,7 +5,6 @@ export function HowIWork() {
     <section className="section process-section" id="como-trabajo" aria-labelledby="process-title">
       <div className="container process-layout">
         <div className="section-intro">
-          <p className="eyebrow">De problema a solución</p>
           <h2 id="process-title">Entender el contexto antes de construir</h2>
         </div>
         <ol className="process-list">
