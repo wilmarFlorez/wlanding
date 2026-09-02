@@ -9,7 +9,6 @@ export function Header() {
           <a href="#construyo">Qué construyo</a>
           <a href="#logistica">Logística y operaciones</a>
           <a href="#proyectos">Proyectos y demostraciones</a>
-          <a href="#sobre-wilmar">Sobre Wilmar</a>
         </nav>
         <a className="button button-small" href="#contacto">
           Contactar a Wilmar

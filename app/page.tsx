@@ -1,4 +1,3 @@
-import { About } from "@/components/landing/About";
 import { Capabilities } from "@/components/landing/Capabilities";
 import { ContactSection } from "@/components/landing/ContactSection";
 import { Demos } from "@/components/landing/Demos";
@@ -21,7 +20,6 @@ export default function Home() {
         <HowIWork />
         <Logistics />
         <Demos />
-        <About />
         <ContactSection />
         <FAQ />
       </main>
