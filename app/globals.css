@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f7f4;
+  --background: #e7e7e7;
   --surface: #ffffff;
-  --foreground: #17201d;
-  --muted: #5f6863;
-  --line: #d8ded9;
-  --accent: #245c4c;
-  --accent-dark: #173d32;
-  --accent-soft: #e4eee9;
-  --friction: #8a6232;
+  --foreground: #111111;
+  --muted: #4f4f4f;
+  --line: #b8b8b8;
+  --accent: #70151a;
+  --accent-dark: #5f1115;
+  --accent-soft: #f1dadd;
+  --friction: #6d171b;
 }
 
 @theme inline {
@@ -78,7 +78,7 @@ p { color: var(--muted); }
 .capability-card:nth-child(even) .item-index { left: 32px; }
 .capability-card p { max-width: 430px; margin-bottom: 0; font-size: .9rem; }
 
-.process-section { border-top: 1px solid var(--line); background: #eef1ed; }
+.process-section { border-top: 1px solid var(--line); background: #eeeeee; }
 .process-layout { display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); column-gap: clamp(44px, 8vw, 130px); }
 .process-layout .section-intro { margin-bottom: 0; }
 .process-list { list-style: none; margin: 0; padding: 0; }
@@ -105,7 +105,7 @@ p { color: var(--muted); }
 .logistics-context li:nth-child(odd) { border-right: 1px solid var(--line); }
 .logistics-context li:nth-child(even) { padding-left: 16px; }
 
-.demos-section { background: #e6ebe6; }
+.demos-section { background: #d2d2d2; }
 .section-intro-wide { max-width: 830px; }
 .freight-pilot { border: 1px solid var(--accent); background: var(--surface); padding: clamp(25px, 4vw, 52px); }
 .freight-pilot-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-bottom: 43px; }
@@ -148,7 +148,7 @@ p { color: var(--muted); }
 .contact-status { min-height: 1.45em; margin: 0; font-size: .81rem !important; }
 .contact-status-idle { visibility: hidden; }
 .contact-status-success { color: var(--accent-dark); }
-.contact-status-error { color: #8a332d; }
+.contact-status-error { color: var(--friction); }
 
 .faq-section { padding-top: 72px; }
 .faq-container { max-width: 780px; }
@@ -163,8 +163,8 @@ p { color: var(--muted); }
 .footer-content { min-height: 94px; }
 .footer-content p { margin: 0; font-size: .77rem; }
 .footer-content .footer-name { margin-bottom: 2px; }
-.whatsapp-button { position: fixed; z-index: 20; right: 24px; bottom: 24px; display: inline-flex; min-height: 48px; align-items: center; gap: 9px; border: 1px solid #1d7655; border-radius: 5px; background: #1f8c64; box-shadow: 0 8px 22px color-mix(in srgb, #173d32 28%, transparent); color: #fff; font-size: .82rem; font-weight: 650; padding: 0 15px; transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease; }
-.whatsapp-button:hover { background: #176f50; box-shadow: 0 11px 25px color-mix(in srgb, #173d32 34%, transparent); transform: translateY(-2px); }
+.whatsapp-button { position: fixed; z-index: 20; right: 24px; bottom: 24px; display: inline-flex; min-height: 48px; align-items: center; gap: 9px; border: 1px solid #1d7655; border-radius: 5px; background: #1f8c64; box-shadow: 0 8px 22px color-mix(in srgb, #111111 28%, transparent); color: #fff; font-size: .82rem; font-weight: 650; padding: 0 15px; transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease; }
+.whatsapp-button:hover { background: #176f50; box-shadow: 0 11px 25px color-mix(in srgb, #111111 34%, transparent); transform: translateY(-2px); }
 .whatsapp-button svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
 
 @media (max-width: 1050px) {
