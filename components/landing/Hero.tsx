@@ -3,23 +3,25 @@ export function Hero() {
     <section className="hero section" id="inicio" aria-labelledby="hero-title">
       <div className="container hero-content">
         <div className="hero-copy">
-          <p className="eyebrow">Sobre mí</p>
-          <h1 id="hero-title">Wilmar Florez Samudio, Product Architect &amp; Builder.</h1>
-          <p className="hero-role">Trabajo entre el problema, la arquitectura y lo que finalmente se construye.</p>
-           <p className="hero-lede">
-             Mi enfoque combina entendimiento de producto, diseño de sistemas y construcción de software para convertir una situación concreta en una intervención usable y conectada.
-           </p>
-          <div className="focus-list" aria-label="Enfoque">
-            <span>Producto</span>
-            <span>Arquitectura</span>
-            <span>Construcción</span>
+          <p className="eyebrow">Product Architect &amp; Builder</p>
+          <p className="hero-name">Wilmar Florez Samudio</p>
+          <h1 id="hero-title">Diseño y construyo AI Agents, automatización, integraciones y software con IA para problemas operativos reales.</h1>
+          <p className="hero-lede">
+            Trabajo a partir de un proceso, una decisión o una información que hoy genera trabajo manual, coordinación dispersa o falta de visibilidad. Defino la intervención adecuada y construyo una solución conectada con la operación y los sistemas existentes.
+          </p>
+          <div className="focus-list" aria-label="Capacidades principales">
+            <span>AI Agents</span>
+            <span>Automation &amp; Workflows</span>
+            <span>Integrations</span>
+            <span>AI-powered Software</span>
           </div>
+          <p className="hero-specialization">Especialización y foco actual: logística y operaciones.</p>
           <div className="hero-actions">
             <a className="button" href="#contacto">
-              Hablemos de tu iniciativa
+              Contactar a Wilmar
             </a>
-            <a className="text-link" href="#problemas">
-              Ver problemas que puedo abordar <span aria-hidden="true">-&gt;</span>
+            <a className="text-link" href="#construyo">
+              Ver qué construyo <span aria-hidden="true">-&gt;</span>
             </a>
           </div>
         </div>

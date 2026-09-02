@@ -8,7 +8,7 @@ export function ContactSection() {
       <div className="container contact-panel">
         <div className="contact-copy">
           <p className="eyebrow">Contacto</p>
-          <h2 id="contact-title">¿Hay un problema o iniciativa que vale la pena explorar?</h2>
+          <h2 id="contact-title">¿Tienes un proyecto, proceso u oportunidad que vale la pena revisar?</h2>
           <p>Puede empezar por un proceso manual, una integración pendiente o una decisión repetible que necesita mejor contexto. No es necesario llegar con una solución técnica definida.</p>
         </div>
         <div className="contact-form-panel">

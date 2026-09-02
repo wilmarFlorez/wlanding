@@ -5,9 +5,9 @@ export function Problems() {
     <section className="section" id="problemas" aria-labelledby="problems-title">
       <div className="container">
         <div className="section-intro">
-          <p className="eyebrow">Problemas y construcción</p>
-          <h2 id="problems-title">Procesos operativos que conviene revisar.</h2>
-          <p>Diseño flujos, automatizaciones, integraciones e interfaces internas según el proceso y las herramientas que ya usa el equipo.</p>
+          <p className="eyebrow">Punto de partida</p>
+          <h2 id="problems-title">La oportunidad suele estar en el trabajo que hoy sostiene la operación.</h2>
+          <p>El trabajo comienza con un problema concreto. Estos patrones pueden aparecer en logística, operaciones y otras industrias.</p>
         </div>
         <ol className="problems-list">
           {problems.map(([title, description], index) => (
@@ -20,6 +20,10 @@ export function Problems() {
             </li>
           ))}
         </ol>
+        <p className="section-closing">La conversación no necesita empezar con una solución de IA. Puede empezar con un proceso que hoy es difícil de coordinar, seguir o decidir.</p>
+        <a className="text-link section-link" href="#como-trabajo">
+          Ver cómo trabajo <span aria-hidden="true">-&gt;</span>
+        </a>
       </div>
     </section>
   );
