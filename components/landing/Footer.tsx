@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container footer-content">
         <div>
           <p className="footer-name">Wilmar Florez Samudio</p>
-          <p>Product Architect &amp; Builder</p>
+          <p>Full-Stack &amp; Applied AI Engineer</p>
         </div>
         <p>© {new Date().getFullYear()} Wilmar Florez Samudio</p>
       </div>

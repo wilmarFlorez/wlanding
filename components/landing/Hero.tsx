@@ -1,26 +1,30 @@
-export function Hero() {
+import { content, NUTEAM_URL, type Locale } from "@/components/landing/data";
+
+export function Hero({ locale }: { locale: Locale }) {
+  const copy = content[locale].hero;
   return (
     <section className="hero section" id="inicio" aria-labelledby="hero-title">
       <div className="container hero-content">
         <div>
           <p className="hero-name">Wilmar Florez Samudio</p>
-          <p className="eyebrow hero-role">Product Architect &amp; Builder</p>
-          <h1 id="hero-title">Diseño y construyo productos, automatizaciones y sistemas con IA para resolver problemas operativos</h1>
+          <p className="eyebrow hero-role">{copy.role}</p>
+          <h1 id="hero-title">{copy.title}</h1>
           <p className="hero-lede">
-            Trabajo con equipos que necesitan convertir información dispersa, procesos manuales o decisiones repetibles en herramientas que se puedan usar.
+             {copy.lede}
           </p>
-          <div className="focus-list" aria-label="Capacidades principales">
-            <span>AI Agents</span>
-            <span>Automation &amp; Workflows</span>
+          <div className="focus-list" aria-label={copy.focusLabel}>
+            <span>TypeScript + React</span>
+            <span>Python + FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>LLM Workflows</span>
             <span>Integrations</span>
-            <span>AI-powered Software</span>
           </div>
           <div className="hero-actions">
-            <a className="button" href="#contacto">
-              Contactar a Wilmar
+            <a className="button" href="#experiencia">
+               {copy.experience}
             </a>
-            <a className="text-link" href="#construyo">
-              Ver qué construyo <span aria-hidden="true">-&gt;</span>
+            <a className="text-link" href={NUTEAM_URL} target="_blank" rel="noreferrer">
+               {copy.nuteam} <span aria-hidden="true">↗</span><span className="sr-only"> ({copy.newTab})</span>
             </a>
           </div>
         </div>

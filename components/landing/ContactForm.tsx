@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import Script from "next/script";
+import { content, type Locale } from "@/components/landing/data";
 
 type Status = "idle" | "success" | "error";
 
@@ -11,9 +12,10 @@ declare global {
   }
 }
 
-export function ContactForm({ turnstileSiteKey }: { turnstileSiteKey?: string }) {
+export function ContactForm({ locale, turnstileSiteKey }: { locale: Locale; turnstileSiteKey?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const copy = content[locale].form;
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -56,28 +58,28 @@ export function ContactForm({ turnstileSiteKey }: { turnstileSiteKey?: string })
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="contact-form-grid">
         <label>
-          <span>Nombre <span aria-hidden="true">*</span></span>
+           <span>{copy.name} <span aria-hidden="true">*</span></span>
           <input autoComplete="name" name="name" required maxLength={120} />
         </label>
         <label>
-          <span>Correo de trabajo <span aria-hidden="true">*</span></span>
+           <span>{copy.email} <span aria-hidden="true">*</span></span>
           <input autoComplete="email" name="email" required type="email" maxLength={254} />
         </label>
         <label>
-          Empresa
+           {copy.company}
           <input autoComplete="organization" name="company" maxLength={160} />
         </label>
         <label>
-          Cargo
+           {copy.role}
           <input autoComplete="organization-title" name="role" maxLength={160} />
         </label>
       </div>
       <label>
-        <span>¿Qué proyecto, iniciativa o rol quieres conversar? <span aria-hidden="true">*</span></span>
+         <span>{copy.message} <span aria-hidden="true">*</span></span>
         <textarea name="message" required maxLength={5000} rows={5} />
       </label>
       <label className="contact-honeypot" aria-hidden="true">
-        Sitio web
+         {copy.website}
         <input name="website" tabIndex={-1} autoComplete="off" />
       </label>
       {turnstileSiteKey ? (
@@ -90,16 +92,16 @@ export function ContactForm({ turnstileSiteKey }: { turnstileSiteKey?: string })
         </>
       ) : (
         <p className="contact-status contact-status-error" role="alert">
-          La verificación de seguridad no está disponible.
+           {copy.unavailable}
         </p>
       )}
-      <p className="contact-privacy">Cloudflare procesa la verificación de seguridad. Usaré tu información únicamente para responder a tu consulta.</p>
+       <p className="contact-privacy">{copy.privacy}</p>
       <button className="button" disabled={isSubmitting || !turnstileSiteKey} type="submit">
-        {isSubmitting ? "Enviando..." : "Enviar consulta"}
+         {isSubmitting ? copy.sending : copy.submit}
       </button>
       <p className={`contact-status contact-status-${status}`} aria-live="polite">
-        {status === "success" && "Recibí tu consulta. Te responderé por correo."}
-        {status === "error" && "No fue posible enviar la consulta. Inténtalo nuevamente."}
+         {status === "success" && copy.success}
+         {status === "error" && copy.error}
       </p>
     </form>
   );

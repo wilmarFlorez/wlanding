@@ -48,6 +48,8 @@ p { color: var(--muted); }
 .header-nav { display: flex; align-items: center; gap: 20px; margin-left: auto; margin-right: 28px; }
 .header-nav a, .text-link { color: var(--muted); font-size: .78rem; transition: color 160ms ease; }
 .header-nav a:hover, .text-link:hover { color: var(--accent-dark); }
+.language-link { border: 1px solid var(--line); color: var(--foreground); font-family: var(--font-geist-mono), monospace; font-size: .69rem; line-height: 1; margin-right: 12px; padding: 6px 7px; transition: border-color 160ms ease, color 160ms ease; }
+.language-link:hover { border-color: var(--accent); color: var(--accent-dark); }
 .button { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; border: 1px solid var(--accent); border-radius: 5px; background: var(--accent); color: #fff; font-size: .86rem; font-weight: 600; padding: 0 18px; transition: background 160ms ease, border-color 160ms ease, transform 160ms ease; }
 .button:hover { border-color: var(--accent-dark); background: var(--accent-dark); transform: translateY(-1px); }
 .button-small { min-height: 35px; padding: 0 12px; font-size: .73rem; }
@@ -79,6 +81,15 @@ p { color: var(--muted); }
 .capability-card .item-index { position: absolute; top: 29px; left: 0; }
 .capability-card:nth-child(even) .item-index { left: 32px; }
 .capability-card p { max-width: 430px; margin-bottom: 0; font-size: .9rem; }
+.capability-card:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: 0; }
+
+.experience-section { border-bottom: 1px solid var(--line); }
+.experience-list { margin: 0; border-top: 1px solid var(--line); padding: 0; list-style: none; }
+.experience-item { display: grid; grid-template-columns: minmax(145px, .35fr) minmax(0, 1fr); gap: clamp(25px, 6vw, 80px); border-bottom: 1px solid var(--line); padding: 25px 0 28px; }
+.experience-period { margin: 2px 0 0; color: var(--foreground); font-family: var(--font-geist-mono), monospace; font-size: .72rem; }
+.experience-company { margin-bottom: 6px; }
+.experience-item h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
+.experience-item div > p:last-child { max-width: 680px; margin-bottom: 0; font-size: .9rem; }
 
 .process-section { border-top: 1px solid var(--line); background: #eeeeee; }
 .process-layout { display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); column-gap: clamp(44px, 8vw, 130px); }
@@ -109,16 +120,20 @@ p { color: var(--muted); }
 
 .demos-section { background: #d2d2d2; }
 .section-intro-wide { max-width: 830px; }
+.projects-list { display: grid; gap: 24px; }
 .freight-pilot { border: 1px solid var(--accent); background: var(--surface); padding: clamp(25px, 4vw, 52px); }
 .freight-pilot-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-bottom: 43px; }
 .freight-pilot-heading .eyebrow { margin: 4px 0 0; text-align: right; }
 .evidence-label { width: fit-content; margin: 0 0 8px; border: 1px solid var(--accent); color: var(--accent-dark); padding: 4px 6px; }
 .evidence-label-primary { background: var(--accent); color: #fff; }
-.evidence-status { margin: 0; color: var(--accent-dark); font-family: var(--font-geist-mono), monospace; font-size: .7rem; letter-spacing: .04em; }
+.evidence-status { max-width: 560px; margin: 0; color: var(--accent-dark); font-family: var(--font-geist-mono), monospace; font-size: .7rem; letter-spacing: .04em; text-align: right; }
 .freight-pilot-copy { max-width: 850px; }
 .freight-pilot-copy h3 { margin-bottom: 18px; font-size: clamp(2rem, 3.2vw, 3.4rem); font-weight: 600; letter-spacing: -.065em; line-height: .98; }
 .freight-pilot-copy p { max-width: 720px; font-size: 1rem; }
 .freight-pilot-copy p:last-child { margin-bottom: 0; }
+.project-problem { max-width: 850px; margin-top: 30px; border-top: 1px solid var(--line); padding-top: 18px; }
+.project-problem .flow-label { margin-bottom: 7px; color: var(--accent-dark); }
+.project-problem p:last-child { max-width: 720px; margin-bottom: 0; font-size: .9rem; }
 .freight-pilot-details { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(180px, .7fr); gap: 32px; margin-top: 36px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 20px 0; }
 .freight-pilot-details .flow-label { margin-bottom: 9px; color: var(--accent-dark); }
 .freight-pilot-details ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 20px; margin: 0; padding: 0; list-style: none; }
@@ -129,9 +144,18 @@ p { color: var(--muted); }
 .freight-pilot-link { gap: 9px; }
 .freight-pilot-link span[aria-hidden] { font-size: 1.1rem; line-height: 1; }
 
+.nuteam-section { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #eeeeee; }
+.nuteam-panel { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(44px, 8vw, 130px); }
+.nuteam-copy { border-top: 1px solid var(--line); padding-top: 22px; }
+.nuteam-copy p { max-width: 610px; }
+.nuteam-copy p:nth-child(2) { color: var(--foreground); font-size: .9rem; }
+.nuteam-copy .button { margin-top: 9px; gap: 9px; }
+
 .contact-section { padding-top: 72px; }
 .contact-panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .72fr); gap: clamp(40px, 7vw, 96px); border: 1px solid var(--line); background: var(--surface); padding: clamp(27px, 5vw, 59px); }
 .contact-copy > p { max-width: 570px; }
+.contact-route { max-width: 570px; margin-top: 34px; border-top: 1px solid var(--line); padding-top: 20px; }
+.contact-route p { margin-bottom: 10px; font-size: .88rem; }
 .contact-form-panel { align-self: start; border: 1px solid var(--line); background: var(--background); padding: 22px; }
 .contact-form-panel h3 { margin-bottom: 9px; }
 .contact-form-panel > p { font-size: .86rem; }
@@ -174,7 +198,7 @@ p { color: var(--muted); }
 }
 
 @media (max-width: 900px) {
-  .process-layout, .logistics-layout, .contact-panel { grid-template-columns: 1fr; }
+  .process-layout, .logistics-layout, .nuteam-panel, .contact-panel { grid-template-columns: 1fr; }
   .process-layout .section-intro { margin-bottom: 38px; }
   .process-closing { grid-column: 1; }
   .logistics-image { aspect-ratio: 3 / 2; max-width: 720px; }
@@ -194,7 +218,8 @@ p { color: var(--muted); }
   h2 { font-size: clamp(2rem, 9vw, 2.75rem); }
   .header-content { min-height: 60px; gap: 15px; }
   .wordmark img { width: 34px; height: 34px; }
-  .header-content .button { max-width: 154px; min-height: 34px; padding: 0 10px; font-size: .68rem; text-align: center; }
+   .header-content .button { max-width: 154px; min-height: 34px; padding: 0 10px; font-size: .68rem; text-align: center; }
+   .language-link { margin-left: auto; margin-right: 0; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
   .hero-actions .button { width: 100%; }
   .hero-actions { margin-top: 20px; }
@@ -203,12 +228,14 @@ p { color: var(--muted); }
   .hero-context { align-items: flex-start; flex-direction: column; gap: 9px; margin-top: 18px; }
   .hero-context p { font-size: .76rem; }
   .capabilities-grid, .freight-pilot-details { grid-template-columns: 1fr; }
+  .capability-card:last-child:nth-child(odd) { grid-column: auto; }
   .capability-card { min-height: 0; border-right: 0 !important; padding: 25px 0 26px 43px; }
   .capability-card .item-index { left: 0; }
   .capability-card:nth-child(even) .item-index { left: 0; }
   .freight-pilot { padding: 22px; }
   .freight-pilot-heading { align-items: flex-start; flex-direction: column; gap: 16px; margin-bottom: 32px; }
   .freight-pilot-heading .eyebrow { margin: 0; text-align: left; }
+  .evidence-status { text-align: left; }
   .freight-pilot-copy h3 { font-size: clamp(1.9rem, 9vw, 2.65rem); }
   .freight-pilot-copy p { font-size: .92rem; }
   .freight-pilot-details { gap: 21px; }
@@ -218,6 +245,7 @@ p { color: var(--muted); }
   .contact-panel { gap: 35px; padding: 28px 20px; }
   .contact-form-grid { grid-template-columns: 1fr; }
   .contact-form .button { width: 100%; }
+  .experience-item { grid-template-columns: 1fr; gap: 12px; }
   .footer-content { min-height: 120px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 14px; }
   .whatsapp-button { right: 16px; bottom: 16px; width: 48px; min-height: 48px; justify-content: center; padding: 0; }
   .whatsapp-button span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); white-space: nowrap; }

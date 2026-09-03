@@ -1,41 +1,51 @@
-export function Demos() {
+import { content, type Locale } from "@/components/landing/data";
+
+export function Demos({ locale }: { locale: Locale }) {
+  const copy = content[locale];
+
   return (
-    <section className="section demos-section" id="proyectos" aria-labelledby="demos-title">
+    <section className="section demos-section" id="proyectos" aria-labelledby="projects-title">
       <div className="container">
         <div className="section-intro section-intro-wide">
-          <h2 id="demos-title">Proyectos</h2>
-          <p>Freight Pilot es un proyecto propio desplegado que ilustra cómo combino IA, reglas y revisión humana en un flujo operativo.</p>
+          <h2 id="projects-title">{copy.projectsTitle}</h2>
+          <p>{copy.projectsIntro}</p>
         </div>
-
-        <article className="freight-pilot" aria-labelledby="freight-pilot-title">
-          <div className="freight-pilot-heading">
-          </div>
-          <div className="freight-pilot-copy">
-            <h3 id="freight-pilot-title">Freight Pilot</h3>
-            <p>Freight Pilot es una demo de portfolio para operadores de transporte terrestre. Usa IA para extraer la información de un mensaje de cliente, reglas deterministas para validarla y revisión humana cuando faltan datos o existe ambigüedad.</p>
-            <p>El sistema conserva el texto original, la extracción realizada, las incidencias detectadas y las correcciones. El objetivo es mantener trazabilidad mientras la información se prepara para el siguiente paso del proceso de cotización.</p>
-          </div>
-          <div className="freight-pilot-details">
-            <div>
-              <p className="flow-label">Capacidades demostradas</p>
-              <ul>
-                <li>Extracción de información con IA</li>
-                <li>Validación mediante reglas</li>
-                <li>Revisión humana de excepciones</li>
-                <li>Trazabilidad de procesamiento</li>
-              </ul>
-            </div>
-            <div>
-              <p className="flow-label">Tecnología</p>
-              <p>Construido con Next.js, FastAPI y PostgreSQL.</p>
-            </div>
-          </div>
-          <p className="freight-pilot-limit">No calcula precios, no genera cotizaciones y no asigna vehículos. Es un proyecto propio de portfolio; no es un proyecto de cliente ni un producto comercial validado.</p>
-          <a className="button freight-pilot-link" href="https://freight-pilot-flame.vercel.app/" target="_blank" rel="noreferrer">
-            Explorar Freight Pilot <span aria-hidden="true">&#8599;</span><span className="sr-only"> (abre en una nueva pestaña)</span>
-          </a>
-        </article>
-
+        <div className="projects-list">
+          {copy.projects.map((project, index) => {
+            const titleId = `project-${index}-title`;
+            return (
+              <article className="freight-pilot" aria-labelledby={titleId} key={project.name}>
+                <div className="freight-pilot-heading">
+                  <p className="evidence-label">{project.statusLabel}</p>
+                  <p className="evidence-status">{project.status}</p>
+                </div>
+                <div className="freight-pilot-copy">
+                  <h3 id={titleId}>{project.name}</h3>
+                  <p>{project.summary}</p>
+                </div>
+                <div className="project-problem">
+                  <p className="flow-label">{project.problemLabel}</p>
+                  <p>{project.problem}</p>
+                </div>
+                <div className="freight-pilot-details">
+                  <div>
+                    <p className="flow-label">{project.decisionsLabel}</p>
+                    <ul>{project.decisions.map((decision) => <li key={decision}>{decision}</li>)}</ul>
+                  </div>
+                  <div>
+                    <p className="flow-label">{project.technologyLabel}</p>
+                    <p>{project.technology}</p>
+                  </div>
+                </div>
+                {project.link && (
+                  <a className="button freight-pilot-link" href={project.link.href} target="_blank" rel="noreferrer">
+                    {project.link.label} <span aria-hidden="true">↗</span><span className="sr-only"> ({copy.hero.newTab})</span>
+                  </a>
+                )}
+              </article>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

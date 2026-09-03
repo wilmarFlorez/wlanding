@@ -1,0 +1,14 @@
+import { Capabilities } from "@/components/landing/Capabilities";
+import { ContactSection } from "@/components/landing/ContactSection";
+import { Demos } from "@/components/landing/Demos";
+import { Footer } from "@/components/landing/Footer";
+import { Header } from "@/components/landing/Header";
+import { Hero } from "@/components/landing/Hero";
+import { Experience } from "@/components/landing/Experience";
+import { NuTeam } from "@/components/landing/NuTeam";
+import type { Locale } from "@/components/landing/data";
+import { WhatsAppButton } from "@/components/landing/WhatsAppButton";
+
+export function LandingPage({ locale }: { locale: Locale }) {
+  return <><Header locale={locale} /><main><Hero locale={locale} /><Experience locale={locale} /><Demos locale={locale} /><Capabilities locale={locale} /><NuTeam locale={locale} /><ContactSection locale={locale} /></main><Footer /><WhatsAppButton locale={locale} /></>;
+}
