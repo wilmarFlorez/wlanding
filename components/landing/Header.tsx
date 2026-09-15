@@ -11,6 +11,7 @@ export function Header({ locale }: { locale: Locale }) {
         </a>
         <nav className="header-nav" aria-label={copy.navLabel}>
           <a href="#experiencia">{copy.experience}</a>
+          <a href="#automatizaciones">{copy.automations}</a>
           <a href="#proyectos">{copy.projects}</a>
           <a href="#capacidades">{copy.capabilities}</a>
           <a href="#contacto">{copy.contact}</a>

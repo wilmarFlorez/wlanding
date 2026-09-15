@@ -27,3 +27,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Use the pinned package manager: `pnpm@9.13.0`.
 - Run `pnpm dev` for local development, `pnpm lint` for ESLint, `pnpm exec tsc --noEmit` for type checking, and `pnpm build` for the production build.
 - There is no test suite or CI workflow configured; validate UI changes at desktop and mobile breakpoints in addition to linting/type checking.
+
+## Formatting
+
+- Do not use numbered lists by default. Use numbers only when explicitly required by the user or when the sequence itself is essential to understanding the content.

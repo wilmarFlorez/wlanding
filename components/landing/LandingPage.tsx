@@ -1,6 +1,7 @@
 import { Capabilities } from "@/components/landing/Capabilities";
 import { ContactSection } from "@/components/landing/ContactSection";
 import { Demos } from "@/components/landing/Demos";
+import { AutomationExamples } from "@/components/landing/AutomationExamples";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
@@ -9,5 +10,5 @@ import type { Locale } from "@/components/landing/data";
 import { WhatsAppButton } from "@/components/landing/WhatsAppButton";
 
 export function LandingPage({ locale }: { locale: Locale }) {
-  return <><Header locale={locale} /><main><Hero locale={locale} /><Experience locale={locale} /><Demos locale={locale} /><Capabilities locale={locale} /><ContactSection locale={locale} /></main><Footer /><WhatsAppButton locale={locale} /></>;
+  return <><Header locale={locale} /><main><Hero locale={locale} /><AutomationExamples locale={locale} /><Experience locale={locale} /><Demos locale={locale} /><Capabilities locale={locale} /><ContactSection locale={locale} /></main><Footer /><WhatsAppButton locale={locale} /></>;
 }

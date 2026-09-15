@@ -14,18 +14,35 @@ type Project = {
   link?: { label: string; href: string };
 };
 
+type AutomationExample = {
+  context: string;
+  title: string;
+  outcome: string;
+  inputLabel: string;
+  input: string;
+  automationLabel: string;
+  automation: string;
+  controlLabel: string;
+  control: string;
+};
+
 type LandingContent = {
   capabilities: readonly { title: string; description: string }[];
   workSteps: readonly (readonly [string, string])[];
   faqs: readonly (readonly [string, string])[];
   experience: readonly { company: string; role: string; period: string; summary: string }[];
   projects: readonly Project[];
-  header: { homeLabel: string; navLabel: string; experience: string; projects: string; capabilities: string; contact: string; languageLabel: string; languageName: string; languageHref: string };
+  automationExamples: readonly AutomationExample[];
+  header: { homeLabel: string; navLabel: string; experience: string; automations: string; projects: string; capabilities: string; contact: string; languageLabel: string; languageName: string; languageHref: string };
   hero: { role: string; title: string; lede: string; focusLabel: string; experience: string };
   experienceTitle: string;
   experienceIntro: string;
   projectsTitle: string;
   projectsIntro: string;
+  automationTitle: string;
+  automationIntro: string;
+  automationNote: string;
+  automationClosing: string;
   capabilityTitle: string;
   capabilityIntro: string;
   processTitle: string;
@@ -57,7 +74,16 @@ export const content: Record<Locale, LandingContent> = {
     projects: [
       { name: "Freight Pilot", summary: "Demo desplegada para estructurar solicitudes de cotización de transporte terrestre y hacer visibles los datos que requieren revisión.", problemLabel: "Problema abordado", problem: "Las solicitudes llegan en texto libre y pueden omitir datos clave o mezclar información ambigua. La demo los organiza sin perder el texto original ni el historial de correcciones.", decisionsLabel: "Decisiones técnicas", decisions: ["Extracción estructurada con IA", "Validación determinista de campos", "Revisión humana de excepciones", "Trazabilidad del texto, incidencias y correcciones"], technologyLabel: "Tecnologías", technology: "Next.js, FastAPI y PostgreSQL.", statusLabel: "Estado real", status: "Demo desplegada", link: { label: "Explorar Freight Pilot", href: "https://freight-pilot-flame.vercel.app/" } },
     ],
-    header: { homeLabel: "Wilmar Florez Samudio, inicio", navLabel: "Navegación principal", experience: "Experiencia", projects: "Proyectos", capabilities: "Capacidades", contact: "Contacto", languageLabel: "Cambiar el idioma a inglés", languageName: "EN", languageHref: "/en" },
+    automationExamples: [
+      { context: "Atención y ventas", title: "Responder sin dejar conversaciones en visto", outcome: "Un asistente puede clasificar consultas, responder preguntas frecuentes y entregar a una persona los casos que necesitan criterio comercial.", inputLabel: "Entra", input: "Mensajes de WhatsApp, web o correo.", automationLabel: "La IA hace", automation: "Identifica la intención, consulta información aprobada y propone la siguiente acción.", controlLabel: "Se controla", control: "Las respuestas sensibles y las oportunidades de venta pasan a revisión humana." },
+      { context: "Operaciones y documentos", title: "Convertir archivos en tareas accionables", outcome: "Cotizaciones, facturas o solicitudes dejan de vivir como texto suelto y se convierten en datos que un equipo puede revisar y procesar.", inputLabel: "Entra", input: "PDFs, formularios, correos o texto libre.", automationLabel: "La IA hace", automation: "Extrae campos, detecta faltantes y organiza la información en el sistema correcto.", controlLabel: "Se controla", control: "Las reglas validan datos y una persona decide cuando hay ambigüedad." },
+      { context: "Marketing y contenido", title: "Pasar de una idea a varias piezas", outcome: "Un briefing puede convertirse en borradores adaptados para distintos canales, sin perder la voz ni la revisión del equipo.", inputLabel: "Entra", input: "Briefings, notas de producto o grabaciones.", automationLabel: "La IA hace", automation: "Resume, propone ángulos y adapta el contenido a formatos definidos.", controlLabel: "Se controla", control: "El equipo aprueba datos, tono y publicación antes de salir al aire." },
+    ],
+    automationTitle: "La IA puede leer, clasificar, redactar y conectar sistemas",
+    automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
+    automationNote: "No se trata de reemplazar todo el proceso. Se trata de quitar pasos manuales donde una máquina puede ayudar y dejar las decisiones importantes en manos de las personas.",
+    automationClosing: "Cada automatización empieza por un proceso real y medible, no por una herramienta de moda.",
+    header: { homeLabel: "Wilmar Florez Samudio, inicio", navLabel: "Navegación principal", experience: "Experiencia", automations: "Automatizaciones", projects: "Proyectos", capabilities: "Capacidades", contact: "Contacto", languageLabel: "Cambiar el idioma a inglés", languageName: "EN", languageHref: "/en" },
     hero: { role: "Full-Stack & Applied AI Engineer", title: "Construyo productos, automatizaciones y software con IA", lede: "Ingeniero de software con experiencia en producto, frontend, backend e integraciones. Combino TypeScript, React, Python y FastAPI para convertir procesos complejos en herramientas que puedan operarse y mantenerse.", focusLabel: "Tecnologías y áreas principales", experience: "Ver experiencia y proyectos" },
     experienceTitle: "Experiencia construyendo producto",
     experienceIntro: "He trabajado en equipos de producto y en proyectos propios, con responsabilidades que abarcan frontend, backend, arquitectura e integraciones.",
@@ -92,7 +118,16 @@ export const content: Record<Locale, LandingContent> = {
     projects: [
       { name: "Freight Pilot", summary: "A deployed demo for structuring ground transportation quote requests and surfacing the information that needs review.", problemLabel: "Problem addressed", problem: "Requests arrive as free-form text and may omit key details or combine ambiguous information. The demo structures them without losing the original text or correction history.", decisionsLabel: "Technical decisions", decisions: ["AI-powered structured extraction", "Deterministic field validation", "Human review of exceptions", "Traceability for text, issues, and corrections"], technologyLabel: "Technologies", technology: "Next.js, FastAPI, and PostgreSQL.", statusLabel: "Current status", status: "Deployed demo", link: { label: "Explore Freight Pilot", href: "https://freight-pilot-flame.vercel.app/" } },
     ],
-    header: { homeLabel: "Wilmar Florez Samudio, home", navLabel: "Main navigation", experience: "Experience", projects: "Projects", capabilities: "Capabilities", contact: "Contact", languageLabel: "Switch language to Spanish", languageName: "ES", languageHref: "/" },
+    automationExamples: [
+      { context: "Support and sales", title: "Respond without leaving conversations behind", outcome: "An assistant can classify questions, answer frequent requests, and hand off cases that need commercial judgment to a person.", inputLabel: "Input", input: "WhatsApp, web, or email messages.", automationLabel: "AI handles", automation: "It identifies intent, checks approved information, and proposes the next action.", controlLabel: "Control", control: "Sensitive replies and sales opportunities go through human review." },
+      { context: "Operations and documents", title: "Turn files into actionable tasks", outcome: "Quotes, invoices, or requests stop living as loose text and become data a team can review and process.", inputLabel: "Input", input: "PDFs, forms, emails, or free-form text.", automationLabel: "AI handles", automation: "It extracts fields, spots missing details, and organizes information in the right system.", controlLabel: "Control", control: "Rules validate data and a person decides when information is ambiguous." },
+      { context: "Marketing and content", title: "Turn one idea into several pieces", outcome: "A brief can become drafts adapted for different channels without losing the team’s voice or review process.", inputLabel: "Input", input: "Briefs, product notes, or recordings.", automationLabel: "AI handles", automation: "It summarizes, suggests angles, and adapts content to defined formats.", controlLabel: "Control", control: "The team approves facts, tone, and publishing before anything goes live." },
+    ],
+    automationTitle: "La IA puede leer, clasificar, redactar y conectar sistemas",
+    automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
+    automationNote: "This is not about replacing the whole process. It is about removing manual steps where a machine can help and keeping important decisions with people.",
+    automationClosing: "Every automation starts with a real, measurable process, not a trendy tool.",
+    header: { homeLabel: "Wilmar Florez Samudio, home", navLabel: "Main navigation", experience: "Experience", automations: "Automations", projects: "Projects", capabilities: "Capabilities", contact: "Contact", languageLabel: "Switch language to Spanish", languageName: "ES", languageHref: "/" },
     hero: { role: "Full-Stack & Applied AI Engineer", title: "I build AI-powered products, automations, and software", lede: "Software engineer with experience across product, frontend, backend, and integrations. I combine TypeScript, React, Python, and FastAPI to turn complex processes into tools that can be operated and maintained.", focusLabel: "Core technologies and disciplines", experience: "View experience and projects" },
     experienceTitle: "Experience building products",
     experienceIntro: "I have worked in product teams and on self-initiated projects, with responsibilities spanning frontend, backend, architecture, and integrations.",
