@@ -10,9 +10,9 @@ La landing es el portafolio personal bilingüe de **Wilmar Florez Samudio**. Su 
 - contratación como `Full-Stack & Applied AI Engineer`;
 - roles de producto e ingeniería;
 - contratos y colaboraciones profesionales;
-- derivación de empresas interesadas en automatización operativa hacia NuTeam.
+- conversaciones con empresas interesadas en automatización operativa.
 
-No es actualmente una landing exclusiva de logística ni una página de venta directa de una oferta propia de automatización. La logística es una especialización visible dentro del portafolio y el canal comercial para automatización es NuTeam.
+No es actualmente una landing exclusiva de logística ni una página de venta directa de una oferta propia de automatización. La logística es una especialización visible dentro del portafolio.
 
 ## 2. Posicionamiento vigente
 
@@ -51,21 +51,20 @@ La IA es una capacidad aplicada al flujo, no una promesa de que toda solución r
 
 - Empresas con procesos operativos que quieren explorar automatización.
 - Especialmente organizaciones de logística y transporte terrestre.
-- Prospectos que deben continuar la conversación comercial en NuTeam, no en esta landing personal.
+- Prospectos que quieren explorar una colaboración técnica o automatización operativa.
 
 ## 4. Recorrido implementado
 
 La página se compone en `components/landing/LandingPage.tsx` con este orden:
 
-1. `Header`: navegación a experiencia, proyectos, capacidades, NuTeam y contacto; selector de idioma y CTA de contacto.
-2. `Hero`: nombre, rol, propuesta principal, tecnologías y enlaces a experiencia y NuTeam.
+1. `Header`: navegación a experiencia, proyectos, capacidades y contacto; selector de idioma y CTA de contacto.
+2. `Hero`: nombre, rol, propuesta principal, tecnologías y enlace a experiencia.
 3. `Experience`: trayectoria profesional en Roomly, Elenas, Easy Case Legal y trabajo freelance.
 4. `Demos`: proyectos técnicos con problema, decisiones, tecnologías, estado real y enlace cuando existe.
 5. `Capabilities`: applied AI, backend con Python, frontend de producto e integraciones/eventos.
-6. `NuTeam`: frontera entre el portafolio personal y la iniciativa comercial de automatización.
-7. `ContactSection`: contacto para roles y colaboraciones, más enlace comercial a NuTeam.
-8. `Footer`: nombre, rol, año, LinkedIn y GitHub.
-9. `WhatsAppButton`: acceso directo a WhatsApp con mensaje predefinido para roles o colaboraciones.
+6. `ContactSection`: contacto para roles y colaboraciones.
+7. `Footer`: nombre, rol, año, LinkedIn y GitHub.
+8. `WhatsAppButton`: acceso directo a WhatsApp con mensaje predefinido para roles o colaboraciones.
 
 ### Componentes existentes pero no incluidos en el recorrido actual
 
@@ -80,7 +79,6 @@ La página se compone en `components/landing/LandingPage.tsx` con este orden:
 - Título: `Construyo productos, automatizaciones y software con IA`.
 - Descripción: `Ingeniero de software con experiencia en producto, frontend, backend e integraciones. Combino TypeScript, React, Python y FastAPI para convertir procesos complejos en herramientas que puedan operarse y mantenerse.`
 - CTA primario: `Ver experiencia y proyectos`.
-- CTA secundario: `Automatizar un proceso con NuTeam`.
 
 ### Experiencia
 
@@ -126,26 +124,12 @@ Las etiquetas y estados deben seguir siendo exactos. No convertir productos prop
 3. `Frontend de producto`: interfaces con TypeScript y React/Next.js.
 4. `Integraciones y eventos`: APIs, webhooks, mensajería y sistemas existentes.
 
-### NuTeam
-
-Copy publicado: NuTeam es la iniciativa comercial mediante la cual Wilmar evalúa y construye automatizaciones para procesos operativos, con foco inicial en logística.
-
-La frontera es intencional:
-
-- esta landing demuestra quién es Wilmar y qué puede ejecutar;
-- NuTeam explica la oferta comercial y recibe consultas de empresas que quieren automatizar un proceso.
-
-Enlace vigente: `https://www.nuteam.ai/`.
-
 ### Contacto
 
 El contacto personal está orientado a `roles y colaboraciones`:
 
 - título: `Quiero conversar sobre un rol o colaboración`;
 - formulario: nombre, correo, empresa, cargo y descripción del rol o colaboración;
-- enlace comercial separado: `Ir al formulario de NuTeam`.
-
-No presentar el formulario personal como el canal para vender automatización empresarial. Para eso se debe dirigir al visitante a NuTeam.
 
 ## 6. Contacto y comportamiento real
 
@@ -166,7 +150,7 @@ El formulario sí tiene una ruta de backend en `/api/contact`.
 
 ### Canales adicionales
 
-El botón flotante de WhatsApp abre `https://wa.me/573184323342` con un mensaje predefinido para hablar sobre un rol o colaboración. Es un canal personal, no el flujo comercial de NuTeam.
+El botón flotante de WhatsApp abre `https://wa.me/573184323342` con un mensaje predefinido para hablar sobre un rol o colaboración.
 
 ## 7. Idiomas y rutas
 
@@ -183,7 +167,7 @@ La página puede afirmar únicamente lo que está respaldado por el contenido ac
 - Roomly como producto propio construido y desplegado en validación;
 - Freight Pilot como demo desplegada;
 - capacidades técnicas descritas sin resultados comerciales inventados;
-- enlaces reales a LinkedIn, GitHub, NuTeam y Freight Pilot.
+- enlaces reales a LinkedIn, GitHub y Freight Pilot.
 
 No agregar sin verificación:
 
@@ -218,11 +202,10 @@ Estos pendientes corresponden a la implementación actual, no a funcionalidades 
 - Evaluar si se añade fotografía profesional, sin usar placeholder ni stock.
 - Mantener actualizados LinkedIn, GitHub, experiencia y estado de proyectos.
 - Decidir si se publica biografía adicional o ubicación, siempre con información verificable.
-- Revisar la relación pública entre la marca personal y NuTeam si cambia la oferta comercial.
 
 ## 11. Criterios para futuros cambios
 
-1. La landing personal debe seguir vendiendo a Wilmar como profesional individual, no convertirse en la página de NuTeam.
+1. La landing debe seguir vendiendo a Wilmar como profesional individual.
 2. El primer recorrido debe explicar qué construye, con qué capacidades y para qué tipo de colaboración.
 3. La experiencia y los proyectos deben conservar estado y límites explícitos.
 4. La logística puede crecer como especialización, pero no debe volver a ser una restricción implícita para contratación general.

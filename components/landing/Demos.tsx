@@ -39,7 +39,7 @@ export function Demos({ locale }: { locale: Locale }) {
                 </div>
                 {project.link && (
                   <a className="button freight-pilot-link" href={project.link.href} target="_blank" rel="noreferrer">
-                    {project.link.label} <span aria-hidden="true">↗</span><span className="sr-only"> ({copy.hero.newTab})</span>
+                     {project.link.label} <span aria-hidden="true">↗</span><span className="sr-only"> ({copy.newTab})</span>
                   </a>
                 )}
               </article>

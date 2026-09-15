@@ -144,18 +144,9 @@ p { color: var(--muted); }
 .freight-pilot-link { gap: 9px; }
 .freight-pilot-link span[aria-hidden] { font-size: 1.1rem; line-height: 1; }
 
-.nuteam-section { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #eeeeee; }
-.nuteam-panel { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(44px, 8vw, 130px); }
-.nuteam-copy { border-top: 1px solid var(--line); padding-top: 22px; }
-.nuteam-copy p { max-width: 610px; }
-.nuteam-copy p:nth-child(2) { color: var(--foreground); font-size: .9rem; }
-.nuteam-copy .button { margin-top: 9px; gap: 9px; }
-
 .contact-section { padding-top: 72px; }
 .contact-panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .72fr); gap: clamp(40px, 7vw, 96px); border: 1px solid var(--line); background: var(--surface); padding: clamp(27px, 5vw, 59px); }
 .contact-copy > p { max-width: 570px; }
-.contact-route { max-width: 570px; margin-top: 34px; border-top: 1px solid var(--line); padding-top: 20px; }
-.contact-route p { margin-bottom: 10px; font-size: .88rem; }
 .contact-form-panel { align-self: start; border: 1px solid var(--line); background: var(--background); padding: 22px; }
 .contact-form-panel h3 { margin-bottom: 9px; }
 .contact-form-panel > p { font-size: .86rem; }
@@ -203,7 +194,7 @@ p { color: var(--muted); }
 }
 
 @media (max-width: 900px) {
-  .process-layout, .logistics-layout, .nuteam-panel, .contact-panel { grid-template-columns: 1fr; }
+  .process-layout, .logistics-layout, .contact-panel { grid-template-columns: 1fr; }
   .process-layout .section-intro { margin-bottom: 38px; }
   .process-closing { grid-column: 1; }
   .logistics-image { aspect-ratio: 3 / 2; max-width: 720px; }

@@ -13,7 +13,6 @@ export function Header({ locale }: { locale: Locale }) {
           <a href="#experiencia">{copy.experience}</a>
           <a href="#proyectos">{copy.projects}</a>
           <a href="#capacidades">{copy.capabilities}</a>
-          <a href="#nuteam">{copy.nuteam}</a>
           <a href="#contacto">{copy.contact}</a>
         </nav>
         <a className="language-link" href={copy.languageHref} aria-label={copy.languageLabel}>{copy.languageName}</a>

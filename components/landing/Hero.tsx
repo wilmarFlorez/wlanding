@@ -1,4 +1,4 @@
-import { content, NUTEAM_URL, type Locale } from "@/components/landing/data";
+import { content, type Locale } from "@/components/landing/data";
 
 export function Hero({ locale }: { locale: Locale }) {
   const copy = content[locale].hero;
@@ -22,9 +22,6 @@ export function Hero({ locale }: { locale: Locale }) {
           <div className="hero-actions">
             <a className="button" href="#experiencia">
                {copy.experience}
-            </a>
-            <a className="text-link" href={NUTEAM_URL} target="_blank" rel="noreferrer">
-               {copy.nuteam} <span aria-hidden="true">↗</span><span className="sr-only"> ({copy.newTab})</span>
             </a>
           </div>
         </div>
