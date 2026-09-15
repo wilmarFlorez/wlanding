@@ -1,5 +1,22 @@
 export type Locale = "es" | "en";
 
+export const aiSignalContent = {
+  es: {
+    aria: "La IA transforma ideas, mensajes y documentos en respuestas, decisiones y siguientes pasos.",
+    inputs: ["una idea", "un mensaje", "un documento"],
+    outputs: ["respuesta", "decisión", "siguiente paso"],
+    center: "IA",
+    centerCaption: "da forma",
+  },
+  en: {
+    aria: "AI transforms ideas, messages and documents into answers, decisions and next steps.",
+    inputs: ["an idea", "a message", "a document"],
+    outputs: ["an answer", "a decision", "next step"],
+    center: "AI",
+    centerCaption: "gives shape",
+  },
+} as const;
+
 type Project = {
   name: string;
   summary: string;
