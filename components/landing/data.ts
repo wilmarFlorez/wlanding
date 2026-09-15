@@ -82,7 +82,6 @@ export const content: Record<Locale, LandingContent> = {
     automationTitle: "La IA puede leer, clasificar, redactar y conectar sistemas",
     automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
     automationNote: "No se trata de reemplazar todo el proceso. Se trata de quitar pasos manuales donde una máquina puede ayudar y dejar las decisiones importantes en manos de las personas.",
-    automationClosing: "Cada automatización empieza por un proceso real y medible, no por una herramienta de moda.",
     header: { homeLabel: "Wilmar Florez Samudio, inicio", navLabel: "Navegación principal", experience: "Experiencia", automations: "Automatizaciones", projects: "Proyectos", capabilities: "Capacidades", contact: "Contacto", languageLabel: "Cambiar el idioma a inglés", languageName: "EN", languageHref: "/en" },
     hero: { role: "Full-Stack & Applied AI Engineer", title: "Construyo productos, automatizaciones y software con IA", lede: "Ingeniero de software con experiencia en producto, frontend, backend e integraciones. Combino TypeScript, React, Python y FastAPI para convertir procesos complejos en herramientas que puedan operarse y mantenerse.", focusLabel: "Tecnologías y áreas principales", experience: "Ver experiencia y proyectos" },
     experienceTitle: "Experiencia construyendo producto",

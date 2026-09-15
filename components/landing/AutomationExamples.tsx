@@ -19,7 +19,6 @@ export function AutomationExamples({ locale }: { locale: Locale }) {
             return (
               <article className="automation-card" aria-labelledby={titleId} key={example.title}>
                 <div className="automation-card-top">
-                  <span className="item-index">0{index + 1}</span>
                   <span className="automation-context">{example.context}</span>
                 </div>
                 <h3 id={titleId}>{example.title}</h3>
