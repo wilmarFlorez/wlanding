@@ -18,7 +18,7 @@ No es actualmente una landing exclusiva de logística ni una página de venta di
 
 ### Mensaje principal
 
-> Construyo productos, automatizaciones y software con IA, desde la arquitectura hasta producción.
+> Construyo productos, automatizaciones y software con IA.
 
 ### Rol
 
@@ -77,7 +77,7 @@ La página se compone en `components/landing/LandingPage.tsx` con este orden:
 
 - Nombre: `Wilmar Florez Samudio`.
 - Rol: `Full-Stack & Applied AI Engineer`.
-- Título: `Construyo productos, automatizaciones y software con IA, desde la arquitectura hasta producción`.
+- Título: `Construyo productos, automatizaciones y software con IA`.
 - Descripción: `Ingeniero de software con experiencia en producto, frontend, backend e integraciones. Combino TypeScript, React, Python y FastAPI para convertir procesos complejos en herramientas que puedan operarse y mantenerse.`
 - CTA primario: `Ver experiencia y proyectos`.
 - CTA secundario: `Automatizar un proceso con NuTeam`.
