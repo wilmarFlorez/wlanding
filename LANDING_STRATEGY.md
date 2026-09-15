@@ -94,25 +94,16 @@ Estas afirmaciones deben mantenerse factuales y actualizarse cuando cambien los 
 
 ### Proyectos
 
-La sección se titula `Proyectos técnicos` y presenta dos piezas de evidencia:
-
-#### Roomly
-
-- Tipo: producto propio.
-- Estado: construido y desplegado; en etapa de validación.
-- Problema: coordinar conversaciones operativas por WhatsApp sin perder contexto, control del flujo ni intervención humana.
-- Decisiones: workflows conversacionales deterministas, uso controlado de LLM, escalamiento humano y arquitectura por capas con webhooks.
-- Tecnología: FastAPI, PostgreSQL y WhatsApp Business API.
-- Límite explícito: no se presenta como producto con clientes, usuarios activos o resultados comerciales demostrados.
+La sección presenta una pieza de evidencia técnica desplegada:
 
 #### Freight Pilot
 
 - Tipo: demo de portafolio.
-- Estado: demo desplegada.
-- Problema: preparar información de solicitudes de cotización recibida en texto libre, mostrando datos faltantes o ambiguos y conservando trazabilidad.
-- Decisiones: extracción con IA, validación determinista, revisión humana de excepciones y registro de texto, incidencias y correcciones.
-- Tecnología: Next.js, FastAPI y PostgreSQL.
 - Límite explícito: no calcula precios, genera cotizaciones ni asigna vehículos; no es proyecto de cliente ni producto comercial validado.
+- Problema: estructurar solicitudes de cotización recibidas en texto libre, mostrando datos faltantes o ambiguos y conservando trazabilidad.
+- Decisiones: extracción estructurada con IA, validación determinista, revisión humana de excepciones y registro de texto, incidencias y correcciones.
+- Tecnología: Next.js, FastAPI y PostgreSQL.
+- Estado: demo desplegada.
 - Enlace: `https://freight-pilot-flame.vercel.app/`.
 
 Las etiquetas y estados deben seguir siendo exactos. No convertir productos propios o demos en casos de cliente.
