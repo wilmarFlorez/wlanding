@@ -41,8 +41,6 @@ type LandingContent = {
   projectsIntro: string;
   automationTitle: string;
   automationIntro: string;
-  automationNote: string;
-  automationClosing: string;
   capabilityTitle: string;
   capabilityIntro: string;
   processTitle: string;
@@ -80,9 +78,8 @@ export const content: Record<Locale, LandingContent> = {
       { context: "Marketing y contenido", title: "Pasar de una idea a varias piezas", outcome: "Un briefing puede convertirse en borradores adaptados para distintos canales, sin perder la voz ni la revisión del equipo.", inputLabel: "Entra", input: "Briefings, notas de producto o grabaciones.", automationLabel: "La IA hace", automation: "Resume, propone ángulos y adapta el contenido a formatos definidos.", controlLabel: "Se controla", control: "El equipo aprueba datos, tono y publicación antes de salir al aire." },
     ],
     automationTitle: "La IA puede leer, clasificar, redactar y conectar sistemas",
-    automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
-    automationNote: "No se trata de reemplazar todo el proceso. Se trata de quitar pasos manuales donde una máquina puede ayudar y dejar las decisiones importantes en manos de las personas.",
-    header: { homeLabel: "Wilmar Florez Samudio, inicio", navLabel: "Navegación principal", experience: "Experiencia", automations: "Automatizaciones", projects: "Proyectos", capabilities: "Capacidades", contact: "Contacto", languageLabel: "Cambiar el idioma a inglés", languageName: "EN", languageHref: "/en" },
+     automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
+     header: { homeLabel: "Wilmar Florez Samudio, inicio", navLabel: "Navegación principal", experience: "Experiencia", automations: "Automatizaciones", projects: "Proyectos", capabilities: "Capacidades", contact: "Contacto", languageLabel: "Cambiar el idioma a inglés", languageName: "EN", languageHref: "/en" },
     hero: { role: "Full-Stack & Applied AI Engineer", title: "Construyo productos, automatizaciones y software con IA", lede: "Ingeniero de software con experiencia en producto, frontend, backend e integraciones. Combino TypeScript, React, Python y FastAPI para convertir procesos complejos en herramientas que puedan operarse y mantenerse.", focusLabel: "Tecnologías y áreas principales", experience: "Ver experiencia y proyectos" },
     experienceTitle: "Experiencia construyendo producto",
     experienceIntro: "He trabajado en equipos de producto y en proyectos propios, con responsabilidades que abarcan frontend, backend, arquitectura e integraciones.",
@@ -124,8 +121,6 @@ export const content: Record<Locale, LandingContent> = {
     ],
     automationTitle: "La IA puede leer, clasificar, redactar y conectar sistemas",
     automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
-    automationNote: "This is not about replacing the whole process. It is about removing manual steps where a machine can help and keeping important decisions with people.",
-    automationClosing: "Every automation starts with a real, measurable process, not a trendy tool.",
     header: { homeLabel: "Wilmar Florez Samudio, home", navLabel: "Main navigation", experience: "Experience", automations: "Automations", projects: "Projects", capabilities: "Capabilities", contact: "Contact", languageLabel: "Switch language to Spanish", languageName: "ES", languageHref: "/" },
     hero: { role: "Full-Stack & Applied AI Engineer", title: "I build AI-powered products, automations, and software", lede: "Software engineer with experience across product, frontend, backend, and integrations. I combine TypeScript, React, Python, and FastAPI to turn complex processes into tools that can be operated and maintained.", focusLabel: "Core technologies and disciplines", experience: "View experience and projects" },
     experienceTitle: "Experience building products",

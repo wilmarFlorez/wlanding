@@ -11,7 +11,6 @@ export function AutomationExamples({ locale }: { locale: Locale }) {
             <h2 id="automation-title">{copy.automationTitle}</h2>
             <p>{copy.automationIntro}</p>
           </div>
-          <p className="automation-note">{copy.automationNote}</p>
         </div>
         <div className="automation-grid">
           {copy.automationExamples.map((example, index) => {
@@ -23,16 +22,15 @@ export function AutomationExamples({ locale }: { locale: Locale }) {
                 </div>
                 <h3 id={titleId}>{example.title}</h3>
                 <p className="automation-outcome">{example.outcome}</p>
-                <dl className="automation-flow">
-                  <div><dt>{example.inputLabel}</dt><dd>{example.input}</dd></div>
-                  <div><dt>{example.automationLabel}</dt><dd>{example.automation}</dd></div>
-                  <div><dt>{example.controlLabel}</dt><dd>{example.control}</dd></div>
+                <dl className="automation-flow" aria-label={example.title}>
+                  <div className="automation-flow-step"><dt>{example.inputLabel}</dt><dd>{example.input}</dd></div>
+                  <div className="automation-flow-step"><dt>{example.automationLabel}</dt><dd>{example.automation}</dd></div>
+                  <div className="automation-flow-step"><dt>{example.controlLabel}</dt><dd>{example.control}</dd></div>
                 </dl>
               </article>
             );
           })}
         </div>
-        <p className="automation-closing">{copy.automationClosing}</p>
       </div>
     </section>
   );
