@@ -9,6 +9,7 @@ type Status = "idle" | "success" | "error";
 declare global {
   interface Window {
     turnstile?: { reset: () => void };
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -42,6 +43,11 @@ export function ContactForm({ locale, turnstileSiteKey }: { locale: Locale; turn
       ) {
         form.reset();
         setStatus("success");
+        window.gtag?.("event", "conversion", {
+          send_to: "AW-18456241301/zR2ZcPnxovocEJXJz-BE",
+          value: 1.0,
+          currency: "COP",
+        });
       } else {
         window.turnstile?.reset();
         setStatus("error");
