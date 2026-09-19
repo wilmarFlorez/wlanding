@@ -44,7 +44,7 @@ export function ContactForm({ locale, turnstileSiteKey }: { locale: Locale; turn
         form.reset();
         setStatus("success");
         window.gtag?.("event", "conversion", {
-          send_to: "AW-18456241301/zR2ZcPnxovocEJXJz-BE",
+          send_to: "AW-18456241301/zR2zCPnxovocEJXJz-BE",
           value: 1.0,
           currency: "COP",
         });

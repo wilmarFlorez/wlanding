@@ -31,7 +31,9 @@ La investigación inicial del Grupo A está completada. Ya se completaron una b�
 
 La especificación, investigación y decisiones relacionadas con esta campaña deben permanecer dentro de este directorio. El archivo de campaña es la fuente central del plan; los análisis de keywords funcionan como evidencia y soporte para actualizarlo.
 
-El siguiente paso es configurar la medición sobre la landing existente, confirmar que el formulario puede recibir y registrar leads y preparar los anuncios. No se requiere crear una nueva landing o ruta para esta campaña. Todavía no se debe activar gasto.
+La campaña Search ya fue creada y permanece detenida mientras los anuncios pasan revisión y se corrige la acción de conversión. La etiqueta base `AW-18456241301` y el evento del formulario están desplegados en la landing; el formulario ya fue probado en producción y registró el lead en Google Sheets y por correo. Google Ads muestra actualmente la acción `Enviar formulario de clientes potenciales` con estado **“Configuración incorrecta”**. No se debe activar gasto hasta resolverlo y confirmar una conversión en Google Ads.
+
+El presupuesto actual de prueba es de aproximadamente COP 34.000 diarios, cercano a COP 1.000.000 durante 30 días. El estado detallado, las decisiones de keywords y las tareas pendientes están en `CAMPAIGN_01_COLABORACIONES_AUTOMATIZACION.md`.
 
 ## Criterio de campaña
 

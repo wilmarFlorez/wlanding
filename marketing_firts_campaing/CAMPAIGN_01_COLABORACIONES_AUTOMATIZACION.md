@@ -1,6 +1,6 @@
 # Campaña 01 — Google Ads Search: automatización de flujos
 
-**Estado:** keywords del Grupo A analizadas; preparación de landing y medición pendiente; no activar gasto
+**Estado:** campaña creada y detenida; anuncios en revisión; la acción de conversión aparece con “Configuración incorrecta” en Google Ads; no activar gasto
 **Canal de pago:** Google Ads, Red de Búsqueda
 **Mercado e idioma:** Colombia, español
 **Duración:** 30 días de pauta activa
@@ -64,7 +64,21 @@ La primera ronda de investigación ya fue ejecutada y está documentada en `keyw
 - [x] Analizar la segunda exportación y seleccionar las keywords provisionales en `03_analisis_implementacion.md`.
 - [x] Revisar si las nuevas semillas tienen datos suficientes para una nueva SERP; no se priorizaron porque aparecen sin volumen estimado.
 
-**Decisión actual:** la revisión de ambos CSV dejó cuatro candidatas para una posible prueba: `automatización de procesos`, `automatización empresarial`, `servicios de automatización` y `automatización documental`. La segunda exportación no aportó volumen medible para las variantes más directas de contratación. Esto no confirma que exista una campaña rentable. No se activará Google Ads hasta confirmar la capacidad de medición y respuesta de la landing.
+**Decisión actual:** la revisión de ambos CSV dejó cuatro candidatas para la prueba: `automatización de procesos`, `automatización empresarial`, `servicios de automatización` y `automatización documental`. La segunda exportación no aportó volumen medible para las variantes más directas de contratación. Esto no confirma que exista una campaña rentable. La campaña ya fue creada, pero permanece detenida hasta confirmar el registro de la conversión.
+
+### Estado de ejecución al 18 de septiembre de 2026
+
+- La cuenta de Google Ads tiene facturación aprobada y la forma de pago fue confirmada.
+- Se creó una campaña Search (`Campaign #1`) para Colombia en español, con socios de búsqueda y Red de Display desactivados.
+- La campaña está detenida; los anuncios figuran en proceso de revisión.
+- Google muestra una advertencia de volumen o relevancia insuficiente de palabras clave. Se revisará con datos reales antes de ampliar la segmentación.
+- Se cargaron cuatro keywords provisionales en concordancia de frase. La separación en dos grupos de anuncios y las concordancias exactas quedan pendientes de confirmar en la interfaz.
+- Se configuró una puja de maximizar clics con límite de CPC de COP 6.000.
+- El presupuesto quedó en aproximadamente COP 34.000 diarios, equivalente a cerca de COP 1.000.000 mensuales; reemplaza el presupuesto inicial de COP 150.000 diarios.
+- La etiqueta de Google `AW-18456241301` está desplegada en las rutas `/` y `/en`.
+- El evento de conversión del formulario `AW-18456241301/zR2ZcPnxovocEJXJz-BE` está desplegado y se dispara después de una respuesta exitosa de `/api/contact`.
+- Se realizó una prueba de producción: el formulario registró el envío en Google Sheets y envió el correo esperado. Sin embargo, la acción de conversión `Enviar formulario de clientes potenciales` aparece actualmente en Google Ads con estado **“Configuración incorrecta”**. Esto indica que la configuración o la detección de la acción todavía requiere revisión; no se debe interpretar como una conversión registrada.
+- UTMs, `gclid`, `gbraid` y analítica adicional todavía no están implementados.
 
 No se mantendrá el requisito artificial de encontrar diez keywords. Una campaña pequeña puede probar pocas búsquedas relevantes; si el volumen estimado no permite entregar anuncios, se documentará y se evaluará otro canal.
 
@@ -94,13 +108,13 @@ Crear una campaña nueva con estos parámetros:
 | Opción de ubicación | Presencia: personas en Colombia o que se encuentren habitualmente allí |
 | Idioma | Español |
 | Programación | Continua, sin franjas horarias durante los primeros 14 días |
-| Presupuesto diario | COP 150.000 |
-| Presupuesto máximo de prueba | COP 4.500.000 durante 30 días |
-| Conversión primaria | Envío exitoso del formulario existente en `/#contacto` |
-| Puja días 1–14 | Maximizar clics con límite de CPC definido a partir de Keyword Planner |
+| Presupuesto diario | Aproximadamente COP 34.000 |
+| Presupuesto máximo de prueba | Aproximadamente COP 1.000.000 durante 30 días |
+| Conversión primaria | Envío exitoso del formulario existente, después de respuesta válida de `/api/contact` |
+| Puja días 1–14 | Maximizar clics con límite de CPC de COP 6.000 |
 | Puja desde día 15 | Mantener si no hay conversiones; evaluar Maximizar conversiones solo si el tracking funciona y hay señal de conversiones reales |
 
-El límite de CPC no se fija en este documento porque debe salir del rango observado en Keyword Planner; registrar el valor elegido y su fuente en el informe de lanzamiento. No usar puja amplia sin límite durante la primera prueba.
+El límite de CPC de COP 6.000 es una hipótesis inicial de control para esta prueba, no una referencia validada de mercado. Se revisará con el CPC real, los términos de búsqueda y la entrega observada. No usar puja amplia sin límite durante la primera prueba.
 
 ## Estructura de grupos de anuncios y keywords
 
@@ -198,7 +212,8 @@ Revisar el informe de términos de búsqueda en los días 7, 14, 21 y 30. Añadi
 
 La campaña dirigirá a la landing existente del proyecto. No se requiere construir una nueva página ni una nueva ruta para iniciar esta prueba. El recorrido actual ya presenta el perfil, las automatizaciones, las capacidades, los proyectos y el formulario de contacto.
 
-**Destino:** `https://[dominio-publicado]/?utm_source=google&utm_medium=cpc&utm_campaign=ia_operativa_co_01&utm_content={adgroupid}_{creative}#contacto`
+**Destino actual configurado en Google Ads:** `https://www.wilmarflorez.com/`
+**Destino planificado con parámetros:** `https://[dominio-publicado]/?utm_source=google&utm_medium=cpc&utm_campaign=ia_operativa_co_01&utm_content={adgroupid}_{creative}#contacto`
 **Página utilizada:** landing existente en español (`/`), con sección de automatizaciones y formulario en `#contacto`.
 **CTA único:** `Cuéntame qué quieres automatizar`
 
@@ -346,31 +361,32 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 - [x] Analizar `Keyword_grupo_a_implementacion.csv` y seleccionar keywords provisionales en `03_analisis_implementacion.md`.
 - [x] Revisar las nuevas candidatas disponibles; las semillas más específicas aparecen sin volumen estimado y quedan para una futura validación.
 - [x] Comparar y documentar los rangos de CPC del conjunto provisional.
-- [ ] Elegir y registrar el límite de CPC inicial antes de configurar la campaña.
-- [ ] Confirmar que la campaña se dirige a personas o equipos que buscan una colaboración técnica, no a contratación ni formación.
+- [x] Elegir y registrar el límite de CPC inicial antes de configurar la campaña: COP 6.000 como límite de prueba.
+- [x] Confirmar que la campaña se dirige a personas o equipos que buscan una colaboración técnica, no a contratación ni formación.
 
 ### Landing y medición
 
 - [x] Confirmar que la landing existente contiene las secciones de automatizaciones y contacto.
-- [ ] Confirmar en producción el formulario existente, Turnstile, `/api/contact` y Google Sheets.
-- [ ] Instalar y verificar Google tag y la conversión de formulario enviado.
+- [x] Confirmar en producción el formulario existente, `/api/contact`, Google Sheets y el correo de notificación; Turnstile forma parte del flujo configurado.
+- [x] Instalar y verificar Google tag y la conversión de formulario enviado en el código; falta que Google Ads registre la prueba.
 - [ ] Implementar captura de UTMs, `gclid` y `gbraid` hasta Google Sheets.
 - [ ] Configurar eventos de sesión, CTA, inicio y envío de formulario.
 - [ ] Revisar privacidad y consentimiento para las etiquetas antes de publicarlas.
-- [ ] Realizar y documentar una conversión de prueba completa.
+- [x] Realizar y documentar una conversión de prueba completa en producción; pendiente de confirmación en Google Ads.
 
 ### Configuración y anuncios
 
-- [ ] Crear `CO_Search_Automatizacion_Flujos_01` con Search, Colombia, español y redes desactivadas según la tabla.
-- [ ] Crear los dos grupos de anuncios provisionales y cargar solo keywords de frase y exactas aprobadas.
+- [x] Crear una campaña Search para Colombia, español y redes desactivadas según la tabla; la interfaz la identifica actualmente como `Campaign #1`.
+- [ ] Confirmar los dos grupos de anuncios provisionales y cargar concordancias exactas además de las keywords de frase.
 - [ ] Añadir la lista inicial de palabras negativas.
-- [ ] Cargar un anuncio responsivo por grupo con los recursos especificados.
+- [x] Cargar un anuncio responsivo con los recursos de automatización y colaboración técnica.
 - [ ] Configurar URLs finales, UTM y ruta visible.
-- [ ] Revisar vista previa, ortografía, límites de caracteres, URLs y políticas antes de enviar a aprobación.
-- [ ] Configurar COP 150.000 diarios y límite total COP 4.500.000 sin activar gasto todavía.
+- [x] Revisar vista previa, límites de caracteres, URL y políticas; los anuncios quedaron en revisión.
+- [x] Configurar aproximadamente COP 34.000 diarios y límite de prueba cercano a COP 1.000.000 sin activar gasto todavía.
 
 ### Lanzamiento y seguimiento
 
+- [ ] Corregir la acción `Enviar formulario de clientes potenciales`, que aparece con estado “Configuración incorrecta”, y confirmar que Google Ads detecta el evento.
 - [ ] Confirmar que la conversión de prueba aparece en Google Ads antes de activar la campaña.
 - [ ] Activar la campaña.
 - [ ] Revisar gasto y estado en los días 1 y 3.
