@@ -1,6 +1,6 @@
 # Campaña 01 — Google Ads Search: automatización de flujos
 
-**Estado:** campaña creada y detenida; anuncios en revisión; la acción de conversión aparece con “Configuración incorrecta” en Google Ads; no activar gasto
+**Estado:** campaña activa desde el 21 de septiembre de 2026; grupo de anuncios apto; sin impresiones, clics ni gasto registrados al momento de la activación
 **Canal de pago:** Google Ads, Red de Búsqueda
 **Mercado e idioma:** Colombia, español
 **Duración:** 30 días de pauta activa
@@ -76,9 +76,27 @@ La primera ronda de investigación ya fue ejecutada y está documentada en `keyw
 - Se configuró una puja de maximizar clics con límite de CPC de COP 6.000.
 - El presupuesto quedó en aproximadamente COP 34.000 diarios, equivalente a cerca de COP 1.000.000 mensuales; reemplaza el presupuesto inicial de COP 150.000 diarios.
 - La etiqueta de Google `AW-18456241301` está desplegada en las rutas `/` y `/en`.
-- El evento de conversión del formulario `AW-18456241301/zR2ZcPnxovocEJXJz-BE` está desplegado y se dispara después de una respuesta exitosa de `/api/contact`.
-- Se realizó una prueba de producción: el formulario registró el envío en Google Sheets y envió el correo esperado. Sin embargo, la acción de conversión `Enviar formulario de clientes potenciales` aparece actualmente en Google Ads con estado **“Configuración incorrecta”**. Esto indica que la configuración o la detección de la acción todavía requiere revisión; no se debe interpretar como una conversión registrada.
+- El evento de conversión del formulario `AW-18456241301/zR2zCPnxovocEJXJz-BE` está desplegado y se dispara después de una respuesta exitosa de `/api/contact`.
+- Se realizó una prueba de producción: el formulario registró el envío en Google Sheets y envió el correo esperado.
+- Tras corregir la diferencia de mayúsculas en `send_to`, Tag Assistant detectó el evento `Enviar formulario de clientes potenciales` con la etiqueta base `AW-18456241301`. Google Ads todavía debe actualizar el diagnóstico; esta detección no equivale aún a una conversión atribuida a un clic de anuncio.
 - UTMs, `gclid`, `gbraid` y analítica adicional todavía no están implementados.
+
+### Registro de verificación en Google Ads — 21 de septiembre de 2026
+
+- La acción `Enviar formulario de clientes potenciales` aparece con indicador verde y estado **“Esperando conversiones”**.
+- La fuente es **Sitio web**, la optimización es **Acción principal** y está incluida en los objetivos de la cuenta.
+- Google Ads indica que no se registraron conversiones en los últimos 7 días, algo esperado mientras la campaña permanece detenida.
+- No se observa un error de configuración en la vista de detalles.
+- La configuración muestra una ventana posclic de 30 días y atribución basada en datos.
+- Las conversiones avanzadas aparecen como **“Sin configurar”**; no bloquean esta prueba porque la conversión web básica ya fue detectada por Tag Assistant.
+- Antes del lanzamiento, la campaña permanecía detenida hasta iniciar tráfico real y observar una conversión atribuida a un clic de anuncio.
+
+### Registro de lanzamiento — 21 de septiembre de 2026
+
+- Wilmar activó la campaña `Campaign #1`.
+- El grupo de anuncios aparece como **“Apto”**.
+- En la captura posterior al lanzamiento: 0 impresiones, 0 clics, COP 0 de costo y 0 conversiones.
+- Este registro es una línea base inicial, no evidencia de bajo rendimiento; todavía no hay entrega suficiente para evaluar la campaña.
 
 No se mantendrá el requisito artificial de encontrar diez keywords. Una campaña pequeña puede probar pocas búsquedas relevantes; si el volumen estimado no permite entregar anuncios, se documentará y se evaluará otro canal.
 
@@ -372,7 +390,8 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 - [ ] Implementar captura de UTMs, `gclid` y `gbraid` hasta Google Sheets.
 - [ ] Configurar eventos de sesión, CTA, inicio y envío de formulario.
 - [ ] Revisar privacidad y consentimiento para las etiquetas antes de publicarlas.
-- [x] Realizar y documentar una conversión de prueba completa en producción; pendiente de confirmación en Google Ads.
+- [x] Realizar y documentar una prueba completa en producción; Tag Assistant detectó el evento.
+- [x] Revisar el detalle de la acción en Google Ads; no se observan errores y el estado es “Esperando conversiones”.
 
 ### Configuración y anuncios
 
@@ -386,8 +405,8 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 
 ### Lanzamiento y seguimiento
 
-- [ ] Corregir la acción `Enviar formulario de clientes potenciales`, que aparece con estado “Configuración incorrecta”, y confirmar que Google Ads detecta el evento.
-- [ ] Confirmar que la conversión de prueba aparece en Google Ads antes de activar la campaña.
+- [x] Corregir la etiqueta `send_to` y confirmar que Tag Assistant detecta el evento `Enviar formulario de clientes potenciales`.
+- [ ] Confirmar una conversión atribuida a un clic de anuncio en Google Ads antes de activar o escalar la campaña.
 - [ ] Activar la campaña.
 - [ ] Revisar gasto y estado en los días 1 y 3.
 - [ ] Completar la revisión de términos y calidad del día 7.
