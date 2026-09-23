@@ -51,7 +51,7 @@ type LandingContent = {
   projects: readonly Project[];
   automationExamples: readonly AutomationExample[];
   header: { homeLabel: string; navLabel: string; experience: string; automations: string; projects: string; capabilities: string; contact: string; languageLabel: string; languageName: string; languageHref: string };
-  hero: { role: string; title: string; lede: string; focusLabel: string; experience: string };
+  hero: { role: string; title: string; lede: string; focusLabel: string; contact: string };
   experienceTitle: string;
   experienceIntro: string;
   projectsTitle: string;
@@ -97,7 +97,7 @@ export const content: Record<Locale, LandingContent> = {
     automationTitle: "La IA puede leer, clasificar, redactar y conectar sistemas",
      automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
      header: { homeLabel: "Wilmar Florez Samudio, inicio", navLabel: "Navegación principal", experience: "Experiencia", automations: "Automatizaciones", projects: "Proyectos", capabilities: "Capacidades", contact: "Contacto", languageLabel: "Cambiar el idioma a inglés", languageName: "EN", languageHref: "/en" },
-    hero: { role: "Full-Stack & Applied AI Engineer", title: "Construyo productos, automatizaciones y software con IA", lede: "Ingeniero de software con experiencia en producto, frontend, backend e integraciones. Combino TypeScript, React, Python y FastAPI para convertir procesos complejos en herramientas que puedan operarse y mantenerse.", focusLabel: "Tecnologías y áreas principales", experience: "Ver experiencia y proyectos" },
+    hero: { role: "Full-Stack & Applied AI Engineer", title: "Construyo productos, automatizaciones y software con IA", lede: "Ingeniero de software con experiencia en producto, frontend, backend e integraciones. Combino TypeScript, React, Python y FastAPI para convertir procesos complejos en herramientas que puedan operarse y mantenerse.", focusLabel: "Tecnologías y áreas principales", contact: "Quiero automatizar un proceso" },
     experienceTitle: "Experiencia construyendo producto",
     experienceIntro: "He trabajado en equipos de producto y en proyectos propios, con responsabilidades que abarcan frontend, backend, arquitectura e integraciones.",
     projectsTitle: "Proyecto técnico aplicado",
@@ -139,7 +139,7 @@ export const content: Record<Locale, LandingContent> = {
     automationTitle: "La IA puede leer, clasificar, redactar y conectar sistemas",
     automationIntro: "La oportunidad está en diseñar el flujo completo: entradas, reglas, excepciones y una salida que el equipo pueda confiar.",
     header: { homeLabel: "Wilmar Florez Samudio, home", navLabel: "Main navigation", experience: "Experience", automations: "Automations", projects: "Projects", capabilities: "Capabilities", contact: "Contact", languageLabel: "Switch language to Spanish", languageName: "ES", languageHref: "/" },
-    hero: { role: "Full-Stack & Applied AI Engineer", title: "I build AI-powered products, automations, and software", lede: "Software engineer with experience across product, frontend, backend, and integrations. I combine TypeScript, React, Python, and FastAPI to turn complex processes into tools that can be operated and maintained.", focusLabel: "Core technologies and disciplines", experience: "View experience and projects" },
+    hero: { role: "Full-Stack & Applied AI Engineer", title: "I build AI-powered products, automations, and software", lede: "Software engineer with experience across product, frontend, backend, and integrations. I combine TypeScript, React, Python, and FastAPI to turn complex processes into tools that can be operated and maintained.", focusLabel: "Core technologies and disciplines", contact: "I want to automate a process" },
     experienceTitle: "Experience building products",
     experienceIntro: "I have worked in product teams and on self-initiated projects, with responsibilities spanning frontend, backend, architecture, and integrations.",
     projectsTitle: "Applied technical project",

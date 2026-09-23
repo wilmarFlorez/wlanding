@@ -21,8 +21,8 @@ export function Hero({ locale }: { locale: Locale }) {
             <span>Integrations</span>
           </div>
           <div className="hero-actions">
-            <a className="button" href="#experiencia">
-               {copy.experience}
+            <a className="button" href="#contacto">
+                {copy.contact}
             </a>
           </div>
         </div>
