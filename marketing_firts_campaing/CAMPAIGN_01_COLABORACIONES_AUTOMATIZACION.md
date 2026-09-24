@@ -8,7 +8,7 @@
 **Ejecutor y responsable operativo:** Wilmar Florez Samudio
 **Apoyo:** un agente de IA puede asistir con investigación, clasificación y borradores. Wilmar revisa, verifica y aprueba toda decisión de segmentación, keyword, anuncio, landing y lead.
 
-**Próxima implementación:** ejecutar primero **T1 — Atribución del formulario hasta Google Sheets**, siguiendo la sección «Guía de ejecución para el agente implementador». T2 acompaña su puesta en producción; T3 comienza después de validar T1. Las casillas pendientes no son una orden de implementar todo el plan a la vez.
+**Estado de implementación:** **T1 — Atribución del formulario hasta Google Sheets** quedó implementada, desplegada y validada en producción el 24 de septiembre de 2026. Siguen pendientes T2 —verificación de URLs y conversión en Google Ads— y T3 —analítica mínima en GA4—. T3 está habilitada tras validar T1; requiere propiedad/ID de GA4 y revisión de privacidad y consentimiento. Las casillas pendientes no son una orden de implementar todo el plan a la vez.
 
 ## Decisión estratégica
 
@@ -66,7 +66,7 @@ La primera ronda de investigación ya fue ejecutada y está documentada en `keyw
 - [x] Analizar la segunda exportación y seleccionar las keywords provisionales en `03_analisis_implementacion.md`.
 - [x] Revisar si las nuevas semillas tienen datos suficientes para una nueva SERP; no se priorizaron porque aparecen sin volumen estimado.
 
-**Decisión actual:** la revisión de ambos CSV dejó cuatro candidatas para la prueba: `automatización de procesos`, `automatización empresarial`, `servicios de automatización` y `automatización documental`. La segunda exportación no aportó volumen medible para las variantes más directas de contratación. Esto no confirma que exista una campaña rentable. La campaña se activó el 21 de septiembre de 2026; el registro de conversiones y la atribución siguen en validación.
+**Decisión actual:** la revisión de ambos CSV dejó cuatro candidatas para la prueba: `automatización de procesos`, `automatización empresarial`, `servicios de automatización` y `automatización documental`. La segunda exportación no aportó volumen medible para las variantes más directas de contratación. Esto no confirma que exista una campaña rentable. La campaña se activó el 21 de septiembre de 2026; la atribución técnica del formulario a Sheets se validó el 24 de septiembre. La primera conversión atribuida a un clic real en Google Ads sigue pendiente.
 
 ### Estado de ejecución al 18 de septiembre de 2026
 
@@ -108,6 +108,15 @@ La primera ronda de investigación ya fue ejecutada y está documentada en `keyw
 - El lead llegó después de la activación de campaña, por lo que podría ser atribuible a Google Ads, pero todavía no debe contarse como conversión de campaña: la hoja no almacena UTMs ni `gclid`, y Google Ads no registra aún la conversión.
 - Estado del lead: contacto potencial de automatización operativa sin calificar; pendiente de reprogramación o información adicional para comprobar si cumple el criterio de decisión o capacidad de presentar el caso al responsable.
 - Decisión: no optimizar anuncios, keywords ni presupuesto antes de completar la revisión operativa del día 3, prevista para el 24 de septiembre, y confirmar el estado de la conversión web en Google Ads.
+
+### Validación de T1 en producción — 24 de septiembre de 2026
+
+- Se actualizó y volvió a desplegar Apps Script en la implementación existente. La migración añadió las ocho columnas de atribución sin modificar la fila histórica de Breiner.
+- El formulario publicado, todavía sin atribución, aceptó el payload antiguo; la prueba de Wilmar creó una fila y llegó el correo de notificación.
+- Las pruebas etiquetadas desde Chrome de escritorio y Chrome en iPhone conservaron las cuatro UTMs, los valores sintéticos `gclid`/`gbraid`, `landing_url` de la entrada inicial `/` y `captured_at`, incluso al enviar desde `/en`.
+- Tag Assistant registró el evento `conversion` y el hit `Enviar formulario de clientes potenciales` bajo `AW-18456241301` después del envío exitoso.
+- En Brave, la prueba manual perdió `gclid` antes de llegar a la página; Chrome conservó ambos identificadores. Los valores sintéticos y las filas de prueba no representan leads ni clics reales de Ads. El envío desde iPhone se identificó en el mensaje; su `utm_content` quedó como `desktop` porque se reutilizó ese enlace de QA.
+- La primera evidencia completa de atribución de QA quedó disponible el 24 de septiembre; una fila móvil registra `captured_at=2026-09-24T16:33:31.027Z` (UTC).
 
 No se mantendrá el requisito artificial de encontrar diez keywords. Una campaña pequeña puede probar pocas búsquedas relevantes; si el volumen estimado no permite entregar anuncios, se documentará y se evaluará otro canal.
 
@@ -418,14 +427,14 @@ Si se necesita revertir la aplicación, el Apps Script ampliado debe seguir acep
 
 Usar `pnpm@9.13.0` y ejecutar, en orden: `pnpm lint`, `pnpm exec tsc --noEmit`, `pnpm build`. Verificar de forma focalizada normalización, persistencia y migración idempotente; no hace falta introducir un framework de tests para este bloque.
 
-- [ ] Un envío sin UTMs ni identificadores sigue completando Turnstile → API → Sheets → correo → éxito visible.
-- [ ] Un enlace de prueba con las cuatro UTMs conserva esos valores hasta la fila de Sheets, después de recargar y navegar entre `/` y `/en` en la misma pestaña.
-- [ ] `gclid` y `gbraid` se conservan exactamente cuando están presentes; comprobar el transporte con valores sintéticos en entorno local o de prueba, sin presentarlos como clics reales de Ads.
-- [ ] Una segunda URL sin parámetros no borra la atribución; una segunda entrada etiquetada no sustituye ni mezcla el primer conjunto capturado.
-- [ ] Con almacenamiento bloqueado o corrupto, el formulario sigue funcionando; con datos opcionales inválidos, el contacto válido sigue llegando.
-- [ ] La hoja existente conserva filas y columnas; repetir la migración no duplica encabezados y una solicitud antigua sigue siendo aceptada.
-- [ ] La prueba de producción funciona en escritorio y móvil; las filas de prueba están identificadas y excluidas del conteo de leads cualificados.
-- [ ] Tag Assistant sigue detectando el evento existente después del éxito. Los intentos fallidos del formulario no disparan la conversión.
+- [x] Un envío sin UTMs ni identificadores sigue completando Turnstile → API → Sheets → correo → éxito visible.
+- [x] Un enlace de prueba con las cuatro UTMs conserva esos valores hasta la fila de Sheets al recargar y navegar entre `/` y `/en` en la misma pestaña; se verificó persistencia local y navegación entre rutas en producción.
+- [x] `gclid` y `gbraid` se conservaron exactamente en pruebas de producción con valores sintéticos, sin presentarlos como clics reales de Ads.
+- [x] Una URL sin parámetros no borra la atribución y una segunda entrada etiquetada no sustituye ni mezcla el primer conjunto; verificación de navegación y captura focalizada.
+- [x] Con almacenamiento bloqueado o corrupto, el formulario sigue funcionando; con datos opcionales inválidos, el contacto válido sigue llegando, según verificaciones focalizadas locales.
+- [x] La hoja existente conserva filas y columnas; la migración repetida no duplica encabezados y una solicitud antigua sigue siendo aceptada.
+- [x] La prueba de producción funciona en escritorio y móvil; las filas de Wilmar están identificadas como pruebas y excluidas del conteo de leads cualificados.
+- [x] Tag Assistant detectó `Enviar formulario de clientes potenciales` después del éxito. La conversión solo se llama en la rama de respuesta exitosa del formulario.
 
 Usar en producción UTMs identificables como `utm_source=qa&utm_medium=test&utm_campaign=attribution_validation&utm_content=desktop` o `mobile`. No hacer clic en anuncios propios para probar. Registrar por separado la prueba técnica y cualquier conversión atribuida a un clic real. T1 no necesita esperar a la primera conversión atribuida para darse por validada técnicamente.
 
@@ -537,11 +546,11 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 
 - [x] Confirmar que la landing existente contiene las secciones de automatizaciones y contacto.
 - [x] Confirmar en producción el formulario existente, `/api/contact`, Google Sheets y el correo de notificación; Turnstile forma parte del flujo configurado.
-- [x] Instalar Google tag y la conversión de formulario enviado; evento detectado por Tag Assistant y acción en estado «Esperando conversiones». La primera atribución real sigue pendiente.
-- [ ] **T1 — Primera tarea:** implementar y validar captura de UTMs, `gclid` y `gbraid` hasta Google Sheets según la guía de ejecución, incluida la migración de encabezados y el despliegue separado de Apps Script.
+- [x] Instalar Google tag y la conversión de formulario enviado; evento detectado por Tag Assistant y acción en estado «Esperando conversiones». La primera conversión atribuida real sigue pendiente.
+- [x] **T1 — Atribución del formulario hasta Google Sheets:** implementada, desplegada y validada en producción el 24 de septiembre; revisar el registro de validación de T1.
 - [ ] **T3 — Después de T1:** configurar y validar sesiones, CTA, inicio, éxito y error de formulario en GA4.
 - [ ] Revisar privacidad y consentimiento de las etiquetas existentes y antes de publicar la instrumentación adicional de T3.
-- [x] Realizar y documentar una prueba completa en producción; Tag Assistant detectó el evento.
+- [x] Realizar y documentar pruebas de producción sin atribución y con UTMs/IDs sintéticos en escritorio y móvil; Tag Assistant detectó el evento de conversión después del éxito.
 - [x] Revisar el detalle de la acción en Google Ads; no se observan errores y el estado es “Esperando conversiones”.
 
 ### Configuración y anuncios
@@ -550,7 +559,7 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 - [ ] Confirmar los grupos y concordancias realmente cargados; decidir ajustes en la revisión de términos, sin reestructurar automáticamente por esta casilla.
 - [ ] Revisar las negativas existentes y propuestas, especialmente `trabajo` y `trabajos`; aplicar solo exclusiones pertinentes aprobadas por Wilmar.
 - [x] Cargar un anuncio responsivo con los recursos de automatización y colaboración técnica.
-- [ ] **T2 — En paralelo con T1:** confirmar etiquetado automático, configurar sufijo UTM y verificar el destino y el evento de conversión según la guía. La ruta visible es un ajuste posterior.
+- [ ] **T2 — Pendiente:** confirmar etiquetado automático, configurar sufijo UTM y verificar el destino y el evento de conversión según la guía. La ruta visible es un ajuste posterior.
 - [x] Revisar vista previa, límites de caracteres, URL y políticas; los anuncios quedaron en revisión.
 - [x] Configurar aproximadamente COP 34.000 diarios y presupuesto de prueba previsto cercano a COP 1.000.000; campaña activada posteriormente el 21 de septiembre.
 
