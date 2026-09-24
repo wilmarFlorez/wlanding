@@ -6,7 +6,7 @@
 
 - Campaña: `CO_Search_Automatizacion_Flujos_01` / `Campaign #1`.
 - Mercado: Colombia, español.
-- Estado: activa desde el 21 de septiembre de 2026; han transcurrido dos días completos de pauta al iniciar el 23 de septiembre.
+- Estado: activa desde el 21 de septiembre de 2026; al 24 de septiembre han transcurrido tres días completos de pauta.
 - Presupuesto de prueba: aproximadamente COP 34.000 diarios.
 - Objetivo: 3 leads cualificados en 30 días de pauta activa.
 - T1 — atribución del formulario hasta Google Sheets: implementada, desplegada y validada en producción el 24 de septiembre de 2026.
@@ -49,14 +49,16 @@
 - Después del despliegue de T1, Tag Assistant mostró el evento `conversion` y el hit `Enviar formulario de clientes potenciales` en `AW-18456241301` al enviar correctamente el formulario.
 - Las pruebas de producción de escritorio Chrome e iPhone Chrome guardaron las cuatro UTMs, `gclid`/`gbraid` sintéticos y la landing inicial `/`, también al completar el formulario desde `/en`. Las filas están identificadas como pruebas y no cuentan como leads.
 - En la prueba desde Brave, el navegador quitó `gclid` antes de cargar la landing; Chrome conservó ambos identificadores sintéticos. No inferir una atribución real de Ads a partir de estas pruebas.
+- T2 verificada el 24 de septiembre: etiquetado automático habilitado; sufijo UTM configurado a nivel de campaña y prueba de seguimiento 1/1 correcta, con destino y valores de ValueTrack comprobados.
+- Acción web `Enviar formulario de clientes potenciales`: permanece como principal y ahora cuenta **Una conversión** por interacción; Tag Assistant detectó el hit tras el envío exitoso.
 
 ## Próximos pasos
 
 - **T1 completada:** el contrato opcional, la captura por sesión de pestaña, la migración de encabezados, la compatibilidad con el formulario antiguo y la validación de producción están documentados en el plan completo.
-- **T2 pendiente:** Wilmar verifica etiquetado automático, sufijo UTM, destino y configuración de conversión en Google Ads. Mantener el destino actual sin añadir `#contacto`. La primera conversión atribuida a un clic real sigue pendiente; los IDs sintéticos fueron solo pruebas.
-- **T3 habilitada después de T1:** instrumentar la analítica mínima en GA4 cuando Wilmar facilite/configure la propiedad y el ID de medición, y complete la revisión de privacidad y consentimiento. No duplicar la conversión principal existente.
+- **T2 completada:** autoetiquetado, sufijo UTM, URL de destino, ValueTrack, acción primaria y recuento «Una» verificados. Mantener el destino actual sin añadir `#contacto`. La primera conversión atribuida a un clic real sigue pendiente; los IDs sintéticos fueron solo pruebas.
+- **Siguiente implementación: T3 — GA4:** instrumentar la analítica mínima cuando Wilmar facilite/configure la propiedad y el ID de medición, y complete la revisión de privacidad y consentimiento. No duplicar la conversión principal existente.
 - Completar la revisión operativa del día 3 el 24 de septiembre: estado, gasto, aprobación, impresiones y clics. No modificar todavía anuncios ni keywords.
-- Confirmar el primer evento visible en Google Ads y su posible atribución.
+- Confirmar la primera conversión atribuida a un clic real en Google Ads; el evento técnico ya se detectó en Tag Assistant.
 - Revisar términos de búsqueda el 28 de septiembre, después de siete días completos de pauta.
 - Enviar un seguimiento a Breiner para ofrecer reprogramación y, si responde, clasificar la calidad del lead sin atribuirlo a Ads hasta contar con evidencia.
 
@@ -72,4 +74,4 @@
 - Resumen: `README.md`.
 - Estrategia del sitio: `../LANDING_STRATEGY.md`.
 
-Al retomar esta campaña, leer primero este archivo y el plan completo. La guía T1–T4 define el orden vigente; T1 ya está desplegada y validada. Continuar con T2 y preparar T3 con el ID de GA4 y la revisión de privacidad/consentimiento; no reinstalar ni alterar la conversión existente sin evidencia de un fallo. Distinguir implementación local, despliegue y validación de producción al actualizar el estado.
+Al retomar esta campaña, leer primero este archivo y el plan completo. T1 y T2 están desplegadas y verificadas; continuar con T3 cuando estén disponibles el ID de GA4 y la revisión de privacidad/consentimiento. La atribución a un clic real de Ads sigue pendiente por separado. No reinstalar ni alterar la conversión existente sin evidencia de un fallo; distinguir implementación local, despliegue y validación de producción al actualizar el estado.

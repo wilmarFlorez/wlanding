@@ -8,7 +8,7 @@
 **Ejecutor y responsable operativo:** Wilmar Florez Samudio
 **Apoyo:** un agente de IA puede asistir con investigación, clasificación y borradores. Wilmar revisa, verifica y aprueba toda decisión de segmentación, keyword, anuncio, landing y lead.
 
-**Estado de implementación:** **T1 — Atribución del formulario hasta Google Sheets** quedó implementada, desplegada y validada en producción el 24 de septiembre de 2026. Siguen pendientes T2 —verificación de URLs y conversión en Google Ads— y T3 —analítica mínima en GA4—. T3 está habilitada tras validar T1; requiere propiedad/ID de GA4 y revisión de privacidad y consentimiento. Las casillas pendientes no son una orden de implementar todo el plan a la vez.
+**Estado de implementación:** **T1 — Atribución del formulario hasta Google Sheets** quedó implementada, desplegada y validada en producción el 24 de septiembre de 2026. **T2 — URLs y verificación de conversión en Google Ads** quedó configurada y verificada el 24 de septiembre; la primera conversión atribuida a un clic real sigue pendiente. T3 —analítica mínima en GA4— está habilitada tras validar T1; requiere propiedad/ID de GA4 y revisión de privacidad y consentimiento. Las casillas pendientes no son una orden de implementar todo el plan a la vez.
 
 ## Decisión estratégica
 
@@ -440,7 +440,7 @@ Usar en producción UTMs identificables como `utm_source=qa&utm_medium=test&utm_
 
 ### T2 — URLs y verificación de conversión en Google Ads
 
-Wilmar ejecuta estas acciones en la cuenta mientras se prepara T1:
+Wilmar ejecuta estas acciones en la cuenta y registra la evidencia de configuración:
 
 - Confirmar el etiquetado automático. No construir ni añadir manualmente un `gclid` a los anuncios.
 - Revisar los parámetros ya existentes y configurar una sola vez el sufijo `utm_source=google&utm_medium=cpc&utm_campaign=ia_operativa_co_01&utm_content={adgroupid}_{creative}`, sin `?` inicial y sin duplicarlo en la URL final.
@@ -448,6 +448,15 @@ Wilmar ejecuta estas acciones en la cuenta mientras se prepara T1:
 - Usar las herramientas de prueba de URL de Ads para comprobar el destino, la sustitución de ValueTrack y las redirecciones. Verificar con un enlace de prueba que las UTMs llegan al navegador y, después de desplegar T1, a Sheets.
 - Revisar que la acción principal sigue siendo `Enviar formulario de clientes potenciales`, con `send_to` igual a `AW-18456241301/zR2zCPnxovocEJXJz-BE`. Confirmar que la configuración de recuento es apropiada para leads, normalmente «Una» por interacción.
 - Verificar el evento tras un envío exitoso en Tag Assistant y documentar fecha, resultado y diagnóstico de Ads. Si continúa mostrando cero conversiones, revisar período del informe, retraso de reporte y evidencia de un clic atribuible antes de diagnosticar una falla.
+
+### Registro de T2 — 24 de septiembre de 2026
+
+- El etiquetado automático está habilitado.
+- Se guardó una sola vez, en las opciones URL de la campaña, el sufijo `utm_source=google&utm_medium=cpc&utm_campaign=ia_operativa_co_01&utm_content={adgroupid}_{creative}`. La plantilla de seguimiento y los parámetros personalizados quedaron vacíos; el destino se conservó como `https://www.wilmarflorez.com/`.
+- La prueba de seguimiento de Google Ads completó 1 de 1 muestras, encontró la página de destino y sustituyó `{adgroupid}` y `{creative}` por valores de prueba.
+- La acción web `Enviar formulario de clientes potenciales` sigue como **Acción principal**, con recuento **Una conversión**. El formulario alojado por Google permanece como acción secundaria.
+- Tag Assistant ya había confirmado el evento `conversion` y el hit `Enviar formulario de clientes potenciales` en `AW-18456241301` tras un envío exitoso.
+- No se hizo clic en un anuncio para probar. La primera conversión atribuida a un clic real permanece como pendiente independiente.
 
 **Cierre de T2:** registrar lo comprobado en la cuenta y la prueba técnica. Mantener como pendiente separado la primera conversión atribuida real. La detección de Tag Assistant, una fila con UTMs y una conversión atribuida en Ads son evidencias distintas.
 
@@ -559,7 +568,7 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 - [ ] Confirmar los grupos y concordancias realmente cargados; decidir ajustes en la revisión de términos, sin reestructurar automáticamente por esta casilla.
 - [ ] Revisar las negativas existentes y propuestas, especialmente `trabajo` y `trabajos`; aplicar solo exclusiones pertinentes aprobadas por Wilmar.
 - [x] Cargar un anuncio responsivo con los recursos de automatización y colaboración técnica.
-- [ ] **T2 — Pendiente:** confirmar etiquetado automático, configurar sufijo UTM y verificar el destino y el evento de conversión según la guía. La ruta visible es un ajuste posterior.
+- [x] **T2 — Completada el 24 de septiembre:** etiquetado automático habilitado, sufijo UTM configurado a nivel de campaña, destino y ValueTrack probados, acción principal y recuento «Una» confirmados. La primera conversión atribuida a un clic real sigue pendiente.
 - [x] Revisar vista previa, límites de caracteres, URL y políticas; los anuncios quedaron en revisión.
 - [x] Configurar aproximadamente COP 34.000 diarios y presupuesto de prueba previsto cercano a COP 1.000.000; campaña activada posteriormente el 21 de septiembre.
 
