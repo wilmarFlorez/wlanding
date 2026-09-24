@@ -1,10 +1,19 @@
 # Wlanding
 
-Sitio personal en Next.js con un formulario de contacto que registra consultas en Google Sheets. El formulario está protegido con Cloudflare Turnstile y una limitación de solicitudes por IP.
+Landing personal bilingüe construida con Next.js 16 y React 19. La versión en español está disponible en `/` y la inglesa en `/en`.
+
+El formulario de contacto valida los datos y Cloudflare Turnstile en el servidor, limita las solicitudes por IP y registra los leads en Google Sheets mediante Google Apps Script.
+
+## Stack
+
+- Next.js 16, React 19 y TypeScript.
+- Tailwind CSS 4 y Motion.
+- Cloudflare Turnstile para la protección anti-bots.
+- Google Apps Script, Google Sheets y correo para la entrega de contactos.
 
 ## Desarrollo local
 
-Usa `pnpm@9.13.0`:
+El proyecto usa `pnpm@9.13.0`:
 
 ```bash
 pnpm install
@@ -12,6 +21,24 @@ pnpm dev
 ```
 
 Abre [http://localhost:3000](http://localhost:3000).
+
+Para ejecutar la compilación de producción localmente:
+
+```bash
+pnpm build
+pnpm start
+```
+
+## Estructura del proyecto
+
+| Ruta | Propósito |
+| --- | --- |
+| `app/(es)` | Página y metadatos en español para `/`. |
+| `app/(en)/en` | Página y metadatos en inglés para `/en`. |
+| `components/landing` | Secciones, formulario y contenido de la landing. |
+| `components/landing/data.ts` | Copy compartido en español e inglés. |
+| `app/api/contact/route.ts` | Validación, Turnstile, rate limiting y reenvío de contactos. |
+| `script.js` | Web App de Google Apps Script que guarda y notifica los leads. |
 
 ## Variables de entorno
 
@@ -27,12 +54,14 @@ Crea `.env.local` a partir de `.env.example`. Nunca publiques este archivo ni su
 ## Configuración de Google Sheets
 
 1. Crea una hoja de cálculo y copia su ID: el fragmento entre `/d/` y `/edit` de su URL.
-2. En el proyecto de Apps Script, pega el contenido de `script.js`.
+2. Crea un proyecto de Apps Script, pega el contenido de `script.js` y autoriza los permisos de Sheets y Mail al desplegarlo.
 3. En **Project Settings > Script properties**, configura:
    - `SPREADSHEET_ID`: ID de la hoja de cálculo.
    - `LEADS_SHARED_SECRET`: secreto aleatorio que también se define en `GOOGLE_SHEETS_SHARED_SECRET`.
 4. Implementa el script como **Web app**, con acceso para cualquier persona, y copia la URL que termina en `/exec` a `GOOGLE_SHEETS_ENDPOINT`.
 5. El primer envío crea automáticamente la pestaña `leads-wilmar-landing` y sus encabezados.
+
+El script envía una notificación a la dirección definida en `NOTIFICATION_EMAIL` dentro de `script.js`.
 
 ## Configuración de Cloudflare Turnstile
 
@@ -59,3 +88,7 @@ pnpm build
 ```
 
 Confirma manualmente en escritorio y móvil que el widget de Turnstile aparece, completa una consulta y verifica que la fila se crea en `leads-wilmar-landing`.
+
+## Despliegue
+
+Configura las cuatro variables de entorno en el proveedor antes de ejecutar el build. La variable `NEXT_PUBLIC_TURNSTILE_SITE_KEY` se incorpora durante la compilación, por lo que requiere un nuevo build si cambia. Despliega `script.js` por separado como Web App de Google Apps Script.

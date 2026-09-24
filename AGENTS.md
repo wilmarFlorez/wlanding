@@ -10,23 +10,23 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # Wlanding
 
-## Purpose
+## Architecture
 
-- This Spanish (`es_CO`) personal site must work both as a paid-traffic landing page and as a LinkedIn portfolio: retain a clear value proposition, credible examples, and a prominent truthful CTA when changing copy or section order.
-- Do not add a lead form or claim that contact is available until a functional destination and response flow exist. The current contact section intentionally says no data is collected.
+- `/` is the Spanish landing page (`app/(es)`); `/en` is the English page (`app/(en)/en`). Both render `components/landing/LandingPage.tsx`. Keep user-facing copy in `components/landing/data.ts` synchronized for both `es` and `en`.
+- Section markup belongs in `components/landing/`; shared tokens and responsive styles are in `app/globals.css`. Use the configured `@/*` import alias and root-relative paths for assets in `public/`.
+- Each locale layout owns its metadata, document language, fonts, and the Google Ads tag. Update both layouts when changing shared metadata or analytics behavior.
 
-## Structure
+## Contact Delivery
 
-- `app/page.tsx` composes the landing sections; `app/layout.tsx` owns document metadata, locale, Google fonts, and the root layout.
-- Keep reusable landing copy and repeated cards in `components/landing/data.ts`; section markup belongs in `components/landing/`.
-- Shared design tokens and all responsive styles live in `app/globals.css`. Tailwind CSS 4 is loaded there through `@import "tailwindcss"`.
-- Use the configured `@/*` alias for root imports. Put static assets in `public/` and reference them with root-relative paths.
+- `app/api/contact/route.ts` validates Turnstile server-side, rate-limits in memory (five requests per IP per 15 minutes), then forwards leads to the Google Apps Script in `script.js`. Keep the route and script field validation in sync.
+- Deploy `script.js` separately as a Google Apps Script Web App. Its deployment URL and shared secret belong in `.env.local`; do not commit them.
+- Copy `.env.example` to `.env.local` for local form testing. `NEXT_PUBLIC_TURNSTILE_SITE_KEY` is exposed to the browser and incorporated at build time; `TURNSTILE_SECRET_KEY` and `GOOGLE_SHEETS_SHARED_SECRET` must remain server-only.
 
 ## Commands
 
 - Use the pinned package manager: `pnpm@9.13.0`.
-- Run `pnpm dev` for local development, `pnpm lint` for ESLint, `pnpm exec tsc --noEmit` for type checking, and `pnpm build` for the production build.
-- There is no test suite or CI workflow configured; validate UI changes at desktop and mobile breakpoints in addition to linting/type checking.
+- Run `pnpm dev` locally. Before deployment, run `pnpm lint`, `pnpm exec tsc --noEmit`, then `pnpm build` in that order.
+- There is no test suite or CI workflow. For form changes, manually verify Turnstile, a successful submission, and the resulting `leads-wilmar-landing` Google Sheet row on desktop and mobile.
 
 ## Formatting
 
