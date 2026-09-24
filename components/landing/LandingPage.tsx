@@ -8,7 +8,21 @@ import { Hero } from "@/components/landing/Hero";
 import { Experience } from "@/components/landing/Experience";
 import type { Locale } from "@/components/landing/data";
 import { WhatsAppButton } from "@/components/landing/WhatsAppButton";
+import { AttributionCapture } from "@/components/landing/AttributionCapture";
 
 export function LandingPage({ locale }: { locale: Locale }) {
-  return <><Header locale={locale} /><main><Hero locale={locale} /><AutomationExamples locale={locale} /><Experience locale={locale} /><Demos locale={locale} /><Capabilities locale={locale} /><ContactSection locale={locale} /></main><Footer /><WhatsAppButton locale={locale} /></>;
+  return <>
+    <AttributionCapture />
+    <Header locale={locale} />
+    <main>
+      <Hero locale={locale} />
+      <AutomationExamples locale={locale} />
+      <Experience locale={locale} />
+      <Demos locale={locale} />
+      <Capabilities locale={locale} />
+      <ContactSection locale={locale} />
+    </main>
+    <Footer />
+    <WhatsAppButton locale={locale} />
+  </>;
 }

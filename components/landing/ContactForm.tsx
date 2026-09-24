@@ -3,6 +3,7 @@
 import { FormEvent, useState } from "react";
 import Script from "next/script";
 import { content, type Locale } from "@/components/landing/data";
+import { captureAttribution } from "@/components/landing/attribution";
 
 type Status = "idle" | "success" | "error";
 
@@ -25,12 +26,16 @@ export function ContactForm({ locale, turnstileSiteKey }: { locale: Locale; turn
 
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const attribution = captureAttribution();
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(formData)),
+        body: JSON.stringify({
+          ...Object.fromEntries(formData),
+          ...(attribution ? { attribution } : {}),
+        }),
       });
       const result: unknown = await response.json();
 

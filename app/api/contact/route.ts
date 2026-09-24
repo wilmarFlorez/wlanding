@@ -2,6 +2,18 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1_000;
 const RATE_LIMIT_MAX_REQUESTS = 5;
 const rateLimits = new Map<string, { count: number; resetAt: number }>();
+const ATTRIBUTION_LIMITS = {
+  utm_source: 256,
+  utm_medium: 256,
+  utm_campaign: 256,
+  utm_content: 256,
+  gclid: 512,
+  gbraid: 512,
+  landing_url: 2048,
+  captured_at: 40,
+} as const;
+type AttributionField = keyof typeof ATTRIBUTION_LIMITS;
+type Attribution = Partial<Record<AttributionField, string>>;
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -21,6 +33,97 @@ function text(value: unknown, required: boolean, maxLength: number) {
   }
 
   return result;
+}
+
+function isValidLandingUrl(value: string) {
+  if (value !== value.trim() || value.includes("?") || value.includes("#")) {
+    return false;
+  }
+
+  try {
+    const url = new URL(value);
+    return (
+      (url.protocol === "http:" || url.protocol === "https:") &&
+      Boolean(url.hostname) &&
+      !url.search &&
+      !url.hash
+    );
+  } catch {
+    return false;
+  }
+}
+
+function isValidIsoDate(value: string) {
+  const match =
+    /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.\d{1,3})?(?:Z|[+-](\d{2}):(\d{2}))$/.exec(
+      value,
+    );
+  if (!match || Number.isNaN(Date.parse(value))) {
+    return false;
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const daysInMonth = [
+    31,
+    (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 ? 29 : 28,
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30,
+    31,
+    30,
+    31,
+  ];
+
+  return (
+    month >= 1 &&
+    month <= 12 &&
+    day >= 1 &&
+    day <= daysInMonth[month - 1] &&
+    Number(match[4]) <= 23 &&
+    Number(match[5]) <= 59 &&
+    Number(match[6]) <= 59 &&
+    (match[7] === undefined ||
+      (Number(match[7]) <= 23 && Number(match[8]) <= 59))
+  );
+}
+
+function normalizeAttribution(value: unknown): Attribution | null {
+  if (!isRecord(value)) {
+    return null;
+  }
+
+  const attribution: Attribution = {};
+  for (const [field, maxLength] of Object.entries(ATTRIBUTION_LIMITS) as [
+    AttributionField,
+    number,
+  ][]) {
+    const fieldValue = value[field];
+    if (
+      typeof fieldValue !== "string" ||
+      fieldValue.trim().length === 0 ||
+      fieldValue.length > maxLength
+    ) {
+      continue;
+    }
+
+    if (field === "landing_url" && !isValidLandingUrl(fieldValue)) {
+      continue;
+    }
+
+    if (field === "captured_at" && !isValidIsoDate(fieldValue)) {
+      continue;
+    }
+
+    attribution[field] = fieldValue;
+  }
+
+  return Object.keys(attribution).length > 0 ? attribution : null;
 }
 
 function getClientIp(request: Request) {
@@ -73,6 +176,7 @@ export async function POST(request: Request) {
   const company = text(payload.company, false, 160);
   const role = text(payload.role, false, 160);
   const message = text(payload.message, true, 5000);
+  const attribution = normalizeAttribution(payload.attribution);
 
   if (!name || !email || !message || !emailPattern.test(email) || company === null || role === null) {
     return Response.json({ success: false }, { status: 400 });
@@ -122,7 +226,15 @@ export async function POST(request: Request) {
     const redirect = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({ name, email, company, role, message, secret }),
+      body: JSON.stringify({
+        name,
+        email,
+        company,
+        role,
+        message,
+        secret,
+        ...(attribution ? { attribution } : {}),
+      }),
       cache: "no-store",
       redirect: "manual",
       signal: AbortSignal.timeout(30_000),
