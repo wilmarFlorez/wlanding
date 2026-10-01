@@ -8,6 +8,11 @@ Este directorio contiene la investigación y planificación de la primera campa�
 marketing_firts_campaing/
 ├── README.md
 ├── CAMPAIGN_01_COLABORACIONES_AUTOMATIZACION.md
+├── SESSION_HANDOFF.md
+├── CIERRE_DIA_7_28_SEPTIEMBRE_2026.md
+├── informes_terminos_de_busqueda/
+│   ├── Informe_de_terminos_de_busqueda.csv
+│   └── REVISION_DIA_7_21_27_SEPTIEMBRE_2026.md
 └── keyword_grupo_a/
     ├── Keyword_grupo_a.csv
     ├── Keyword_grupo_a_implementacion.csv
@@ -19,6 +24,9 @@ marketing_firts_campaing/
 ## Archivos
 
 - `CAMPAIGN_01_COLABORACIONES_AUTOMATIZACION.md`: especificación central de la campaña de Google Ads Search, incluyendo objetivo, oferta, keywords, anuncios, landing, medición, tareas y criterios de optimización.
+- `SESSION_HANDOFF.md`: primera lectura al retomar; estado actual, evidencia y próxima acción.
+- `CIERRE_DIA_7_28_SEPTIEMBRE_2026.md`: cambios ejecutados por Wilmar, recursos de anuncios, línea base separada por fuente, pendientes y calendario de la segunda ventana.
+- `informes_terminos_de_busqueda/`: exportación original y análisis de intención del 21–27 de septiembre. No modificar el CSV para hacerlo coincidir con capturas posteriores.
 - `keyword_grupo_a/Keyword_grupo_a.csv`: exportación original de Google Keyword Planner para el grupo amplio de automatización de procesos.
 - `keyword_grupo_a/Keyword_grupo_a_implementacion.csv`: nueva exportación enfocada en búsquedas relacionadas con contratar o implementar automatizaciones.
 - `keyword_grupo_a/01_analisis_grupo_a.md`: clasificación inicial y lectura del primer CSV.
@@ -31,9 +39,15 @@ La investigación inicial del Grupo A está completada. Ya se completaron una b�
 
 La especificación, investigación y decisiones relacionadas con esta campaña deben permanecer dentro de este directorio. El archivo de campaña es la fuente central del plan; los análisis de keywords funcionan como evidencia y soporte para actualizarlo.
 
-La campaña Search fue activada el 21 de septiembre de 2026. El grupo de anuncios aparece como **“Apto”**; la línea base inmediatamente posterior al lanzamiento mostraba 0 impresiones, 0 clics, COP 0 de costo y 0 conversiones. Al cierre del 22 de septiembre, Google Ads mostraba 146 impresiones, 21 clics, CTR de 14,38 %, CPC promedio de COP 3.669, COP 77.046 de costo y 0 conversiones. La etiqueta base `AW-18456241301` y el evento del formulario están desplegados en la landing; el formulario ya fue probado en producción y registró el lead en Google Sheets y por correo. Tag Assistant detectó correctamente el evento `Enviar formulario de clientes potenciales` después de corregir la etiqueta `send_to`. En Google Ads, la acción aparece en verde como **“Esperando conversiones”**, sin errores visibles. El registro detallado está en `CAMPAIGN_01_COLABORACIONES_AUTOMATIZACION.md`.
+**Actualización del 28 de septiembre de 2026:** campaña activa desde el 21. Wilmar aplicó la separación en `AG_Automatizacion_General` y `AG_Documentos_Informacion`, ambos habilitados y aptos, con anuncios específicos y concordancias de frase/exacta. Anuncio anterior y keyword documental del general detenidos, sin eliminar su historial.
 
-El presupuesto actual de prueba es de aproximadamente COP 34.000 diarios, cercano a COP 1.000.000 durante 30 días. El estado detallado, las decisiones de keywords y las tareas pendientes están en `CAMPAIGN_01_COLABORACIONES_AUTOMATIZACION.md`.
+Las capturas del 21–27 muestran 1.052 impresiones, 80 clics, COP 273.250 y 0 conversiones; el CSV de términos del mismo período conserva 996 impresiones, 79 clics y COP 269.070. No mezclar fuentes ni atribuir esos datos a los anuncios nuevos. Wilmar confirma ausencia de formularios nuevos; el contacto histórico sigue sin calificar ni atribuir a Ads.
+
+Se mantienen COP 34.000 diarios promedio para toda la campaña, Maximizar clics con límite de CPC COP 6.000 y presupuesto total orientativo cercano a COP 1.000.000 durante 30 días. La reestructuración no reinicia duración ni presupuesto.
+
+T1/T2 fueron validadas el 24; falta comprobar URL final y herencia UTM de los anuncios nuevos. La primera conversión atribuida real sigue pendiente. GA4/T3 requiere propiedad/ID y revisión de privacidad/consentimiento; no hay todavía medición adicional de sesiones, CTA o inicio de formulario.
+
+**Próximo seguimiento:** verificar URLs/UTMs; comprobar entrega el 29–30 de septiembre; evaluar el **6 de octubre** los siete días completos del **29 de septiembre al 5 de octubre**. El 28 se trata como transición. No hay monitoreo automático; Wilmar aporta los datos y aprueba las decisiones. Consultar el cierre del día 7 para recursos, límites y criterios de pausa o rediseño.
 
 ## Criterio de campaña
 

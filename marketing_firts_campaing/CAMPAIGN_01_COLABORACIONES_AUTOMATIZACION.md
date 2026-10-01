@@ -1,6 +1,6 @@
 # Campaña 01 — Google Ads Search: automatización de flujos
 
-**Estado:** campaña activa desde el 21 de septiembre de 2026; grupo de anuncios apto; la línea base al momento de la activación no registraba impresiones, clics ni gasto
+**Estado al 28 de septiembre de 2026:** campaña activa desde el 21; revisión del día 7 cerrada, dos grupos habilitados y aptos con anuncios específicos. Resultados posteriores al cambio todavía no disponibles. Ver `CIERRE_DIA_7_28_SEPTIEMBRE_2026.md`.
 **Canal de pago:** Google Ads, Red de Búsqueda
 **Mercado e idioma:** Colombia, español
 **Duración:** 30 días de pauta activa
@@ -8,7 +8,7 @@
 **Ejecutor y responsable operativo:** Wilmar Florez Samudio
 **Apoyo:** un agente de IA puede asistir con investigación, clasificación y borradores. Wilmar revisa, verifica y aprueba toda decisión de segmentación, keyword, anuncio, landing y lead.
 
-**Estado de implementación:** **T1 — Atribución del formulario hasta Google Sheets** quedó implementada, desplegada y validada en producción el 24 de septiembre de 2026. **T2 — URLs y verificación de conversión en Google Ads** quedó configurada y verificada el 24 de septiembre; la primera conversión atribuida a un clic real sigue pendiente. T3 —analítica mínima en GA4— está habilitada tras validar T1; requiere propiedad/ID de GA4 y revisión de privacidad y consentimiento. Las casillas pendientes no son una orden de implementar todo el plan a la vez.
+**Estado de implementación:** **T1 — Atribución del formulario hasta Google Sheets** quedó implementada, desplegada y validada en producción el 24 de septiembre de 2026. **T2 — URLs y verificación de conversión en Google Ads** quedó configurada y verificada el 24; siguen pendientes la primera conversión atribuida real y la comprobación de URL final/herencia UTM de los anuncios nuevos del 28. T3 —analítica mínima en GA4— puede iniciarse tras validar T1, pero no está implementada; requiere propiedad/ID de GA4 y revisión de privacidad y consentimiento. Las casillas pendientes no son una orden de implementar todo el plan a la vez.
 
 ## Decisión estratégica
 
@@ -109,6 +109,66 @@ La primera ronda de investigación ya fue ejecutada y está documentada en `keyw
 - Estado del lead: contacto potencial de automatización operativa sin calificar; pendiente de reprogramación o información adicional para comprobar si cumple el criterio de decisión o capacidad de presentar el caso al responsable.
 - Decisión: no optimizar anuncios, keywords ni presupuesto antes de completar la revisión operativa del día 3, prevista para el 24 de septiembre, y confirmar el estado de la conversión web en Google Ads.
 
+### Seguimiento de entrega y calidad — 25 de septiembre de 2026
+
+- El informe de términos de búsqueda exportado para el período 21–25 de septiembre registra 667 impresiones, 56 clics, CTR de 8,40 %, CPC promedio de COP 3.367, gasto de COP 188.532 y 0 conversiones.
+- El informe revela 14 clics y COP 50.625 por término; 42 clics y COP 137.907 permanecen agregados como «Otros términos de búsqueda». Google Ads no muestra esos términos individualmente, por lo que no se deben inventar ni clasificar como consultas concretas.
+- Entre los clics visibles hay intención no alineada con la oferta: formación gratuita, consultas de definición o ejemplos, herramientas n8n, automatización industrial y RPA. Esta evidencia no permite usar CTR como indicador de tráfico cualificado.
+- La keyword de frase `"automatización de procesos"` acumula 359 impresiones, 32 clics, COP 106.884 de gasto y 0 conversiones. Google Ads la marca «Apto (limitado), no suele publicarse (Nivel de calidad bajo)».
+- Su nivel de calidad es 1/10, con experiencia en página de destino, relevancia del anuncio y CTR esperado inferiores al promedio. Las otras tres keywords todavía no tienen diagnóstico de calidad disponible.
+- La cuenta tiene un único grupo de anuncios y un único anuncio responsivo activo; las cuatro keywords cargadas están en concordancia de frase. La separación prevista por intención y las concordancias exactas no están aplicadas en la configuración observada.
+- En el detalle de recursos, todos los recursos del anuncio figuran como aptos. Sus métricas son agregadas por recurso dentro de combinaciones dinámicas y no prueban que un titular o descripción aislado haya causado los clics o la falta de conversiones.
+- La lista de negativas queda verificada: las trece exclusiones están aplicadas a nivel de campaña y con concordancia amplia: `curso`, `cursos`, `ejemplos`, `gratis`, `industrial`, `mecatrónica`, `n8n`, `pdf`, `playwright`, `plc`, `robótica`, `rpa` y `scada`. El informe de términos marca también `rpa` como «Excluido», pero no permite fechar las impresiones previas a la aplicación de la lista.
+- Al momento de esta revisión no hay formularios nuevos. La acción primaria `Enviar formulario de clientes potenciales` continúa en estado «Esperando conversiones» y muestra 0 conversiones para el período 21–25 de septiembre. Esto es consistente con la ausencia de formularios nuevos y no demuestra un fallo técnico, dado que el evento se validó previamente con Tag Assistant.
+- El 23 de septiembre a las 2:52 p. m., Wilmar envió seguimiento a Breiner ofreciendo reprogramar y solicitando contexto del flujo, entradas y destino de la información. Al 25 de septiembre no hay respuesta; el contacto sigue sin calificar y sin atribución confirmada a Ads.
+- Decisión posterior: no enviar más seguimientos a Breiner. Retomar solo si responde al último correo; en ese caso, calificar el contexto antes de asociarlo a la campaña.
+- Decisión: no modificar pujas, presupuesto, keywords, anuncios o estructura antes de la revisión del día 7, el 28 de septiembre. En esa revisión, contrastar la lista aplicada con los términos reales y decidir solo negativas inequívocas. Evaluar por separado la división de grupos y anuncios específicos para resolver el diagnóstico de calidad de la keyword principal.
+
+### Verificación de conversiones — 27 de septiembre de 2026
+
+- En la vista de acciones de conversión de Google Ads, `Enviar formulario de clientes potenciales` continúa como acción principal de sitio web, con estado «Esperando conversiones», ventana de 30 días, `0,00` conversiones y `0,00` valor de conversión.
+- No hay evidencia de una conversión atribuida a un clic real. Esta comprobación no invalida la prueba técnica previa con Tag Assistant: confirma que ningún envío real se ha registrado todavía como conversión de la campaña.
+- `Lead form - Submit` es una acción secundaria alojada en Google y también tiene `0,00`; no corresponde al formulario de la landing.
+
+### Entrega y gasto — corte del 20 al 26 de septiembre de 2026
+
+- El informe de grupos de anuncios muestra 933 impresiones, 74 clics, CTR de 7,93 %, CPC promedio de COP 3.375 y costo de COP 249.714.
+- El único grupo de anuncios activo registra 0,00 conversiones, tasa de conversión de 0,00 % y costo por conversión de COP 0.
+- El período seleccionado incluye el 20 de septiembre, pero la campaña fue activada el 21. Por tanto, el corte contiene seis días completos de entrega activa (21–26) y no incluye el 27 de septiembre en curso.
+- El gasto acumulado representa aproximadamente una cuarta parte del máximo orientativo de COP 1.000.000 para la prueba. El CTR no es evidencia de calidad de tráfico: el informe de términos del 21–25 ya identificó consultas no alineadas.
+- Decisión: completar el corte del día 7 con la información del 27 de septiembre y contrastar los términos reales, las negativas vigentes y la ausencia de conversiones antes de cualquier ajuste de presupuesto, puja, estructura o palabras clave.
+
+### Revisión del día 7 — 21 al 27 de septiembre de 2026
+
+- El informe actualizado registra 996 impresiones, 79 clics, CTR de 7,93 %, CPC promedio de COP 3.405,95, costo de COP 269.070 y 0 conversiones.
+- Los términos identificados explican 21 clics y COP 75.306. «Otros términos de búsqueda» concentra 58 clics y COP 193.764; Google no revela consultas individuales para ese agregado, por lo que no se deben inventar ni clasificar.
+- Entre los clics visibles se observan búsquedas educativas o de ejemplos, n8n e intención industrial, junto con consultas ambiguas de posible colaboración. Esta mezcla confirma que el CTR no mide tráfico cualificado.
+- El análisis por término y las recomendaciones pendientes de aprobación se documentan en `informes_terminos_de_busqueda/REVISION_DIA_7_21_27_SEPTIEMBRE_2026.md`.
+- Próxima decisión: verificar las negativas efectivamente aplicadas y añadir únicamente exclusiones educativas inequívocas. No modificar presupuesto o puja solo con estos datos; la división prevista de grupos y anuncios requiere aprobación e implementación separadas.
+- La vista de palabras clave negativas del 27 de septiembre confirma que las 13 exclusiones documentadas se aplican a `Campaign #1` con concordancia amplia. Los términos históricos que las contienen no son prueba de un fallo, ya que el informe no indica la fecha de cada búsqueda.
+- El 27 de septiembre se agregaron seis negativas educativas en concordancia de frase: `"qué es"`, `"que es"`, `"por qué"`, `"por que"`, `"beneficios"` y `"ventajas"`. La interfaz confirma que se aplican a nivel de campaña; la lista suma 19 negativas activas.
+
+### Validación del estado actual de negativas — 27 de septiembre de 2026
+
+- La evidencia de interfaz confirma 19 negativas para `Campaign #1`, todas aplicadas a nivel de campaña.
+- Las 13 negativas amplias activas son: `curso`, `cursos`, `ejemplos`, `gratis`, `industrial`, `mecatrónica`, `n8n`, `pdf`, `playwright`, `plc`, `robótica`, `rpa` y `scada`.
+- Las 6 negativas de frase activas son: `"beneficios"`, `"por que"`, `"por qué"`, `"que es"`, `"qué es"` y `"ventajas"`.
+- No se observaron discrepancias entre la configuración registrada y la evidencia. Mantener la lista sin nuevas adiciones hoy y observar términos, formularios y conversiones posteriores al ajuste antes de interpretar su impacto.
+
+### Cierre del día 7 y reestructuración — 28 de septiembre de 2026
+
+- Wilmar ejecutó los ajustes y aportó capturas de verificación. `AG_Automatizacion_General` y `AG_Documentos_Informacion` están habilitados y aptos, con un anuncio nuevo apto por grupo. El anuncio general anterior está detenido, sin eliminar historial.
+- El grupo general tiene las tres keywords generales en frase y exacta. La documental de frase quedó detenida allí; el nuevo grupo documental tiene frase y exacta activas. La estructura descrita abajo ya está aplicada, no pendiente de crear.
+- Presupuesto confirmado: COP 34.000 diarios promedio para toda la campaña. Puja confirmada: Maximizar clics con límite de CPC de COP 6.000. No se modificaron por esta iteración.
+- Las capturas del período **21–27 de septiembre** muestran 1.052 impresiones, 80 clics, CTR 7,60 %, CPC COP 3.416, gasto COP 273.250 y 0 conversiones. Son datos anteriores al cambio; no sustituyen los del CSV de términos (996 impresiones, 79 clics y COP 269.070). La causa de la diferencia no está determinada. Conservar fuentes y denominadores separados.
+- Wilmar confirma que no hay formularios nuevos en Sheets ni conversiones nuevas. La validación técnica previa no equivale a una conversión real atribuida.
+- El anuncio general figura con calidad «Promedio» y el documental con «Pendiente», ambos aptos. El nivel 1/10 de la keyword principal no evalúa el efecto de los anuncios nuevos. No optimizar solo por estas puntuaciones.
+- Se mantienen las 19 negativas verificadas el 27, sin cambios adicionales reportados el 28. `pdf` puede excluir intención documental pertinente: dejar su revisión explícita pendiente, sin retirarla automáticamente.
+- La landing publicada respalda el mensaje documental con entradas, extracción, reglas y revisión humana. No se cambió el sitio; continúa pendiente evaluar el formulario generalista de roles/colaboraciones.
+- **Próxima acción:** comprobar URL final y herencia UTM de ambos anuncios nuevos. Las capturas no muestran esos ajustes; la T2 validada el 24 no los verifica automáticamente.
+- **Seguimiento:** comprobar entrega el 29–30 de septiembre; evaluar el **6 de octubre** la ventana de siete días completos del **29 de septiembre al 5 de octubre**, excluyendo el 28 parcial. Esta fecha reemplaza la tentativa anterior del 5 para esta iteración.
+- Recursos de referencia, fuentes, límites, calendario y criterios de decisión: `CIERRE_DIA_7_28_SEPTIEMBRE_2026.md`. No hay resultados posteriores al cambio ni evidencia de mejora todavía.
+
 ### Validación de T1 en producción — 24 de septiembre de 2026
 
 - Se actualizó y volvió a desplegar Apps Script en la implementación existente. La migración añadió las ocho columnas de atribución sin modificar la fila histórica de Breiner.
@@ -155,6 +215,8 @@ Configuración objetivo de la campaña existente. Verificar diferencias en la in
 El límite de CPC de COP 6.000 es una hipótesis inicial de control para esta prueba, no una referencia validada de mercado. Se revisará con el CPC real, los términos de búsqueda y la entrega observada. No usar puja amplia sin límite durante la primera prueba.
 
 ## Estructura de grupos de anuncios y keywords
+
+**Aplicada el 28 de septiembre:** ambos grupos están activos, con un anuncio nuevo por grupo. El anuncio anterior y la keyword documental del grupo general se conservan detenidos. Añadir exactas no restringe las keywords de frase que permanecen activas.
 
 Usar concordancia de frase y exacta solamente durante los primeros 14 días. No usar concordancia amplia hasta tener términos de búsqueda y conversiones revisados.
 
@@ -252,7 +314,7 @@ Revisar el informe de términos de búsqueda en los días 7, 14, 21 y 30. Añadi
 
 La campaña dirigirá a la landing existente del proyecto. No se requiere construir una nueva página ni una nueva ruta para iniciar esta prueba. El recorrido actual ya presenta el perfil, las automatizaciones, las capacidades, los proyectos y el formulario de contacto.
 
-**Destino actual configurado en Google Ads:** `https://www.wilmarflorez.com/`
+**Destino verificado del anuncio anterior y propuesto para los nuevos:** `https://www.wilmarflorez.com/`. La URL final de ambos anuncios nuevos del 28 sigue pendiente de comprobación.
 **Destino de medición:** conservar `https://www.wilmarflorez.com/` y configurar las UTMs mediante el sufijo de URL final descrito en T2. La propuesta anterior de añadir `#contacto` queda para una decisión posterior sobre el recorrido de la landing.
 **Página utilizada:** landing existente en español (`/`), con sección de automatizaciones y formulario en `#contacto`.
 **CTA único:** `Cuéntame qué quieres automatizar`
@@ -294,6 +356,8 @@ Estos textos son la referencia del mensaje publicitario y de cualquier ajuste m�
 Si se aprueban ajustes de copy, redactar su versión en inglés equivalente y mantener el contenido bilingüe en `components/landing/data.ts` según la arquitectura del sitio. La campaña de compra se ejecuta solo en español para Colombia.
 
 ## Anuncios responsivos de búsqueda
+
+**Referencia vigente desde el 28 de septiembre:** los recursos específicos de los dos anuncios nuevos se documentan en `CIERRE_DIA_7_28_SEPTIEMBRE_2026.md`, junto con qué confirma la evidencia y qué falta verificar. Los recursos de las subsecciones siguientes son **propuestas históricas del plan inicial**, no una transcripción de los anuncios activos ni instrucciones para reemplazarlos.
 
 Crear un anuncio responsivo por cada grupo de anuncios. Mantener los titulares y descripciones del grupo correspondiente; no mezclar el mensaje de correos y WhatsApp con búsquedas generales de documentos si no coincide con la consulta.
 
@@ -485,9 +549,10 @@ La profundidad de scroll queda para una iteración posterior si aporta a una pre
 ### T4 — Seguimiento operativo y tareas posteriores
 
 - **24 de septiembre, día 3:** revisar estado, gasto, entrega y errores técnicos; registrar también el avance de T1/T2. No esperar a terminar T3 para realizar esta revisión.
-- **Lead recibido:** completar la conversación con Breiner y evaluar flujo, entradas y capacidad de decisión o escalamiento. Su calidad se puede calificar aunque el origen siga sin confirmar.
-- **28 de septiembre, día 7:** revisar términos reales y negativas; comprobar qué grupos y concordancias están efectivamente cargados. Proponer cambios con evidencia para decisión de Wilmar.
-- Dejar para decisiones posteriores la nueva landing, cambios importantes de copy, salto automático a `#contacto`, ampliación de keywords, reestructuración de grupos, aumento de presupuesto y cambio de puja. Las casillas históricas de configuración son puntos por verificar, no instrucciones de modificar una campaña activa de inmediato.
+- **Lead recibido:** no enviar más seguimientos a Breiner. Si responde, evaluar flujo, entradas y capacidad de decisión o escalamiento; su calidad puede calificarse aunque el origen siga sin confirmar.
+- **28 de septiembre, día 7 — completado:** términos y negativas revisados; estructura de dos grupos, concordancias y anuncios específicos aplicada por Wilmar y verificada en capturas.
+- **Después del cambio:** verificar URL final/herencia UTM; comprobar entrega el 29–30 de septiembre y evaluar el 6 de octubre el período 29 de septiembre–5 de octubre.
+- Dejar para decisiones posteriores la nueva landing, cambios de copy del formulario, salto automático a `#contacto`, ampliación de familias de keywords, aumento de presupuesto y cambio de puja. La reestructuración del 28 ya está aplicada; no repetirla por casillas o recomendaciones históricas.
 - Si se confirma una falla del formulario o del tracking, Wilmar pausa la pauta y se corrige antes de interpretar rendimiento. La ausencia de una conversión atribuida, por sí sola, no confirma ese fallo.
 
 ### Entrega y actualización del estado
@@ -520,6 +585,10 @@ No presentar una solución cerrada, alcance, costo o plazo sin comprender estas 
 | Día 30 | Cerrar resultados, clasificar todos los leads y decidir la siguiente prueba. |
 
 Con la activación el 21 de septiembre, los hitos se cuentan desde ese día como día 0: día 1, 22 de septiembre; día 3, 24 de septiembre; día 7, 28 de septiembre; día 14, 5 de octubre; día 21, 12 de octubre; y día 30, 21 de octubre. Si la hora exacta de activación impide completar una revisión en esa fecha, se realiza al siguiente día hábil sin adelantar decisiones con datos incompletos.
+
+**Ajuste operativo del 28:** la evaluación de esta segunda ventana se realizará el **6 de octubre**, con los siete días completos del **29 de septiembre al 5 de octubre**, en lugar de decidir cambios el 5 con un día incompleto. El 28 es transición. Esto no reinicia la campaña ni amplía los 30 días o el presupuesto total orientativo. Supervisar gasto acumulado; el promedio diario no constituye un tope total. No hay monitoreo ni recordatorios automáticos configurados.
+
+Si esta ventana no genera contactos cualificados, decidir pausa o rediseño antes de consumir el presupuesto completo. Si el grupo documental tiene poco tráfico, registrar evidencia insuficiente en vez de atribuir un fracaso al copy. No es un experimento controlado: estructura, concordancias, anuncios y negativas recientes impiden aislar el efecto de un único cambio.
 
 No optimizar con CTR como objetivo final. La prioridad de decisión es: lead cualificado, formulario enviado, inicio de formulario, clic de CTA, sesión relevante, clic.
 
@@ -565,8 +634,11 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 ### Configuración y anuncios
 
 - [x] Crear una campaña Search para Colombia, español y redes desactivadas según la tabla; la interfaz la identifica actualmente como `Campaign #1`.
-- [ ] Confirmar los grupos y concordancias realmente cargados; decidir ajustes en la revisión de términos, sin reestructurar automáticamente por esta casilla.
-- [ ] Revisar las negativas existentes y propuestas, especialmente `trabajo` y `trabajos`; aplicar solo exclusiones pertinentes aprobadas por Wilmar.
+- [x] Confirmar grupos y concordancias: dos grupos con frase/exacta activos desde el 28, anuncio anterior y keyword documental del general detenidos.
+- [x] Revisar las negativas aplicadas frente a los términos del día 7: conservar las 19 verificadas el 27; no cargar automáticamente la lista inicial propuesta ni `trabajo`/`trabajos`.
+- [ ] Revisar en una decisión posterior el posible bloqueo de consultas documentales pertinentes por la negativa `pdf`.
+- [x] Preparar anuncios específicos y verificar en capturas su estado apto en ambos grupos el 28; copy de referencia en el cierre del día 7.
+- [ ] Comprobar URL final y herencia UTM de los dos anuncios nuevos; no verificadas por las capturas del 28.
 - [x] Cargar un anuncio responsivo con los recursos de automatización y colaboración técnica.
 - [x] **T2 — Completada el 24 de septiembre:** etiquetado automático habilitado, sufijo UTM configurado a nivel de campaña, destino y ValueTrack probados, acción principal y recuento «Una» confirmados. La primera conversión atribuida a un clic real sigue pendiente.
 - [x] Revisar vista previa, límites de caracteres, URL y políticas; los anuncios quedaron en revisión.
@@ -577,9 +649,10 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 - [x] Corregir la etiqueta `send_to` y confirmar que Tag Assistant detecta el evento `Enviar formulario de clientes potenciales`.
 - [ ] Confirmar y documentar la primera conversión atribuida a un clic real en Google Ads durante la campaña activa; no escalar sin revisar medición y calidad de leads.
 - [x] Activar la campaña el 21 de septiembre de 2026.
-- [ ] Completar la revisión operativa del día 3 el 24 de septiembre.
-- [ ] Completar la revisión de términos y calidad del día 7 el 28 de septiembre.
-- [ ] Completar la optimización documentada del día 14.
+- [x] Completar la revisión operativa del día 3 el 24 de septiembre: entrega, gasto, estado del anuncio, términos iniciales, medición y negativas revisados; sin cambios de puja, presupuesto o estructura antes del día 7.
+- [x] Completar la revisión de términos y calidad del día 7 el 28 de septiembre; decisiones aplicadas por Wilmar y documentadas en el cierre.
+- [ ] Comprobar entrega y gasto de la nueva estructura el 29–30 de septiembre, sin optimizar por CTR.
+- [ ] Completar la evaluación de la segunda ventana el 6 de octubre, usando 29 de septiembre–5 de octubre; sustituye la fecha tentativa del 5 para esta revisión.
 - [ ] Completar la revisión de calidad del día 21.
 - [ ] Clasificar cada formulario entrante el mismo día hábil.
 - [ ] Preparar el informe de cierre del día 30 y decidir la siguiente iteración.
@@ -587,7 +660,7 @@ No se establecen metas de CTR, CPC, costo por lead o tasa de conversión antes d
 ### Uso del agente de IA
 
 - [ ] Pedir al agente que agrupe keywords y sugiera negativas; comparar toda sugerencia con Keyword Planner y SERP antes de aplicarla.
-- [ ] Pedir variantes de anuncios dentro de los límites de caracteres y credibilidad; Wilmar valida exactitud y políticas antes de subirlas.
+- [x] Preparar variantes de anuncios dentro de los límites de caracteres y credibilidad; Wilmar las cargó el 28 y aportó capturas con ambos anuncios aptos.
 - [ ] Pedir al agente que clasifique términos de búsqueda exportados como relevantes, dudosos o negativos; Wilmar toma la decisión final.
 - [ ] Pedir al agente un borrador de reporte semanal a partir de datos reales; no aceptar inferencias causales ni métricas no medidas.
 
