@@ -1,19 +1,21 @@
 # Continuidad de sesión — Campaña 01
 
-**Última actualización:** 28 de septiembre de 2026
+**Última actualización:** 1 de octubre de 2026
 
 ## Estado actual
 
 - Campaña en la interfaz: `Campaign #1`; nombre objetivo del plan: `CO_Search_Automatizacion_Flujos_01`.
 - Mercado: Colombia, español.
-- Estado: activa desde el 21 de septiembre; revisión del día 7 cerrada y dos grupos activos desde el 28. No hay resultados posteriores al cambio disponibles todavía.
+- Estado: activa desde el 21 de septiembre; revisión del día 7 cerrada y dos grupos activos desde el 28. El corte del 29–30 ya está revisado: 299 impresiones, 18 clics, 6,02 % CTR, COP 60.147 de gasto y 1 conversión real registrada por Ads.
 - Presupuesto: COP 34.000 diarios promedio para la campaña; Maximizar clics con límite CPC de COP 6.000, confirmados en capturas del 28.
 - Grupos: `AG_Automatizacion_General` y `AG_Documentos_Informacion`, ambos habilitados y aptos. Anuncio anterior y keyword documental del general detenidos, conservando historial.
-- Próxima acción: verificar URL final y herencia UTM de ambos anuncios nuevos. Comprobar entrega el 29–30 de septiembre; evaluar el 6 de octubre la ventana completa del 29 de septiembre al 5 de octubre.
-- Registro detallado y copy de referencia: `CIERRE_DIA_7_28_SEPTIEMBRE_2026.md`.
-- Objetivo: 3 leads cualificados en 30 días de pauta activa.
+- Objetivo: 3 leads cualificados en 30 días de pauta activa. Avance actual: 1 conversión real y 0 leads cualificados confirmados; no equiparar ambos resultados.
+- Próxima evaluación de campaña: el 6 de octubre, con los siete días completos del 29 de septiembre al 5 de octubre. Hacer mientras tanto un control operativo breve diario, sin ajustes por variaciones de un solo día.
+- Registro de configuración y copy al 28: `CIERRE_DIA_7_28_SEPTIEMBRE_2026.md`. Análisis del corte del 29–30: `informes_terminos_de_busqueda/REVISION_29_30_SEPTIEMBRE_2026.md`.
 - T1 — atribución del formulario hasta Google Sheets: implementada, desplegada y validada en producción el 24 de septiembre de 2026.
-- Seguimiento a Breiner: cerrado por ahora. No enviar más correos; retomar únicamente si responde al último mensaje enviado el 23 de septiembre.
+- T2 — configuración de Ads validada el 24; la primera conversión real se registró el 29. Sigue pendiente comprobar URL final/herencia UTM de los dos anuncios nuevos.
+- Contacto del 29 de septiembre: Wilmar confirmó que fue real, recibió el correo de notificación y respondió solicitando contexto; todavía no obtiene respuesta. Mantener como conversión real con calificación pendiente; no guardar PII en esta documentación. No enviar mensajes diarios; considerar un único recordatorio breve después de unos días hábiles si no responde.
+- Seguimiento a Breiner, contacto histórico distinto: cerrado por ahora. No enviar más correos; retomar únicamente si responde al último mensaje enviado el 23 de septiembre.
 
 ## Línea base y seguimiento inicial
 
@@ -41,14 +43,14 @@
 - El lead llegó después de activar la campaña, pero no hay atribución confirmada: en ese momento Sheets aún no almacenaba UTMs ni `gclid`. T1 se validó el 24 y no reconstruye la atribución del contacto histórico.
 - Estado: potencial sin calificar; falta contexto sobre necesidad, entradas, reglas, excepciones, sistemas y capacidad de decisión. No volver a contactar salvo que responda al último correo.
 
-## Medición validada
+## Medición validada y estado histórico (24–27 de septiembre)
 
 - Google tag: `AW-18456241301`.
 - Conversión web: `AW-18456241301/zR2zCPnxovocEJXJz-BE`.
 - Formulario: envía datos a Google Sheets y correo mediante `/api/contact`.
 - Tag Assistant detectó correctamente `Enviar formulario de clientes potenciales` después de corregir `send_to`.
-- En Google Ads, la acción aparece en verde como **“Esperando conversiones”**, sin errores visibles.
-- Todavía no existe una conversión atribuida a un clic de anuncio en Google Ads. La campaña está activa; se debe revisar el retraso de reporte y el disparo del evento antes de interpretar el cero como un fallo.
+- En la revisión del 27 de septiembre, Google Ads mostraba la acción en verde como **“Esperando conversiones”**, sin errores visibles.
+- En esa misma revisión aún no había una conversión atribuida a un clic de anuncio. La primera conversión real se registró el 29 de septiembre; ver el corte y la actualización actuales arriba y en el análisis del 29–30.
 - Conversiones avanzadas: sin configurar; no bloquean esta prueba básica.
 - Después del despliegue de T1, Tag Assistant mostró el evento `conversion` y el hit `Enviar formulario de clientes potenciales` en `AW-18456241301` al enviar correctamente el formulario.
 - Las pruebas de producción de escritorio Chrome e iPhone Chrome guardaron las cuatro UTMs, `gclid`/`gbraid` sintéticos y la landing inicial `/`, también al completar el formulario desde `/en`. Las filas están identificadas como pruebas y no cuentan como leads.
@@ -111,19 +113,18 @@
 ## Próximos pasos
 
 - **T1 completada:** el contrato opcional, la captura por sesión de pestaña, la migración de encabezados, la compatibilidad con el formulario antiguo y la validación de producción están documentados en el plan completo.
-- **T2 completada:** autoetiquetado, sufijo UTM, URL de destino, ValueTrack, acción primaria y recuento «Una» verificados. Mantener el destino actual sin añadir `#contacto`. La primera conversión atribuida a un clic real sigue pendiente; los IDs sintéticos fueron solo pruebas.
+- **T2, configuración completada:** autoetiquetado, sufijo UTM a nivel de campaña, URL de destino, ValueTrack, acción primaria y recuento «Una» verificados el 24. La primera conversión real atribuida por Ads se registró el 29 y Wilmar confirmó el contacto. La comprobación de URL final y herencia UTM en los dos anuncios nuevos sigue pendiente; no hacer clic en anuncios propios.
 - **Siguiente implementación: T3 — GA4:** instrumentar la analítica mínima cuando Wilmar facilite/configure la propiedad y el ID de medición, y complete la revisión de privacidad y consentimiento. No duplicar la conversión principal existente.
-- Revisiones de días 3 y 7 completadas. Mantener la nueva estructura, puja y presupuesto durante la observación salvo fallo técnico o tráfico inequívocamente irrelevante, con decisión y registro.
-- Confirmar la primera conversión atribuida a un clic real en Google Ads; el evento técnico ya se detectó en Tag Assistant.
-- Comprobar URL final y herencia del sufijo UTM de campaña en los dos anuncios nuevos, sin clicar anuncios propios. No marcar este punto completo con la evidencia actual.
-- El 29–30 de septiembre, revisar estados, impresiones y distribución del gasto usando fechas posteriores al cambio. Los ceros del documental en el corte 21–27 no prueban falta de entrega actual.
-- El 6 de octubre, evaluar los siete días completos del 29 de septiembre al 5 de octubre, excluyendo el 28 parcial. Esta fecha sustituye la tentativa del 5 para esta iteración, sin reiniciar los 30 días ni ampliar el presupuesto total.
-- Revisar términos visibles, gasto, formularios y calidad por grupo cuando la atribución lo permita. Si no hay contactos cualificados, decidir pausa o rediseño; si falta tráfico, registrar evidencia insuficiente. No inferir calidad por CTR.
+- Revisiones de días 3 y 7 completadas; comprobación de entrega del 29–30 registrada en `informes_terminos_de_busqueda/REVISION_29_30_SEPTIEMBRE_2026.md`. Mantener estructura, puja y presupuesto durante la observación, salvo fallo técnico o tráfico inequívocamente irrelevante.
+- Hacer el control operativo diario de estado, gasto por grupo y formularios, pero no cambiar la configuración por fluctuaciones diarias. No hay monitoreo automático ni recordatorios configurados.
+- El 6 de octubre, evaluar los siete días completos del 29 de septiembre al 5 de octubre, excluyendo el 28 parcial. Esta evaluación no reinicia los 30 días ni amplía el presupuesto total.
+- Revisar términos visibles, gasto, formularios y calidad por grupo. La conversión del 29 es real, pero no cualificada todavía; si el contacto responde, calificar el flujo, las entradas, el objetivo y la capacidad de decisión. No inferir calidad por CTR.
+- No enviar seguimientos diarios al contacto del 29. Si no responde después de unos días hábiles, considerar un único recordatorio breve; responder antes si llega una respuesta.
 - No enviar más seguimientos a Breiner. Si responde al último correo, retomar la conversación y clasificar la calidad del lead sin atribuirlo a Ads hasta contar con evidencia.
 
 ## Pendientes conocidos
 
-- La primera conversión atribuida a un clic real de Google Ads está pendiente; la captura técnica en Sheets está validada desde las pruebas QA del 24 de septiembre.
+- La primera conversión real atribuida por Ads se registró el 29 de septiembre y el contacto real fue confirmado por Wilmar. Falta respuesta/contexto para su calificación. Wilmar compartió la marca `2026-09-29T17:48:45.317Z` (UTC); no se confirmó aquí el nombre del campo. Si corresponde a `captured_at`, no es necesariamente la hora exacta de envío.
 - No hay analítica adicional para sesiones, profundidad, CTA o inicio de formulario.
 - URL final y aplicación de UTMs de los anuncios nuevos aún sin comprobar.
 - Preparar, para aprobación posterior, un ajuste mínimo bilingüe del formulario que incluya automatización sin eliminar roles y colaboraciones. No implementado ni desplegado.
@@ -136,4 +137,4 @@
 - Cierre del 28, anuncios y ventana de evaluación: `CIERRE_DIA_7_28_SEPTIEMBRE_2026.md`.
 - Estrategia del sitio: `../LANDING_STRATEGY.md`.
 
-Al retomar esta campaña, leer primero este archivo y el cierre del 28, y consultar el plan completo. T1/T2 se validaron el 24; comprobar su aplicación a los anuncios nuevos antes de dar por cerrada esa verificación. Continuar con T3 solo cuando estén disponibles el ID de GA4 y la revisión de privacidad/consentimiento. La atribución a un clic real de Ads sigue pendiente por separado. No reinstalar ni alterar la conversión existente sin evidencia de un fallo; distinguir documentación local, cambios ejecutados por Wilmar y verificación de producción. No hay monitoreo ni recordatorios automáticos configurados.
+Al retomar esta campaña, leer primero este archivo y el análisis del 29–30, consultar el cierre del 28 y el plan completo. T1/T2 se validaron técnicamente el 24; la primera conversión real atribuida ya se registró, pero la aplicación de URL/UTM a los anuncios nuevos sigue pendiente de verificación. Continuar con T3 solo cuando estén disponibles el ID de GA4 y la revisión de privacidad/consentimiento. No reinstalar ni alterar la conversión existente sin evidencia de un fallo; distinguir documentación local, cambios ejecutados por Wilmar y verificación de producción. No hay monitoreo ni recordatorios automáticos configurados.
